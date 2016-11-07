@@ -58,7 +58,7 @@ Note: The answer key is linked in step 11 if you’d like to reference it as you
 
 1.  We also want to save off the drink name to display it with the order so add this code to your submitOrder function after your orderName variable (but still inside the function’s curly braces!):
 
-        var drinkName = $("input[type=&#039;radio&#039;]:checked").val();
+        var drinkName = $("input[type="radio"]:checked").val();
 
        This code is looking for the value of the checked radio input.  It is storing that text in a variable called `drinkName`.  
 
