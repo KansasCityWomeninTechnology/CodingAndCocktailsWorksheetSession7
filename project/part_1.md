@@ -102,4 +102,4 @@ Note: The answer key is linked in step 11 if you’d like to reference it as you
 
 1.  Check your work with our answer key here: [bit.ly/CnC1stKey](https://www.google.com/url?q=http://bit.ly/CnC1stKey&sa=D&ust=1478494043531000&usg=AFQjCNEvCWXEvBIxVNuzUcFa5qTIOBCIfw)
 
-You’ve finished part one! Celebrate with a toast with your neighbor!
+**You’ve finished part one! Celebrate with a toast with your neighbor!**
