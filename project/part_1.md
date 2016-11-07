@@ -20,13 +20,13 @@ Note: The answer key is linked in step 11 if you’d like to reference it as you
 
   1.  If you’ve been to Coding &amp; Cocktails previously and worked in the DrinkOrderApp repository follow these steps in your command line tool (Git Bash on windows or iTerm2 on macs) to get to the right starting point:
 
-    1.  Make sure you’ve navigated into the DrinkOrderApp directory in your command line tool. (Hint: cd is the command for “change directory”)
+      1.  Make sure you’ve navigated into the DrinkOrderApp directory in your command line tool. (Hint: cd is the command for “change directory”)
 
-    1.  Add your upstream remote (the repository that you forked) by running the following command:  `git remote add upstream https://github.com/KansasCityWomeninTechnology/DrinkOrderApp.git`
+      1.  Add your upstream remote (the repository that you forked) by running the following command:  `git remote add upstream https://github.com/KansasCityWomeninTechnology/DrinkOrderApp.git`
 
-    1.  Fetch any upstream changes or new branches that have been made since you last worked in the repository: `git fetch upstream`
+      1.  Fetch any upstream changes or new branches that have been made since you last worked in the repository: `git fetch upstream`
 
-    1.  Checkout your new branch to start from: `git checkout programming-fundamentals-master`
+      1.  Checkout your new branch to start from: `git checkout programming-fundamentals-master`
 
 1.  Open up the index.html file in Google Chrome to view our starting point.
 
