@@ -10,4 +10,4 @@ If you’ve made it through all of the above or want to practice a little furthe
 
 1.  Save your changes and refresh the page in Google Chrome.  Try placing an order without a name now and see what happens!
 
-1.  Compare with the bonus answer key here: [bit.ly/CnCPFBonusKey](https://www.google.com/url?q=http://bit.ly/CnCPFBonusKey&sa=D&ust=1478494043556000&usg=AFQjCNH6gzVyFdOfkbCSdNMYWHncO93dfg)
+1.  Compare with the bonus answer key here: [bit.ly/CnCPFBonusKey](http://bit.ly/CnCPFBonusKey)
