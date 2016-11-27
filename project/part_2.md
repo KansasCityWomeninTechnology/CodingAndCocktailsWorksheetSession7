@@ -37,7 +37,7 @@
 
   1.  Save both **index.html** and **my-scripts.js** and reload your page in Google Chrome.  It won’t look much different but you’ve utilized an array, objects, a for loop and a function to create different loading behavior!
 
-1.  Check your work against the part two answer key here: [bit.ly/CnCPF2ndKey](https://www.google.com/url?q=http://bit.ly/CnCPF2ndKey&sa=D&ust=1478494043550000&usg=AFQjCNEXNxGWyIMxfGqZkJYwWMkKHzcJuA)
+1.  Check your work against the part two answer key here: [bit.ly/CnCPF2ndKey](http://bit.ly/CnCPF2ndKey)
 
 **Congratulations!  You worked through some hard stuff tonight!  Way to stick with it!
 **
