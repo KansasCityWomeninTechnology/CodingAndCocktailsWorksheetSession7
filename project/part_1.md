@@ -100,6 +100,6 @@ Note: The answer key is linked in step 11 if you’d like to reference it as you
 
 1.  Save your file, reload your page in chrome, try adding 6 orders and see your alert!
 
-1.  Check your work with our answer key here: [bit.ly/CnC1stKey](https://www.google.com/url?q=http://bit.ly/CnC1stKey&sa=D&ust=1478494043531000&usg=AFQjCNEvCWXEvBIxVNuzUcFa5qTIOBCIfw)
+1.  Check your work with our answer key here: [bit.ly/CnC1stKey](http://bit.ly/CnC1stKey)
 
 **You’ve finished part one! Celebrate with a toast with your neighbor!**
