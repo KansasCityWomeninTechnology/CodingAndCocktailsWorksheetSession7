@@ -94,7 +94,7 @@ Note: The answer key is linked in step 11 if you’d like to reference it as you
 
    1.  Take a minute to read about alert boxes.  We’ll utilize one in our next step.  You can find information about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/CnCAlert). You can customize the message they display to say whatever you want.
 
-  1.  Add a conditional to check if the `orderCount` is greater than 5\.  If so display an alert that says “Drink order queue is full.  Please try ordering again in a few minutes.” Otherwise (else) add the order to the display! Check this out if you need a reminder on what if statements look like: [bit.ly/CnCIfElse](https://www.google.com/url?q=http://bit.ly/CnCIfElse&sa=D&ust=1478494043529000&usg=AFQjCNGczjKQidYybYcx-YdZ-dk61FeX9w)
+  1.  Add a conditional to check if the `orderCount` is greater than 5\.  If so display an alert that says “Drink order queue is full.  Please try ordering again in a few minutes.” Otherwise (else) add the order to the display! Check this out if you need a reminder on what if statements look like: [bit.ly/CnCIfElse](http://bit.ly/CnCIfElse)
 
            *Note: These orders are only based on what is being submitted on your device in the current browser session.  Since we don’t have a server connected in, the data is only persisted as long as you don’t refresh your browser. Once you run a refresh the variables and page content are reset starting over so in order to reset your order count, just refresh your browser window!*
 
