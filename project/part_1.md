@@ -6,7 +6,7 @@ Note: The answer key is linked in step 11 if you’d like to reference it as you
 
   1.  If you’ve never been to Coding &amp; Cocktails before follow these steps:
 
-      1.  In google chrome using your GitHub account, fork the DrinkOrderApp repository ([bit.ly/CnCPFStrt](https://www.google.com/url?q=http://bit.ly/CnCPFStrt&sa=D&ust=1478494043497000&usg=AFQjCNEYyldhAY1JFnH-TdLkjf6afHH4rw)) to your own account by pressing the Fork button (                                                   ) in the upper right.<br>     ![Capture.PNG](/images/image00.png)
+      1.  In google chrome using your GitHub account, fork the DrinkOrderApp repository ([bit.ly/CnCPFStrt](http://bit.ly/CnCPFStrt) to your own account by pressing the Fork button (                                                   ) in the upper right.<br>     ![Capture.PNG](/images/image00.png)
 
       1.  On the GitHub site in Google Chrome, grab the https URL from GitHub (click on the clipboard icon on the right side to copy the URL):<br>
 
