@@ -7,6 +7,5 @@
   * [Part 3: APIs & Templates](/project/part-3-apis-and-templates.md)
   * [Bonus Section](project/bonus_section.md)
 * [Homework](homework.md)
-
-
+* [Survey](survey.md)
 
