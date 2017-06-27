@@ -1,5 +1,5 @@
-# Coding & Cocktails Session 6:
-## Programming Fundamentals {#programming-fundamentals}
+# Coding & Cocktails Session 7:
+## Programming Concepts 102: A deeper dive into JavaScript {#programming-fundamentals}
 <hr>
 
 ![codingcocktailsbadge-200.png](images/image02.png)
