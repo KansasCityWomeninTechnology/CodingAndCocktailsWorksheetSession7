@@ -2,14 +2,11 @@
 ## Programming Concepts 102: A deeper dive into JavaScript {#programming-fundamentals}
 <hr>
 
-![codingcocktailsbadge-200.png](images/image02.png)
 ### Overview {#overview}
 
-Tonight we discussed some common programming concepts found in the JavaScript programming language.  Many of these concepts are shared across programming languages but in a different programming language the syntax (the format for how you write or utilize a specific concept) may differ slightly. You will utilize these concepts often as you write code so plenty of practice with them will help a lot!
+Tonight we discussed some common programming concepts found in the JavaScript programming language.  Many of these concepts are shared across programming languages but the syntax (the format for how you write or utilize a specific concept) may differ slightly from language to language. You will utilize these concepts often as you write code so practice with them will help a lot!
 
-[![](../images/git.png)](http://bit.ly/CnCvers)  [![](../images/command-line.png)](http://bit.ly/cmdln)
-
-We are going to utilize the drink order app that some of you may have seen during our March version control session or our June jQuery session.  We’re going to make it interactive and utilize the concepts we discussed tonight.
+We will be adding interactivity to our Coding & Cocktails Drink Order App that some of you may have seen during our version control or jQuery sessions earlier this year. Not to worry if you didn't attend those sessions - this will be different functionality!
 
 ### Helpful Keyboard Shortcuts
 |Command|Mac Key Combination|Windows Key Combination|
@@ -33,5 +30,3 @@ While following along with the worksheet, type out the commands instead of doing
 
 
 [![](/images/glossary.png)](http://bit.ly/CnCgloss) [![](/images/tools.png)](http://bit.ly/CnCTools)
-
-If you don’t find what you’re looking for in our glossary let us know and we’ll get it added!  You can either submit a github issue on the repository or send us an email to codingandcocktails@kcwomenintech.org.
