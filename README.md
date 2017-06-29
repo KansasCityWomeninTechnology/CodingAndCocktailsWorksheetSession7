@@ -7,6 +7,10 @@
 
 Tonight we discussed some common programming concepts found in the JavaScript programming language.  Many of these concepts are shared across programming languages but in a different programming language the syntax (the format for how you write or utilize a specific concept) may differ slightly. You will utilize these concepts often as you write code so plenty of practice with them will help a lot!
 
+[![](../images/git.png)](http://bit.ly/CnCvers)  [![](../images/command-line.png)](http://bit.ly/cmdln)
+
+We are going to utilize the drink order app that some of you may have seen during our March version control session or our June jQuery session.  We’re going to make it interactive and utilize the concepts we discussed tonight.
+
 ### Helpful Keyboard Shortcuts
 |Command|Mac Key Combination|Windows Key Combination|
 |--|--|--|
