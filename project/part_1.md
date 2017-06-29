@@ -1,104 +1,209 @@
-### Part 1:  Variables, Data Types, Functions, Comments, Console, Mathematical Operators, Conditionals, Equality, Addition and Concatenation {#part-1-variables-data-types-functions-comments-console-mathematical-operators-conditionals-equality-addition-and-concatenation}
+### Part 1:  Common Programming Concepts
+##### Variables, Data Types, Functions, Comments, Mathematical Operators, Conditionals, Equality, and Concatenation
 
-Note: The answer key is linked in step 11 if you’d like to reference it as you’re working.  Try your hardest to make an attempt and talk things over with a mentor before using it though!
+#### First things first
 
-1.  First we need to get to our starting point utilizing git and our GitHub accounts.
+### <a href="https://kcwit.slack.com/messages/C0BGBKGG6/">Open Slack</a>
 
-  1.  If you’ve never been to Coding &amp; Cocktails before follow these steps:
+If you have a tip that helped you with a step on the worksheet, you can easily share it with the group in Slack. Or if there are any issues with the worksheet [we make typos or there's an update to a tool that we didn't catch before the session], we may post updates in Slack. Plus, after class is over, Slack becomes a tool for you to gain access to mentors as you go through the homework, or any other questions that arise.
 
-      1.  In google chrome using your GitHub account, fork the DrinkOrderApp repository ([bit.ly/CnCPFStrt](http://bit.ly/CnCPFStrt) to your own account by pressing the Fork button (                                                   ) in the upper right.<br>     ![Capture.PNG](/images/image00.png)
+{% hint style='tip' %}
+The answer key is linked at the end of this section if you’d like to reference it as you’re working.  Try your hardest to make an attempt and talk things over with a mentor before using it though!
+{% endhint %}
 
-      1.  On the GitHub site in Google Chrome, grab the https URL from GitHub (click on the clipboard icon on the right side to copy the URL):<br>
+{% hint style='danger' %}
 
-        ![Capture.PNG](/images/image01.png)
+If you're using a Chromebook, skip down to the Cloud9 instructions at the bottom.
 
-      1.  In your command line tool (Git Bash on windows and iTerm2 on macs), change directory into the **CodingAndCocktails** directory you created during the prep work if you’re not there yet: `cd CodingAndCocktails`
+{% endhint %}
 
-      1.  Still in the command line tool run the following command to clone the repository to your local device: `git clone <paste URL copied from GitHub above>` (Hint: use shift + enter on Windows) do not include angle brackets`
+#### Setup
 
-      1.  Finally, checkout the branch we will use as our starting point for this evening with the following command in the command line tool: `git checkout programming-fundamentals-master`
+If you don't want Version Control practice or don't know what Version Control is, just start with step 1 below.
 
-  1.  If you’ve been to Coding &amp; Cocktails previously and worked in the DrinkOrderApp repository follow these steps in your command line tool (Git Bash on windows or iTerm2 on macs) to get to the right starting point:
+If you were at the Version Control session in April and would like to practice your Git skills, expand the section below and follow the steps.
 
-      1.  Make sure you’ve navigated into the DrinkOrderApp directory in your command line tool. (Hint: cd is the command for “change directory”)
+<!--sec data-title="Version Control Practice" data-id="section0" data-show=true data-collapse=true ces-->
+1. Sync your personal DrinkOrderApp fork with the KCWiT repository by following [GitHub's steps on syncing a fork](https://help.github.com/articles/syncing-a-fork/).
+2. In iTerm2 or Git Bash type `git checkout programming-fundamentals-master` to switch to the appropriate branch.
+3. Jump in on step 4 below.
 
-      1.  Add your upstream remote (the repository that you forked) by running the following command:  `git remote add upstream https://github.com/KansasCityWomeninTechnology/DrinkOrderApp.git`
+Grab a mentor if you need some support as you do this!
+<!--endsec-->
 
-      1.  Fetch any upstream changes or new branches that have been made since you last worked in the repository: `git fetch upstream`
+1. In Google Chrome, navigate to https://github.com/KansasCityWomeninTechnology/DrinkOrderApp/archive/programming-fundamentals-master.zip to download the project starting point.
 
-      1.  Checkout your new branch to start from: `git checkout programming-fundamentals-master`
+2. Unzip the downloaded file and place the unzipped folder in your _CodingAndCocktails_ directory that was created during your tools setup.
 
-1.  Open up the index.html file in Google Chrome to view our starting point.
+3. Rename the folder from _DrinkOrderApp-programming-fundamentals-master_ to _DrinkOrderAppJS_.
 
-1.  First we need to add a function that will handle our orders. We will make these changes  to the end of  the **my-scripts.js** file in Sublime Text. Open your text editor and open the folder for the Drink order app.  Find the **my-scripts.js** file and open it. In order to give our function a name create a variable set equal to the function like this:
+4. In Atom, open the _DrinkOrderAppJS_ folder by opening the **File** menu and choosing **Add Project Folder**. Navigate to the unzipped _DrinkOrderAppJS_ folder and click OK.
+
+5.  Open up the index.html file in Google Chrome to view the starting point.
+
+{% hint style='tip' %}
+You can open the file in Google Chrome in a number of ways:
+
+1. Open Google Chrome then choose **Open File...** from the **File** menu
+
+2. Find the file in Finder (macs) or Windows Explorer (windows), right click on it and choose to open with Google Chrome.
+
+3. Drag the file directly on to the Google Chrome browser window.
+
+4. In GitBash, make sure you've changed directories into the one containing the file you want to open and type `start index.html`.
+
+5. In iTerm2, make sure you've changed directories into the one containing the file you want to open and type `open index.html`.
+{% endhint %}
+
+#### Submit an Order
+
+###### Create the function
+First we'll add a function to handle drink orders. 
+  
+  1. In Atom, find the _my-scripts.js_ file and double click on it to open. 
+  
+  2. Find the submitOrder function comment:
+```
+/**
+ * submitOrder Function
+ * 
+ * Increment orderCount, gather and display order details.
+ * The code from the Worksheet Part 1 Submit an Order Step 2 should go on the line just below the comment close.
+ */
+ ```
+ 
+  3. On the line just below the closing `*/`, create a variable set equal to a function like this:
 
     `var submitOrder = function () {}`
 
-1.  Next, let’s get some more practice using variables.  We’ll  gather some input from the user and save it off.
+###### Gather User Input
+Next, we need to gather some input from the user and save it off into additional variables.
 
-  Note: we’ll be using some jQuery (a JavaScript library) to help simplify some of the coding but we’ll supply that portion of the code for you.  Instead of copying and pasting from this document try typing out what you see.
+{% hint style='info' %}
+We’ll be using jQuery (a JavaScript library) to help simplify some of the coding but we’ll supply that portion of the code for you.  Instead of copying and pasting from this worksheet, try typing out what you see.
+{% endhint %}
 
-  1.  Create a variable called `orderName` inside the `submitOrder` function.  Remember to start with the `var` keyword! Your function code goes inside the function’s curly braces - remember the parentheses are where we could pass parameters to the function but we won’t need those for our project.
+  1. Place your cursor in between the curly braces from step 3 and press enter.  The cursor should now be inside the function body. 
+  
+  2. Type `var orderName = $("#order-form-input").val()`.
 
-   1.  Set the variable’s value to the following: `$("#order-form-input").val()`; 
+{% hint style='info' %}
+This code is finding the HTML element that has the id "order-form-input" (the input box you can see on the page) and grabbing the value that has been entered there.
 
-      This code is finding the HTML element that has the id order-form-input (which is our input box on the page) and grabbing the value that has been entered there.
+Missed the HTML session and have no clue what an element is? Grab a mentor to talk through what HTML is!
+{% endhint %}
 
-1.  Now that you’ve saved that string into a variable, let’s make sure we get a value and try our console.log statements!
+###### View Application Data
+Now that the input data is saved into a variable, make sure we got a value and try viewing data via a console.log statement. 
 
-  1.  On the line underneath your variable add a `console.log();` statement, placing your variable name inside the parentheses.
+  1. On the line underneath your variable, type `console.log(orderName);`.
 
-  1.  In order to see what we’ve accomplished so far the function has to be called.  Inside the click event handler for the order button add a call to the “submitOrder” function.  To call a function write the name of the function followed by open and close parentheses.  Inside the parentheses is where you would pass parameters to the function but since ours does not require parameters we just leave them empty. Example:myFunction();
+###### Call the function
+In order to see what we’ve accomplished so far, the function has to be run.  
 
-    1.  Save your work, reload your page in Google Chrome and open up the developer tools or console (push F12 on a windows machine or cmd+opt+i on a mac)
+  1. In the _my-scripts.js_ file, find the comment that says `// call submitOrder function when order button is clicked (Worksheet Part 1: Call the Function Step 1)`.  Place your cursor at the end of that line and press enter.  
+  
+  2. On that new line, type `submitOrder();` to call the submitOrder function. 
 
-    1.  Enter your name in the input box and push the Order button.  
+{% hint style='tip' %}
+Inside the parentheses is where you would pass parameters to the function but since ours does not require parameters, we just leave them empty.
+{% endhint %}
 
-    1.  Your name should appear in the Google Chrome console!  Check your function name or grab a mentor if it is not showing up!
+  3. Save your _my-scripts.js_ file.
+  
+  4. In Google Chrome, reload your page and open up the console by pushing the F12 button on a windows machine or `cmd+opt+i` buttons on a mac.
 
-1.  We also want to save off the drink name to display it with the order so add this code to your submitOrder function after your orderName variable (but still inside the function’s curly braces!):
+  5. Enter your name in the input box and push the Order button.  
 
-        var drinkName = $("input[type="radio"]:checked").val();
+  6. Your name should appear in the Google Chrome console!  Check your function name or grab a mentor if it is not showing up!
 
-       This code is looking for the value of the checked radio input.  It is storing that text in a variable called `drinkName`.  
 
-1.  Finally we want to display the orders that are coming in! Add this code snippet to your function after both variables.  Try concatenating your variables and a string together replacing the &lt;your code goes here&gt; (including the angle brackets) with your string concatenation.  Try to make the message say what would come out as “Jane would like a Strong Lady”. Keep in mind your name is saved in the `orderName` variable and the drink name is saved in the `drinkName` variable.
+###### Ordering Drinks
+We also want to save off the drink name to display it with the order. 
 
-  If you’re struggling grab a mentor or take a peek at the answer key here: [bit.ly/CnC1stKey](https://www.google.com/url?q=http://bit.ly/CnC1stKey&sa=D&ust=1478494043517000&usg=AFQjCNH_ciqas6E-dHypgorOqxTz9ponUQ) (note: The answer key will look slightly different than what your code should look like at this point since it is the answer key for the entire part 1, not just until this point so grab a mentor if you’re confused!)
+ 1. Add a new line after the `var orderName...` line.
+ 
+ 2. Type `var drinkName = $("input[type="radio"]:checked").val();` to save the selected drink to a variable called drinkName.
 
-        $("#order-details").append("<h1>" + <your code goes here> + "</h1>");
+{% hint style='info' %}
+The code in step 2 here is looking for the value of the checked radio button input.  It is storing that data in a variable called `drinkName`.
+{% endhint %}
 
-    This code is finding the HTML element with the id of order-details and appending to (or placing inside of) that element a new h1 element with the text that we specify using the append method.
+###### Display Orders
+Finally we want to display the orders that are coming in! 
 
-  *Note: These orders are only based on what is being submitted on your device in your current browser session. Since we don’t have a server connected in, the data is only persisted as long as you don’t refresh your browser. Once you run a refresh, the variables and page content are reset starting over.  In order to clear out your order details, just refresh your browser window.
-*
-1.  Save your file, go to your chrome browser and reload the page.  You should now be able to select a drink, enter your name, hit the order button and have your order text display in the light purple order detail area on your webpage!
+  1. Add a new line after the `var drinkName ...` line.
+  
+  2. Type `$("#order-details").append("<h1>" + <your code goes here> + "</h1>");` 
 
-  **You’ve added drink ordering to your website! Sounds like it’s time to grab another!
-**
-1.  We’ll want to make sure we don’t overwhelm our bartender with 50 drink orders at one time so let’s make sure to count how many drinks have been ordered.  
+{% hint style='danger' %}
+Replace the `<your code goes here>` portion to display the message "Jane would like a Strong Lady".  You'll need to use concatenation to build that string using your variables `orderName`, `drinkName` and a string `" would like a "`.
+{% endhint %}
+  
+**If you’re struggling here, grab a mentor to talk through concatenation!**
 
-  1.  Back in **my-scripts.js** in Sublime Text add an `orderCount` variable to the top of your file and initialize it to 0\.  Initializing is setting the starting value of a variable.
+{% hint style='info' %}
+The code in step 2 is finding the HTML element with the id of order-details and appending to (or placing inside of) that element a new h1 (header 1) element with the text that we specify using the append method.
+{% endhint %}
 
-  1.  Inside the `submitOrder` function make sure to add one to the `orderCount` variable so it gets incremented each time we create another order. Remember there’s a shortcut for adding one in programming! 
+{% hint style='info' %}
+These orders are only based on what is being submitted on your device in your current (Google Chrome) browser session. Since we don’t have a server connected, the data is only persisted as long as you don’t refresh the page in your browser. Once you hit refresh, the variables and page content are reset - starting over.  In order to clear out your order details, just refresh your browser window.
+{% endhint %}
 
-  1.  This time we’re going to add a function that has a parameter passed to it.  Add a new function to your file called `updateOrderCount`.  Make sure you pass a parameter to this function called `count`.  Remember to pass a parameter that you add it inside the parenthesis like this:<br> `var myFunction = function (myParameter) { }`
+  3. In Atom, save your _my-scripts.js_ file
+  
+  4. In Google Chrome, reload the page.  You should now be able to select a drink, enter your name, hit the order button and have your order text display in the light purple order detail area on your webpage!
 
-  1.  Inside the updateOrderCount function add this code: `$('#drink-count').html("Drinks Ordered: " + count);`
+**You’ve added drink ordering to your website! Sounds like it’s time to grab one of your own!**
+  
+#### Count Orders
+We’ll want to make sure we don’t overwhelm our bartender with 50 drink orders at one time so let’s make sure to count how many drinks have been ordered.  
 
-      This code is finding the HTML element with the id of `drink-count` and changing the content of that HTML element to be what we pass to the html method, here the string “Drinks Ordered:” and our updated order count.
+  1. In Atom, in the _my-scripts.js_ file, find the comment `// Initialize orderCcount variable to 0 (Worksheet Part 1: Count Orders Step 1` at the very top of the file.  Place your cursor at the end of that comment and press enter to add a new line just below the comment.  
+  
+  2. On that new line, create a variable named `orderCount` and initialize it to 0.  Initializing is setting the starting value of a variable, the value to the right of the `=`.
 
-  1.  You’ll need to add a call to this function inside the submitOrder function ( this should go just under the code to add the order display.)  *Remember how we call functions like in step 5b above but this time you’ll need to pass the orderCount variable to the function!*
+  3. Inside the `submitOrder` function, type  `orderCount++` to add one to the orderCount variable each time an order is placed.  
+#  ^^TODO: Guide where to place this better
+# TODO Start here.
 
-            myFunction(passedParameter);
+{% hint style='tip' %}
+`++` is a common shortcut for adding one in programming! 
+{% endhint %}
 
-   1.  Take a minute to read about alert boxes.  We’ll utilize one in our next step.  You can find information about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/CnCAlert). You can customize the message they display to say whatever you want.
+  4. In Atom in the _my-scripts.js_ file, find the comment for the `updateOrderCount` function: 
+```
+/**
+ * updateOrderCount Function
+ * 
+ * @param {number} count
+ * The code from the Worksheet Part 1: Count Orders, Step 4 should go on the line just below the comment close.
+ */
+```
 
-  1.  Add a conditional to check if the `orderCount` is greater than 5\.  If so display an alert that says “Drink order queue is full.  Please try ordering again in a few minutes.” Otherwise (else) add the order to the display! Check this out if you need a reminder on what if statements look like: [bit.ly/CnCIfElse](http://bit.ly/CnCIfElse)
+  5. Add a new function to your file called `updateOrderCount`.  Pass a parameter to this function called `count`.  Remember to pass a parameter that you add it inside the parenthesis like this:`var myFunctionName = function (myParameterName) { }`
 
-           *Note: These orders are only based on what is being submitted on your device in the current browser session.  Since we don’t have a server connected in, the data is only persisted as long as you don’t refresh your browser. Once you run a refresh the variables and page content are reset starting over so in order to reset your order count, just refresh your browser window!*
+  6.  Inside the body of the updateOrderCount function (Remember, the body of a function is inside the curly braces!) type: `$('#drink-count').html("Drinks Ordered: " + count);`
 
-1.  Save your file, reload your page in chrome, try adding 6 orders and see your alert!
+# TODO: Add hint here
+This code is finding the HTML element with the id of `drink-count` and changing the content of that HTML element to be what we pass to the html method, here the string “Drinks Ordered:” and our updated order count.
+
+  7. This function needs to be called inside the submitOrder function just under the code to add the order display.
+
+# TODO: Add tip & better placement guidance  
+Remember how we call functions like in step 5b above but this time you’ll need to pass the orderCount variable to the function! `myFunction(passedParameter);`
+
+###### Alerts
+Take a minute to read about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/CnCAlert). .  We’ll utilize one in our next step. You can customize the message they display to say whatever you want.
+
+  1. Add a conditional to check if the `orderCount` is greater than 5.  If so, display an alert that says “Drink order queue is full.  Please try ordering again in a few minutes.” Otherwise (else) add the order to the display! Check this out if you need a reminder on what if statements look like: [bit.ly/CnCIfElse](http://bit.ly/CnCIfElse)
+
+# TODO: Tip
+These orders are only based on what is being submitted on your device in the current browser session.  Since we don’t have a server connected, the data is only persisted as long as you don’t refresh your browser. Once you run a refresh the variables and page content are reset starting over so in order to reset your order count, just refresh your browser window!
+
+1. In Atom, save your file
+
+2. In Google Chrome, reload your page, try adding 6 orders and see your alert pop up!
 
 1.  Check your work with our answer key here: [bit.ly/CnC1stKey](http://bit.ly/CnC1stKey)
 
