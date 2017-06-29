@@ -1,6 +1,6 @@
 ## Bonus Section {#bonus-section}
 
-If you’ve made it through all of the above or want to practice a little further at home, try ordering a drink without entering a name.  That’s not useful, is it? This is called a bug which is something you’ll run into regularly as a developer. Let’s fix that with another conditional!  These changes need to happen in my-scripts.js in Sublime Text.
+If you’ve made it through all of the above or want to practice a little further at home, try ordering a drink without entering a name.  That’s not useful, is it? This is called a bug which is something you’ll run into regularly as a developer. Let’s fix that with another conditional!  These changes need to happen in _my-scripts.js_ in Atom.
 
 1.  Check to see if `orderName` has a value.  We just want the conditional to evaluate to true and an undefined value will always evaluate to the boolean value false. That means all we have to do to check whether or not `orderName` has a value is check `if (orderName)`
 
