@@ -231,3 +231,43 @@ These orders are only based on what is being submitted on your device in the cur
   9.  Check your work with our answer key here: [bit.ly/CnC1stKey](http://bit.ly/CnC1stKey)
 
 **You’ve finished part one! Celebrate with a toast with your neighbor!**
+
+<!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="section1" data-show=true data-collapse=true ces-->
+
+1. Sign up for an account at [c9.io](https://c9.io)
+
+   Note: It will ask you for credit card information, but you will not get charged for anything since we do not use features of Cloud9 that cost money. Ask a mentor for the Coding & Cocktails card for Cloud9.
+
+2. Confirm your account from your email and log in to Cloud9.
+
+3. Select **Workspaces** from the left side panel if you are not already there.
+
+4. Choose **Create a new workspace**.
+
+5. Add a name for your workspace - it can be anything you like. You do not need a description, but feel free to add one if you like.
+
+6. Leave your workspace as **Public**.
+
+7. Clone the repo from Github so the files we need for Part I will be in our workspace for us.
+
+  1. In the **Clone from Git or Mercurial URL** field enter `https://github.com/KansasCityWomeninTechnology/DrinkOrderApp.git`
+
+8. In the template section leave the template as  **HTML5**.
+
+9. Click on the **Create Workspace** button.
+
+   Cloud9 will take a minute and create your workspace here.
+
+10. All the files that were cloned from the Github repo are in your workspace. 
+
+11. Close the open _README.md_ tab by clicking on the x on the tab.
+
+12. Open the _index.html_ file in the editor by double clicking on the file name on the left.
+
+13. On the top menu bar click on **Preview** and choose **Live Preview File** to open the preview in your workspace.  You may enlarge it to another Google Chrome tab by clicking on the expand icon.
+
+    ![](/images/expand.png)
+
+Now you're ready to start with the **Submit an Order > Create a Function** section above!
+
+<!--endsec-->
