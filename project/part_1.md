@@ -41,7 +41,7 @@ Grab a mentor if you need some support as you do this!
 
 5.  Open up the index.html file in Google Chrome to view the starting point.
 
-{% hint style='tip' %}
+  {% hint style='tip' %}
 You can open the file in Google Chrome in a number of ways:
 
 1. Open Google Chrome then choose **Open File...** from the **File** menu
@@ -53,7 +53,7 @@ You can open the file in Google Chrome in a number of ways:
 4. In GitBash, make sure you've changed directories into the one containing the file you want to open and type `start index.html`.
 
 5. In iTerm2, make sure you've changed directories into the one containing the file you want to open and type `open index.html`.
-{% endhint %}
+  {% endhint %}
 
 ### Submit an Order
 
@@ -79,9 +79,9 @@ First we'll add a function to handle drink orders.
 ###### Gather User Input
 Next, we need to gather some input from the user and save it off into additional variables.
 
-{% hint style='info' %}
+  {% hint style='info' %}
 We’ll be using jQuery (a JavaScript library) to help simplify some of the coding but we’ll supply that portion of the code for you.  Instead of copying and pasting from this worksheet, try typing out what you see.
-{% endhint %}
+  {% endhint %}
 
   1. Place your cursor in between the curly braces from step 3 and press enter.  The cursor should now be inside the function body. 
   
@@ -105,9 +105,9 @@ In order to see what we’ve accomplished so far, the function has to be run.
   
   2. On that new line, type `submitOrder();` to call the submitOrder function. 
 
-{% hint style='tip' %}
+  {% hint style='tip' %}
 Inside the parentheses is where you would pass parameters to the function but since ours does not require parameters, we just leave them empty.
-{% endhint %}
+  {% endhint %}
 
   3. Save your _my-scripts.js_ file.
   
@@ -125,9 +125,9 @@ We also want to save off the drink name to display it with the order.
  
  2. Type `var drinkName = $("input[type="radio"]:checked").val();` to save the selected drink to a variable called drinkName.
 
-{% hint style='info' %}
+  {% hint style='info' %}
 The code in step 2 here is looking for the value of the checked radio button input.  It is storing that data in a variable called `drinkName`.
-{% endhint %}
+  {% endhint %}
 
 ###### Display Orders
 Finally we want to display the orders that are coming in! 
@@ -136,19 +136,19 @@ Finally we want to display the orders that are coming in!
   
   2. Type `$("#order-details").append("<h1>" + <your code goes here> + "</h1>");` 
 
-{% hint style='danger' %}
+  {% hint style='danger' %}
 Replace the `<your code goes here>` portion to display the message "Jane would like a Strong Lady".  You'll need to use concatenation to build that string using your variables `orderName`, `drinkName` and a string `" would like a "`.
-{% endhint %}
-  
+
 **If you’re struggling here, grab a mentor to talk through concatenation!**
+  {% endhint %}
 
-{% hint style='info' %}
+  {% hint style='info' %}
 The code in step 2 is finding the HTML element with the id of order-details and appending to (or placing inside of) that element a new h1 (header 1) element with the text that we specify using the append method.
-{% endhint %}
+  {% endhint %}
 
-{% hint style='info' %}
+  {% hint style='info' %}
 These orders are only based on what is being submitted on your device in your current (Google Chrome) browser session. Since we don’t have a server connected, the data is only persisted as long as you don’t refresh the page in your browser. Once you hit refresh, the variables and page content are reset - starting over.  In order to clear out your order details, just refresh your browser window.
-{% endhint %}
+  {% endhint %}
 
   3. In Atom, save your _my-scripts.js_ file
   
@@ -165,9 +165,9 @@ We’ll want to make sure we don’t overwhelm our bartender with 50 drink order
 
   3. As the first line inside the body (Remember - that means inside those curly braces!) of the `submitOrder` function, type `orderCount++` to add one to the orderCount variable each time an order is placed.  
 
-{% hint style='tip' %}
+  {% hint style='tip' %}
 `++` is a common shortcut for adding one in programming! 
-{% endhint %}
+  {% endhint %}
 
   4. In Atom, in the _my-scripts.js_ file, find the comment for the `updateOrderCount` function: 
 ```
@@ -181,21 +181,21 @@ We’ll want to make sure we don’t overwhelm our bartender with 50 drink order
 
   5. On the line right below the closing `*/` for that comment, add a new function to your file named `updateOrderCount`. Pass a parameter to this function called `count`.  
 
-{% hint style='tip' %}
+  {% hint style='tip' %}
 Remember to pass a parameter that you add it inside the parenthesis like this:`var myFunctionName = function (myParameterName) { }`
-{% endhint %}
+  {% endhint %}
 
   6. Inside the body of the `updateOrderCount` function type: `$('#drink-count').html("Drinks Ordered: " + count);`
 
-{% hint style='info' %}
+  {% hint style='info' %}
 This code is finding the HTML element with the id of `drink-count` and changing the content of that HTML element to be what we pass to the jQuery html method - in this case, the string “Drinks Ordered:” and our updated order count.
-{% endhint %}
+  {% endhint %}
 
   7. This function needs to be called inside the body of the `submitOrder` function, just under the code to add the order display. That code will probably look like `$("#order-details").append("<h1>" + orderName + " would like a " + drinkName + "</h1>");`
 
-{% hint style='info' %}  
+  {% hint style='info' %}  
 Remember how we call functions like in Step 2 under the "Call the Function" section above but this time you’ll need to pass the `orderCount` variable to the `submitOrder` function! `myFunction(passedParameter);`
-{% endhint %}
+  {% endhint %}
 
 ###### Alerts
 Take a minute to read about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/CnCAlert). We’ll utilize one in our next step. You can customize the message to display whatever you want.
@@ -204,9 +204,9 @@ Take a minute to read about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/Cn
 
   2. Just above the comment `// add order display` type out your `if (condition) {` code where the condition is if the `orderCount` is less than or equal to 5.  
 
-{% hint style='tip' %} 
+  {% hint style='tip' %} 
 [View documentation on the if statement on the Mozilla Developer Network pages.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-{% endhint %}
+  {% endhint %}
   
   3. Indent the `// add order display` comment and the line directly below it so it is nested inside the body of the if statement to add the order to the display if there is still room for orders.
   
@@ -216,9 +216,9 @@ Take a minute to read about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/Cn
   
   6. In the body of the else, display an alert that says “Drink order queue is full.  Please try ordering again in a few minutes.” 
 
-{% hint style='info' %} 
+  {% hint style='info' %} 
 These orders are only based on what is being submitted on your device in the current browser session.  Since we don’t have a server connected, the data is only persisted as long as you don’t refresh your browser. Once you run a refresh the variables and page content are reset starting over so in order to reset your order count, just refresh your browser window!
-{% endhint %}
+  {% endhint %}
 
   7. In Atom, save your _my-scripts.js_ file.
 
