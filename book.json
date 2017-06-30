@@ -1,6 +1,5 @@
 {
     "plugins": [
-        "copy-code-button",
         "custom-favicon",
         "hints",
         "sectionx"
