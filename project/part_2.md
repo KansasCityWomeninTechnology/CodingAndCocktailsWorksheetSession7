@@ -1,6 +1,6 @@
 # Part 2:  Loops, Arrays, and Objects
 
-### Data Structures 
+### Data Structures - Arrays & Objects 
 First, you'll create a data structure in _my-scripts.js_. You’ll take the drinks from the HTML markup and move them into the javascript file so they are easier to change.  Since there are multiple drinks, an array (like a list) will be used to hold them.  Each drink will be a JavaScript object and will need two key value pairs; a value that will link the drink label and the radio button and a label that will display nicely.  There should be at least 5 drink objects in the menu.
 
   1. In Atom in the _my-scripts.js_ file just under the `var orderCount = 0;` code, create a variable called `cocktails` and initialize it to an empty array.  
@@ -36,15 +36,27 @@ Objects are surrounded by curly braces and contain key-value pairs like this:
 Don’t forget the comma between key value pairs!
   {% endhint %}
 
-  1.  Make sure to save your work even though we won’t see any cool changes just yet!
+  3.  Make sure to save your work even though we won’t see any cool changes just yet!
 
-1.  Now we need a function that will loop through the objects and add them to the menu
+### Loops
+Next, we need to create a function that will loop through the objects and add them to the menu
 
-  1.  Create another function called `loadMenu` in the **my-scripts.js** file in Sublime Text.  
+  1.  In Atom, in the _my-scripts.js_ file, just below that array of drink objects, create another function called `loadMenu`.  
 
-  1.  Inside the function add a for loop. The for loop has three pieces, the initializing expression, the condition and the incrementing expression. That means we tell the loop where to start with the initializing expression, how many times we will need to loop with the condition and how much to add to the loop counter after each time through the loop. Here is a for loop example we’ll need to change ours to use our array’s variable name so we’re looping through our array of drink objects. 
+  2.  Inside the `loadMenu` function body, add a for loop. 
+  
+  {% hint style='tip' %}
+The for loop has three pieces:
+  1. The initializing expression - what number to start the loop with.
+  2. The condition - how many times to run through the loop.
+  3. The incrementing expression - how much to add to the loop counter each time through the loop.
 
-      `for (var i = 0; i &lt; array.length; i++) { }`
+For loop example: 
+`for (var i = 0; i < array.length; i++) { }`
+
+we’ll need to change ours to use our array’s variable name so we’re looping through our array of drink objects. 
+
+
 
   1.  Inside the for loop (that means inside the curly braces!) add this code:
     
