@@ -17,6 +17,10 @@ If you're using a Chromebook, skip down to the Cloud9 instructions at the bottom
 
 {% endhint %}
 
+### The Project
+
+We will be adding interactivity to our Coding & Cocktails Drink Order App that some of you may have seen during our version control or jQuery sessions earlier this year. Not to worry if you didn't attend those sessions - this will be different functionality and practice!
+
 ### Setup
 
 If you don't want Version Control practice or don't know what Version Control is, just start with step 1 below.

@@ -6,8 +6,6 @@
 
 Tonight we discussed some common programming concepts found in the JavaScript programming language.  Many of these concepts are shared across programming languages but the syntax (the format for how you write or utilize a specific concept) may differ slightly from language to language. You will utilize these concepts often as you write code so practice with them will help a lot!
 
-We will be adding interactivity to our Coding & Cocktails Drink Order App that some of you may have seen during our version control or jQuery sessions earlier this year. Not to worry if you didn't attend those sessions - this will be different functionality!
-
 ### Helpful Keyboard Shortcuts
 |Command|Mac Key Combination|Windows Key Combination|
 |--|--|--|
