@@ -87,11 +87,11 @@ We’ll be using jQuery (a JavaScript library) to help simplify some of the codi
   
   2. Type `var orderName = $("#order-form-input").val()`.
 
-{% hint style='info' %}
+  {% hint style='info' %}
 This code is finding the HTML element that has the id "order-form-input" (the input box you can see on the page) and grabbing the value that has been entered there.
 
 Missed the HTML session and have no clue what an element is? Grab a mentor to talk through what HTML is!
-{% endhint %}
+  {% endhint %}
 
 ###### View Application Data
 Now that the input data is saved into a variable, make sure we got a value and try viewing data via a console.log statement. 
