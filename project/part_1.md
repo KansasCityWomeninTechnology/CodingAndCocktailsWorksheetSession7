@@ -72,7 +72,7 @@ First we'll add a function to handle drink orders.
  * submitOrder Function
  * 
  * Increment orderCount, gather and display order details.
- * The code from the Worksheet Part 1 Submit an Order Step 2 should go on the line just below the comment close.
+ * The code from the Worksheet Part 1: Submit an Order, Step 2 should go on the line just below the comment close.
  */
  ```
  
@@ -105,7 +105,7 @@ Now that the input data is saved into a variable, make sure we got a value and t
 ###### Call the function
 In order to see what we’ve accomplished so far, the function has to be run.  
 
-  1. In the _my-scripts.js_ file, find the comment that says `// call submitOrder function when order button is clicked (Worksheet Part 1: Call the Function Step 1)`.  Place your cursor at the end of that line and press enter.  
+  1. In the _my-scripts.js_ file, find the comment that says `// call submitOrder function when order button is clicked (Worksheet Part 1: Call the Function, Step 1)`.  Place your cursor at the end of that line and press enter.  
   
   2. On that new line, type `submitOrder();` to call the submitOrder function. 
 
@@ -163,7 +163,7 @@ These orders are only based on what is being submitted on your device in your cu
 ### Count Orders
 We’ll want to make sure we don’t overwhelm our bartender with 50 drink orders at one time so let’s make sure to count how many drinks have been ordered.  
 
-  1. In Atom, in the _my-scripts.js_ file, find the comment `// Initialize orderCcount variable to 0 (Worksheet Part 1: Count Orders Step 1` at the very top of the file.  Place your cursor at the end of that comment and press enter to add a new line just below the comment.  
+  1. In Atom, in the _my-scripts.js_ file, find the comment `// Initialize orderCount variable to 0 (Worksheet Part 1: Count Orders, Step 1)` at the very top of the file.  Place your cursor at the end of that comment and press enter to add a new line just below the comment.  
   
   2. On that new line, create a variable named `orderCount` and initialize it to 0.  Initializing is setting the starting value of a variable, the value to the right of the `=`.
 
