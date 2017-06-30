@@ -46,38 +46,49 @@ Next, we need to create a function that will loop through the objects and add th
   2.  Inside the `loadMenu` function body, add a for loop. 
   
   {% hint style='tip' %}
-The for loop has three pieces:
-  1. The initializing expression - what number to start the loop with.
-  2. The condition - how many times to run through the loop.
-  3. The incrementing expression - how much to add to the loop counter each time through the loop.
-
 For loop example: 
-`for (var i = 0; i < array.length; i++) { }`
+`for (var i = 0; i < myArray.length; i++) { }`
 
-we’ll need to change ours to use our array’s variable name so we’re looping through our array of drink objects. 
+In the Drink Order App code, `myArray` would be substituted with the `cocktail` array so the code loops through the array of drink objects.
+  
+The for loop has three pieces:
+
+  1. The initializing expression - what number to start the loop with. `var i = 0;`
+  
+  2. The condition - how many times to run through the loop. `i < myArray.length;`
+  
+  3. The incrementing expression - how much to add to the loop counter each time through the loop. `i++` 
+  {% endhint %}
 
 
+  3.  Inside the body of the for loop (that means inside the curly braces!) add this code:
+  ```$('.radio-group').append('<label class=”radio” for="' + cocktails[i].id + '"><input type="radio" id="' + cocktails[i].id + '" name="drink" value="' + cocktails[i].label + '">' + cocktails[i].label + '</label>');```
 
-  1.  Inside the for loop (that means inside the curly braces!) add this code:
-    
-      ``$('.radio-group').append('<label class=”radio” for="' + cocktails[i].id + '"><input type="radio" id="' + cocktails[i].id + '" name="drink" value="' + cocktails[i].label + '">' + cocktails[i].label + '</label>');``
+  {% hint style='info' %}
+This code is finding the HTML element that has the class `radio-group` applied to it.  Then it appends (or adds inside of that element) the label and radio input elements for the drink items. 
 
-        This code is finding the HTML element that has the class radio-group applied to it.  Then we are appending (or adding inside of that element) our label and radio input elements for the drink items. The label has a “class” attribute of radio for styling purposes.  There is also a “for” attribute that ties the label to the input element’s “id” attribute. This is where we are using the “id” key’s value from our drink objects.  
+The label has a `class` attribute of `radio` for styling purposes.  There is also a `for` attribute that connects the visible label element to the input element’s `id` attribute. This is where using the `id` key’s value from the drink objects.
 
-      The input element is of type “radio” so it will be a radio button selector and all of them have the “name” attribute of drink.  Having the same “name” across the radio input elements ensures the user can only select one radio button at a time. The last attribute is the value of the radio button which holds the drink objects “label” key’s value and helps us display formatted text.
+The input element is of type “radio” so it will be a radio button selector and all of them have the `name` attribute of "drink".  Having the same `name` across the radio input elements ensures the user can only select one radio button at a time. 
 
-      Finally, inside the label element we are utilizing the drink object’s “label” value to display the formatted drink name text.
+The last attribute is the `value` of the radio button which holds the drink objects `label` value and helps display formatted text.
 
-  1.  Now we need to make sure this function is called so the menu gets loaded into the page. Add the function call just inside the `$(document).ready(function() {`
+Finally, inside the label HTML element, the drink object’s `label` value is used to display the formatted drink name text.
+  {% endhint %}
 
-      1.  To call a function write the name of the function followed by open and close parentheses.  Inside the parentheses is where you would pass parameters to the function but since ours does not require parameters we just leave them empty. Example: `myFunction();`<br><br>
+  4.  Next, call this function so the menu gets loaded into the page. In Atom in the _my-styles.js_ file, add the function call just inside the body of `$(document).ready(function() {`
 
-  1.  Finally we need to remove the markup from the **index.html** page so it will be loaded with our JavaScript instead of with the markup. Remove all of the label and input elements that are inside the div element with classes input-group and radio-group
-  `<div class="input-group radio-group">`
+  {% hint style='tip' %}
+Look back at Part 1 for a reminder on how to call a function.
+  {% endhint %}
 
-  1.  Save both **index.html** and **my-scripts.js** and reload your page in Google Chrome.  It won’t look much different but you’ve utilized an array, objects, a for loop and a function to create different loading behavior!
+  5.  Open the _index.html_ file so we can remove the drink menu markup so it will be loaded with our JavaScript instead of with the markup. Remove all of the `<label>` and `<input>` elements that are inside the following `div` element: `<div class="input-group radio-group">`.
 
-1.  Check your work against the part two answer key here: [bit.ly/CnCPF2ndKey](http://bit.ly/CnCPF2ndKey)
+  6.  In Atom, save both _index.html_ and _my-scripts.js_.
+  
+  7. In Google Chrome, reload your page.  
+     It won’t look much different but you’ve utilized an array, objects, a for loop and a function to create different loading behavior!
 
-**Congratulations!  You worked through some hard stuff tonight!  Way to stick with it!
-**
+  8.  Check your work against the part two answer key here: [bit.ly/CnCPF2ndKey](http://bit.ly/CnCPF2ndKey)
+
+**Congratulations!  You worked through some hard stuff tonight!  Way to stick with it!**
