@@ -1,8 +1,15 @@
-### Part 2:  Loops, Arrays, and Objects
+# Part 2:  Loops, Arrays, and Objects
 
-1.  Create your first data structure in **my-scripts.js**. We’ll take the drinks from our HTML markup and move them into our javascript file to make them easier to change.  Since we have multiple drinks we’ll use an array (like a list) to hold them.  Each drink will be an object and will need to key value pairs, a value that will easily link the label and the radio button and a label that will display nicely.  Make sure to add at least 5 drink objects to your menu.
+### Data Structures 
+First, you'll create a data structure in _my-scripts.js_. You’ll take the drinks from the HTML markup and move them into the javascript file so they are easier to change.  Since there are multiple drinks, an array (like a list) will be used to hold them.  Each drink will be a JavaScript object and will need two key value pairs; a value that will link the drink label and the radio button and a label that will display nicely.  There should be at least 5 drink objects in the menu.
 
-  1.  Create a variable called **cocktails** and initialize it to an empty array.  An empty array is just an opening and closing square bracket with no internal content. Example array with content of different data types: `[“element1” , “element2”, 3, true]`
+  1. In Atom in the _my-scripts.js_ file, create a variable called `cocktails` and initialize it to an empty array.  
+  
+  {}
+Empty Array: `[]`
+
+Array with content of different data types: `[“element1” , “element2”, 3, true]`
+  {% endhint %}
 
   1.  Create an object for each drink.  Each drink will need two keys - **id** and **label**.  Each key will need a value paired with it.  The “id” key will need a camelCase (camelCase means the first word starts with a lowercase letter and each subsequent word starts with an uppercase letter without spaces between words!) value that is the drink’s name paired with it.  We will use this to connect the label to the radio button input.  The “label” key will need the display version of the drink name paired with it. Objects are surrounded by curly braces and contain key-value pairs like this:
 ```
