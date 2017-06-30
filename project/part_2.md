@@ -3,23 +3,38 @@
 ### Data Structures 
 First, you'll create a data structure in _my-scripts.js_. You’ll take the drinks from the HTML markup and move them into the javascript file so they are easier to change.  Since there are multiple drinks, an array (like a list) will be used to hold them.  Each drink will be a JavaScript object and will need two key value pairs; a value that will link the drink label and the radio button and a label that will display nicely.  There should be at least 5 drink objects in the menu.
 
-  1. In Atom in the _my-scripts.js_ file, create a variable called `cocktails` and initialize it to an empty array.  
+  1. In Atom in the _my-scripts.js_ file just under the `var orderCount = 0;` code, create a variable called `cocktails` and initialize it to an empty array.  
   
-  {}
+  {% hint style='tip' %}
 Empty Array: `[]`
 
 Array with content of different data types: `[“element1” , “element2”, 3, true]`
   {% endhint %}
 
-  1.  Create an object for each drink.  Each drink will need two keys - **id** and **label**.  Each key will need a value paired with it.  The “id” key will need a camelCase (camelCase means the first word starts with a lowercase letter and each subsequent word starts with an uppercase letter without spaces between words!) value that is the drink’s name paired with it.  We will use this to connect the label to the radio button input.  The “label” key will need the display version of the drink name paired with it. Objects are surrounded by curly braces and contain key-value pairs like this:
+  2. Create an object for each drink.  
+     * Each drink object will need two keys: `id` and `label`.
+     * Each key will need a value paired with it.  
+     * The `id` key will need a camelCase value that is the drink’s name paired with it.  This will connect the drink label to the radio button input.  
+
+    {% hint style='tip' %}
+(camelCase means the first word starts with a lowercase letter and each subsequent word starts with an uppercase letter without spaces between words!)
+    {% endhint %} 
+     
+     * The `label` key will need the human readable drink name paired with it. 
+     
+  {% hint style='tip' %}
+Objects are surrounded by curly braces and contain key-value pairs like this:
 ```
 {
-  "key": "value",
-  "anotherKey": "Another Value"
+          "key": "value",
+          "anotherKey": "Another Value"
 }
 ```
-# TODO: Tip.
+  {% endhint %}
+
+  {% hint style='tip' %}
 Don’t forget the comma between key value pairs!
+  {% endhint %}
 
   1.  Make sure to save your work even though we won’t see any cool changes just yet!
 
