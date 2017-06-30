@@ -264,6 +264,8 @@ These orders are only based on what is being submitted on your device in the cur
 
 12. Open the _index.html_ file in the editor by double clicking on the file name on the left.
 
+13. In the console at the bottom of the workspace type `git checkout programming-fundamentals-master` to switch to the starting point of the project.
+
 13. On the top menu bar click on **Preview** and choose **Live Preview File** to open the preview in your workspace.  You may enlarge it to another Google Chrome tab by clicking on the expand icon.
 
     ![](/images/expand.png)
