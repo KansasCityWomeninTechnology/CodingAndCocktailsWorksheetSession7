@@ -26,7 +26,7 @@ If you were at the Version Control session in April and would like to practice y
 <!--sec data-title="Version Control Practice" data-id="section0" data-show=true data-collapse=true ces-->
 1. Sync your personal DrinkOrderApp fork with the KCWiT repository by following [GitHub's steps on syncing a fork](https://help.github.com/articles/syncing-a-fork/).
 2. In iTerm2 or Git Bash type `git checkout programming-fundamentals-master` to switch to the appropriate branch.
-3. Jump in on step 4 below.
+3. Jump in on step 5 below.
 
 Grab a mentor if you need some support as you do this!
 <!--endsec-->
