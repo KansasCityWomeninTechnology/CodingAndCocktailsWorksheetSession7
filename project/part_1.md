@@ -1,9 +1,9 @@
-### Part 1:  Common Programming Concepts
-##### Variables, Data Types, Functions, Comments, Mathematical Operators, Conditionals, Equality, and Concatenation
+# Part 1:  Common Programming Concepts
+#### Variables, Data Types, Functions, Comments, Mathematical Operators, Conditionals, Equality, and Concatenation
 
-#### First things first
+### First things first
 
-### <a href="https://kcwit.slack.com/messages/C0BGBKGG6/">Open Slack</a>
+#### <a href="https://kcwit.slack.com/messages/C0BGBKGG6/">Click here to open Slack</a>
 
 If you have a tip that helped you with a step on the worksheet, you can easily share it with the group in Slack. Or if there are any issues with the worksheet [we make typos or there's an update to a tool that we didn't catch before the session], we may post updates in Slack. Plus, after class is over, Slack becomes a tool for you to gain access to mentors as you go through the homework, or any other questions that arise.
 
@@ -17,7 +17,7 @@ If you're using a Chromebook, skip down to the Cloud9 instructions at the bottom
 
 {% endhint %}
 
-#### Setup
+### Setup
 
 If you don't want Version Control practice or don't know what Version Control is, just start with step 1 below.
 
@@ -55,7 +55,7 @@ You can open the file in Google Chrome in a number of ways:
 5. In iTerm2, make sure you've changed directories into the one containing the file you want to open and type `open index.html`.
 {% endhint %}
 
-#### Submit an Order
+### Submit an Order
 
 ###### Create the function
 First we'll add a function to handle drink orders. 
@@ -156,22 +156,20 @@ These orders are only based on what is being submitted on your device in your cu
 
 **You’ve added drink ordering to your website! Sounds like it’s time to grab one of your own!**
   
-#### Count Orders
+### Count Orders
 We’ll want to make sure we don’t overwhelm our bartender with 50 drink orders at one time so let’s make sure to count how many drinks have been ordered.  
 
   1. In Atom, in the _my-scripts.js_ file, find the comment `// Initialize orderCcount variable to 0 (Worksheet Part 1: Count Orders Step 1` at the very top of the file.  Place your cursor at the end of that comment and press enter to add a new line just below the comment.  
   
   2. On that new line, create a variable named `orderCount` and initialize it to 0.  Initializing is setting the starting value of a variable, the value to the right of the `=`.
 
-  3. Inside the `submitOrder` function, type  `orderCount++` to add one to the orderCount variable each time an order is placed.  
-#  ^^TODO: Guide where to place this better
-# TODO Start here.
+  3. As the first line inside the body (Remember - that means inside those curly braces!) of the `submitOrder` function, type `orderCount++` to add one to the orderCount variable each time an order is placed.  
 
 {% hint style='tip' %}
 `++` is a common shortcut for adding one in programming! 
 {% endhint %}
 
-  4. In Atom in the _my-scripts.js_ file, find the comment for the `updateOrderCount` function: 
+  4. In Atom, in the _my-scripts.js_ file, find the comment for the `updateOrderCount` function: 
 ```
 /**
  * updateOrderCount Function
@@ -181,30 +179,51 @@ We’ll want to make sure we don’t overwhelm our bartender with 50 drink order
  */
 ```
 
-  5. Add a new function to your file called `updateOrderCount`.  Pass a parameter to this function called `count`.  Remember to pass a parameter that you add it inside the parenthesis like this:`var myFunctionName = function (myParameterName) { }`
+  5. On the line right below the closing `*/` for that comment, add a new function to your file named `updateOrderCount`. Pass a parameter to this function called `count`.  
 
-  6.  Inside the body of the updateOrderCount function (Remember, the body of a function is inside the curly braces!) type: `$('#drink-count').html("Drinks Ordered: " + count);`
+{% hint style='tip' %}
+Remember to pass a parameter that you add it inside the parenthesis like this:`var myFunctionName = function (myParameterName) { }`
+{% endhint %}
 
-# TODO: Add hint here
-This code is finding the HTML element with the id of `drink-count` and changing the content of that HTML element to be what we pass to the html method, here the string “Drinks Ordered:” and our updated order count.
+  6. Inside the body of the `updateOrderCount` function type: `$('#drink-count').html("Drinks Ordered: " + count);`
 
-  7. This function needs to be called inside the submitOrder function just under the code to add the order display.
+{% hint style='info' %}
+This code is finding the HTML element with the id of `drink-count` and changing the content of that HTML element to be what we pass to the jQuery html method - in this case, the string “Drinks Ordered:” and our updated order count.
+{% endhint %}
 
-# TODO: Add tip & better placement guidance  
-Remember how we call functions like in step 5b above but this time you’ll need to pass the orderCount variable to the function! `myFunction(passedParameter);`
+  7. This function needs to be called inside the body of the `submitOrder` function, just under the code to add the order display. That code will probably look like `$("#order-details").append("<h1>" + orderName + " would like a " + drinkName + "</h1>");`
+
+{% hint style='info' %}  
+Remember how we call functions like in Step 2 under the "Call the Function" section above but this time you’ll need to pass the `orderCount` variable to the `submitOrder` function! `myFunction(passedParameter);`
+{% endhint %}
 
 ###### Alerts
-Take a minute to read about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/CnCAlert). .  We’ll utilize one in our next step. You can customize the message they display to say whatever you want.
+Take a minute to read about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/CnCAlert). We’ll utilize one in our next step. You can customize the message to display whatever you want.
 
-  1. Add a conditional to check if the `orderCount` is greater than 5.  If so, display an alert that says “Drink order queue is full.  Please try ordering again in a few minutes.” Otherwise (else) add the order to the display! Check this out if you need a reminder on what if statements look like: [bit.ly/CnCIfElse](http://bit.ly/CnCIfElse)
+  1. You will make the following changes in Atom, in the _my-scripts.js_ file. The placement of this is a little tricky as we need to wrap the conditional around some existing code.  
 
-# TODO: Tip
+  2. Just above the comment `// add order display` type out your `if (condition) {` code where the condition is if the `orderCount` is less than or equal to 5.  
+
+{% hint style='tip' %} 
+[View documentation on the if statement on the Mozilla Developer Network pages.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+{% endhint %}
+  
+  3. Indent the `// add order display` comment and the line directly below it so it is nested inside the body of the if statement to add the order to the display if there is still room for orders.
+  
+  4. Make sure your if statement body is closed out with a closing curly brace under the nested code.
+   
+  5. Add an `else` clause to the if statement.  
+  
+  6. In the body of the else, display an alert that says “Drink order queue is full.  Please try ordering again in a few minutes.” 
+
+{% hint style='info' %} 
 These orders are only based on what is being submitted on your device in the current browser session.  Since we don’t have a server connected, the data is only persisted as long as you don’t refresh your browser. Once you run a refresh the variables and page content are reset starting over so in order to reset your order count, just refresh your browser window!
+{% endhint %}
 
-1. In Atom, save your file
+  7. In Atom, save your file
 
-2. In Google Chrome, reload your page, try adding 6 orders and see your alert pop up!
+  8. In Google Chrome, reload your page, try adding 6 orders and see your alert pop up!
 
-1.  Check your work with our answer key here: [bit.ly/CnC1stKey](http://bit.ly/CnC1stKey)
+  9.  Check your work with our answer key here: [bit.ly/CnC1stKey](http://bit.ly/CnC1stKey)
 
 **You’ve finished part one! Celebrate with a toast with your neighbor!**
