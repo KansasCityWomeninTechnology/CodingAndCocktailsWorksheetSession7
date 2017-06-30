@@ -220,7 +220,7 @@ Take a minute to read about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/Cn
 These orders are only based on what is being submitted on your device in the current browser session.  Since we don’t have a server connected, the data is only persisted as long as you don’t refresh your browser. Once you run a refresh the variables and page content are reset starting over so in order to reset your order count, just refresh your browser window!
 {% endhint %}
 
-  7. In Atom, save your file
+  7. In Atom, save your _my-scripts.js_ file.
 
   8. In Google Chrome, reload your page, try adding 6 orders and see your alert pop up!
 
