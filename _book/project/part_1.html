@@ -1,0 +1,536 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Part 1: Common Programming Concepts · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part_2.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="part_1.html">
+            
+                <a href="part_1.html">
+            
+                    
+                    Part 1: Common Programming Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="part_2.html">
+            
+                <a href="part_2.html">
+            
+                    
+                    Part 2: Loops, Arrays, and Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-3-apis-and-templates.html">
+            
+                <a href="part-3-apis-and-templates.html">
+            
+                    
+                    Part 3: APIs & Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="bonus_section.html">
+            
+                <a href="bonus_section.html">
+            
+                    
+                    Bonus Section
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../homework.html">
+            
+                <a href="../homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../survey.html">
+            
+                <a href="../survey.html">
+            
+                    
+                    Survey
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Part 1: Common Programming Concepts</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="part-1--common-programming-concepts">Part 1:  Common Programming Concepts</h1>
+<h4 id="variables-data-types-functions-comments-mathematical-operators-conditionals-equality-and-concatenation">Variables, Data Types, Functions, Comments, Mathematical Operators, Conditionals, Equality, and Concatenation</h4>
+<h3 id="first-things-first">First things first</h3>
+<h4 id="click-here-to-open-slack"><a href="https://kcwit.slack.com/messages/C0BGBKGG6/" target="_blank">Click here to open Slack</a></h4>
+<p>If you have a tip that helped you with a step on the worksheet, you can easily share it with the group in Slack. Or if there are any issues with the worksheet [we make typos or there&apos;s an update to a tool that we didn&apos;t catch before the session], we may post updates in Slack. Plus, after class is over, Slack becomes a tool for you to gain access to mentors as you go through the homework, or any other questions that arise.</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>The answer key is linked at the end of this section if you&#x2019;d like to reference it as you&#x2019;re working.  Try your hardest to make an attempt and talk things over with a mentor before using it though!</p>
+</div></div></p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>If you&apos;re using a Chromebook, skip down to the Cloud9 instructions at the bottom.</p>
+</div></div></p>
+<h3 id="setup">Setup</h3>
+<p>If you don&apos;t want Version Control practice or don&apos;t know what Version Control is, just start with step 1 below.</p>
+<p>If you were at the Version Control session in April and would like to practice your Git skills, expand the section below and follow the steps.</p>
+<sec data-title="Version Control Practice" data-id="section0" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="version-control-practice">Version Control Practice<a class="pull-right section atTitle btn btn-default" target="section0"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section0"><div class="panel-body">
+<ol>
+<li>Sync your personal DrinkOrderApp fork with the KCWiT repository by following <a href="https://help.github.com/articles/syncing-a-fork/" target="_blank">GitHub&apos;s steps on syncing a fork</a>.</li>
+<li>In iTerm2 or Git Bash type <code>git checkout programming-fundamentals-master</code> to switch to the appropriate branch.</li>
+<li>Jump in on step 4 below.</li>
+</ol>
+<p>Grab a mentor if you need some support as you do this!
+</p></div></div></div></sec><p></p>
+<ol>
+<li><p>In Google Chrome, navigate to <a href="https://github.com/KansasCityWomeninTechnology/DrinkOrderApp/archive/programming-fundamentals-master.zip" target="_blank">https://github.com/KansasCityWomeninTechnology/DrinkOrderApp/archive/programming-fundamentals-master.zip</a> to download the project starting point.</p>
+</li>
+<li><p>Unzip the downloaded file and place the unzipped folder in your <em>CodingAndCocktails</em> directory that was created during your tools setup.</p>
+</li>
+<li><p>Rename the folder from <em>DrinkOrderApp-programming-fundamentals-master</em> to <em>DrinkOrderAppJS</em>.</p>
+</li>
+<li><p>In Atom, open the <em>DrinkOrderAppJS</em> folder by opening the <strong>File</strong> menu and choosing <strong>Add Project Folder</strong>. Navigate to the unzipped <em>DrinkOrderAppJS</em> folder and click OK.</p>
+</li>
+<li><p>Open up the index.html file in Google Chrome to view the starting point.</p>
+</li>
+</ol>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>You can open the file in Google Chrome in a number of ways:</p>
+<ol>
+<li><p>Open Google Chrome then choose <strong>Open File...</strong> from the <strong>File</strong> menu</p>
+</li>
+<li><p>Find the file in Finder (macs) or Windows Explorer (windows), right click on it and choose to open with Google Chrome.</p>
+</li>
+<li><p>Drag the file directly on to the Google Chrome browser window.</p>
+</li>
+<li><p>In GitBash, make sure you&apos;ve changed directories into the one containing the file you want to open and type <code>start index.html</code>.</p>
+</li>
+<li><p>In iTerm2, make sure you&apos;ve changed directories into the one containing the file you want to open and type <code>open index.html</code>.</p>
+</li>
+</ol>
+</div></div></p>
+<h3 id="submit-an-order">Submit an Order</h3>
+<h6 id="create-the-function">Create the function</h6>
+<p>First we&apos;ll add a function to handle drink orders. </p>
+<ol>
+<li><p>In Atom, find the <em>my-scripts.js</em> file and double click on it to open. </p>
+</li>
+<li><p>Find the submitOrder function comment:</p>
+<pre><code>/**
+* submitOrder Function
+* 
+* Increment orderCount, gather and display order details.
+* The code from the Worksheet Part 1 Submit an Order Step 2 should go on the line just below the comment close.
+*/
+</code></pre></li>
+<li><p>On the line just below the closing <code>*/</code>, create a variable set equal to a function like this:</p>
+<p><code>var submitOrder = function () {}</code></p>
+</li>
+</ol>
+<h6 id="gather-user-input">Gather User Input</h6>
+<p>Next, we need to gather some input from the user and save it off into additional variables.</p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>We&#x2019;ll be using jQuery (a JavaScript library) to help simplify some of the coding but we&#x2019;ll supply that portion of the code for you.  Instead of copying and pasting from this worksheet, try typing out what you see.</p>
+</div></div></p>
+<ol>
+<li><p>Place your cursor in between the curly braces from step 3 and press enter.  The cursor should now be inside the function body. </p>
+</li>
+<li><p>Type <code>var orderName = $(&quot;#order-form-input&quot;).val()</code>.</p>
+</li>
+</ol>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>This code is finding the HTML element that has the id &quot;order-form-input&quot; (the input box you can see on the page) and grabbing the value that has been entered there.</p>
+<p>Missed the HTML session and have no clue what an element is? Grab a mentor to talk through what HTML is!</p>
+</div></div></p>
+<h6 id="view-application-data">View Application Data</h6>
+<p>Now that the input data is saved into a variable, make sure we got a value and try viewing data via a console.log statement. </p>
+<ol>
+<li>On the line underneath your variable, type <code>console.log(orderName);</code>.</li>
+</ol>
+<h6 id="call-the-function">Call the function</h6>
+<p>In order to see what we&#x2019;ve accomplished so far, the function has to be run.  </p>
+<ol>
+<li><p>In the <em>my-scripts.js</em> file, find the comment that says <code>// call submitOrder function when order button is clicked (Worksheet Part 1: Call the Function Step 1)</code>.  Place your cursor at the end of that line and press enter.  </p>
+</li>
+<li><p>On that new line, type <code>submitOrder();</code> to call the submitOrder function. </p>
+</li>
+</ol>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Inside the parentheses is where you would pass parameters to the function but since ours does not require parameters, we just leave them empty.</p>
+</div></div></p>
+<ol>
+<li><p>Save your <em>my-scripts.js</em> file.</p>
+</li>
+<li><p>In Google Chrome, reload your page and open up the console by pushing the F12 button on a windows machine or <code>cmd+opt+i</code> buttons on a mac.</p>
+</li>
+<li><p>Enter your name in the input box and push the Order button.  </p>
+</li>
+<li><p>Your name should appear in the Google Chrome console!  Check your function name or grab a mentor if it is not showing up!</p>
+</li>
+</ol>
+<h6 id="ordering-drinks">Ordering Drinks</h6>
+<p>We also want to save off the drink name to display it with the order. </p>
+<ol>
+<li><p>Add a new line after the <code>var orderName...</code> line.</p>
+</li>
+<li><p>Type <code>var drinkName = $(&quot;input[type=&quot;radio&quot;]:checked&quot;).val();</code> to save the selected drink to a variable called drinkName.</p>
+</li>
+</ol>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>The code in step 2 here is looking for the value of the checked radio button input.  It is storing that data in a variable called <code>drinkName</code>.</p>
+</div></div></p>
+<h6 id="display-orders">Display Orders</h6>
+<p>Finally we want to display the orders that are coming in! </p>
+<ol>
+<li><p>Add a new line after the <code>var drinkName ...</code> line.</p>
+</li>
+<li><p>Type <code>$(&quot;#order-details&quot;).append(&quot;&lt;h1&gt;&quot; + &lt;your code goes here&gt; + &quot;&lt;/h1&gt;&quot;);</code> </p>
+</li>
+</ol>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>Replace the <code>&lt;your code goes here&gt;</code> portion to display the message &quot;Jane would like a Strong Lady&quot;.  You&apos;ll need to use concatenation to build that string using your variables <code>orderName</code>, <code>drinkName</code> and a string <code>&quot; would like a &quot;</code>.</p>
+</div></div></p>
+<p><strong>If you&#x2019;re struggling here, grab a mentor to talk through concatenation!</strong></p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>The code in step 2 is finding the HTML element with the id of order-details and appending to (or placing inside of) that element a new h1 (header 1) element with the text that we specify using the append method.</p>
+</div></div></p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>These orders are only based on what is being submitted on your device in your current (Google Chrome) browser session. Since we don&#x2019;t have a server connected, the data is only persisted as long as you don&#x2019;t refresh the page in your browser. Once you hit refresh, the variables and page content are reset - starting over.  In order to clear out your order details, just refresh your browser window.</p>
+</div></div></p>
+<ol>
+<li><p>In Atom, save your <em>my-scripts.js</em> file</p>
+</li>
+<li><p>In Google Chrome, reload the page.  You should now be able to select a drink, enter your name, hit the order button and have your order text display in the light purple order detail area on your webpage!</p>
+</li>
+</ol>
+<p><strong>You&#x2019;ve added drink ordering to your website! Sounds like it&#x2019;s time to grab one of your own!</strong></p>
+<h3 id="count-orders">Count Orders</h3>
+<p>We&#x2019;ll want to make sure we don&#x2019;t overwhelm our bartender with 50 drink orders at one time so let&#x2019;s make sure to count how many drinks have been ordered.  </p>
+<ol>
+<li><p>In Atom, in the <em>my-scripts.js</em> file, find the comment <code>// Initialize orderCcount variable to 0 (Worksheet Part 1: Count Orders Step 1</code> at the very top of the file.  Place your cursor at the end of that comment and press enter to add a new line just below the comment.  </p>
+</li>
+<li><p>On that new line, create a variable named <code>orderCount</code> and initialize it to 0.  Initializing is setting the starting value of a variable, the value to the right of the <code>=</code>.</p>
+</li>
+<li><p>As the first line inside the body (Remember - that means inside those curly braces!) of the <code>submitOrder</code> function, type <code>orderCount++</code> to add one to the orderCount variable each time an order is placed.  </p>
+</li>
+</ol>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p><code>++</code> is a common shortcut for adding one in programming! </p>
+</div></div></p>
+<ol>
+<li><p>In Atom, in the <em>my-scripts.js</em> file, find the comment for the <code>updateOrderCount</code> function: </p>
+<pre><code>/**
+* updateOrderCount Function
+* 
+* @param {number} count
+* The code from the Worksheet Part 1: Count Orders, Step 4 should go on the line just below the comment close.
+*/
+</code></pre></li>
+<li><p>On the line right below the closing <code>*/</code> for that comment, add a new function to your file named <code>updateOrderCount</code>. Pass a parameter to this function called <code>count</code>.  </p>
+</li>
+</ol>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Remember to pass a parameter that you add it inside the parenthesis like this:<code>var myFunctionName = function (myParameterName) { }</code></p>
+</div></div></p>
+<ol>
+<li>Inside the body of the <code>updateOrderCount</code> function type: <code>$(&apos;#drink-count&apos;).html(&quot;Drinks Ordered: &quot; + count);</code></li>
+</ol>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>This code is finding the HTML element with the id of <code>drink-count</code> and changing the content of that HTML element to be what we pass to the jQuery html method - in this case, the string &#x201C;Drinks Ordered:&#x201D; and our updated order count.</p>
+</div></div></p>
+<ol>
+<li>This function needs to be called inside the body of the <code>submitOrder</code> function, just under the code to add the order display. That code will probably look like <code>$(&quot;#order-details&quot;).append(&quot;&lt;h1&gt;&quot; + orderName + &quot; would like a &quot; + drinkName + &quot;&lt;/h1&gt;&quot;);</code></li>
+</ol>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Remember how we call functions like in Step 2 under the &quot;Call the Function&quot; section above but this time you&#x2019;ll need to pass the <code>orderCount</code> variable to the <code>submitOrder</code> function! <code>myFunction(passedParameter);</code></p>
+</div></div></p>
+<h6 id="alerts">Alerts</h6>
+<p>Take a minute to read about alert boxes here: <a href="http://bit.ly/CnCAlert" target="_blank">bit.ly/CnCAlert</a>. We&#x2019;ll utilize one in our next step. You can customize the message to display whatever you want.</p>
+<ol>
+<li><p>You will make the following changes in Atom, in the <em>my-scripts.js</em> file. The placement of this is a little tricky as we need to wrap the conditional around some existing code.  </p>
+</li>
+<li><p>Just above the comment <code>// add order display</code> type out your <code>if (condition) {</code> code where the condition is if the <code>orderCount</code> is less than or equal to 5.  </p>
+</li>
+</ol>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" target="_blank">View documentation on the if statement on the Mozilla Developer Network pages.</a></p>
+</div></div></p>
+<ol>
+<li><p>Indent the <code>// add order display</code> comment and the line directly below it so it is nested inside the body of the if statement to add the order to the display if there is still room for orders.</p>
+</li>
+<li><p>Make sure your if statement body is closed out with a closing curly brace under the nested code.</p>
+</li>
+<li><p>Add an <code>else</code> clause to the if statement.  </p>
+</li>
+<li><p>In the body of the else, display an alert that says &#x201C;Drink order queue is full.  Please try ordering again in a few minutes.&#x201D; </p>
+</li>
+</ol>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>These orders are only based on what is being submitted on your device in the current browser session.  Since we don&#x2019;t have a server connected, the data is only persisted as long as you don&#x2019;t refresh your browser. Once you run a refresh the variables and page content are reset starting over so in order to reset your order count, just refresh your browser window!</p>
+</div></div></p>
+<ol>
+<li><p>In Atom, save your <em>my-scripts.js</em> file.</p>
+</li>
+<li><p>In Google Chrome, reload your page, try adding 6 orders and see your alert pop up!</p>
+</li>
+<li><p>Check your work with our answer key here: <a href="http://bit.ly/CnC1stKey" target="_blank">bit.ly/CnC1stKey</a></p>
+</li>
+</ol>
+<p><strong>You&#x2019;ve finished part one! Celebrate with a toast with your neighbor!</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Overview">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part_2.html" class="navigation navigation-next " aria-label="Next page: Part 2: Loops, Arrays, and Objects">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Part 1: Common Programming Concepts","level":"1.2","depth":1,"next":{"title":"Part 2: Loops, Arrays, and Objects","level":"1.3","depth":1,"path":"project/part_2.md","ref":"project/part_2.md","articles":[]},"previous":{"title":"Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["copy-code-button","custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project/part_1.md","mtime":"2017-06-30T02:10:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-30T02:12:03.418Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
