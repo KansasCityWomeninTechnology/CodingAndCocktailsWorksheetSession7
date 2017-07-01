@@ -89,6 +89,6 @@ Look back at Part 1 for a reminder on how to call a function.
   7. In Google Chrome, reload your page.  
      It won’t look much different but you’ve utilized an array, objects, a for loop and a function to create different loading behavior!
 
-  8.  Check your work against the part two answer key here: [bit.ly/CnCPF2ndKey](http://bit.ly/CnCPF2ndKey)
+  8.  Check your work against the part two answer key here: [bit.ly/CnCPFKey2](http://bit.ly/CnCPFKey2)
 
 **Congratulations!  You worked through some hard stuff tonight!  Way to stick with it!**
