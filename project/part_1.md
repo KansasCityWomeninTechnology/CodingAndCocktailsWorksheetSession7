@@ -207,13 +207,13 @@ Take a minute to read about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/Cn
 
   1. You will make the following changes in Atom, in the _my-scripts.js_ file. The placement of this is a little tricky as we need to wrap the conditional around some existing code.  
 
-  2. Just above the comment `// add order display` type out your `if (condition) {` code where the condition is if the `orderCount` is less than or equal to 5.  
+  2. Just above the comment `// add order display (Worksheet Part 1: Alerts, Step 2)` type out your `if (condition) {` code where the condition is if the `orderCount` is less than or equal to 5.  
 
   {% hint style='tip' %} 
 [View documentation on the if statement on the Mozilla Developer Network pages.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
   {% endhint %}
   
-  3. Indent the `// add order display` comment and the line directly below it so it is nested inside the body of the if statement to add the order to the display if there is still room for orders.
+  3. Indent the `// add order display (Worksheet Part 1: Alerts, Step 2)` comment and the line directly below it so it is nested inside the body of the if statement to add the order to the display if there is still room for orders.
   
   4. Make sure your if statement body is closed out with a closing curly brace under the nested code.
    
