@@ -64,7 +64,7 @@ You can open the file in Google Chrome in a number of ways:
 ###### Create the function
 First we'll add a function to handle drink orders. 
   
-  1. In Atom, find the _my-scripts.js_ file and double click on it to open. 
+  1. In Atom, find the _my-scripts.js_ file in the _assets/scripts_ folder and double click on it to open. 
   
   2. Find the submitOrder function comment:
 ```
@@ -78,7 +78,7 @@ First we'll add a function to handle drink orders.
  
   3. On the line just below the closing `*/`, create a variable set equal to a function like this:
 
-    `var submitOrder = function () {}`
+    `var submitOrder = function () {};`
 
 ###### Gather User Input
 Next, we need to gather some input from the user and save it off into additional variables.
@@ -89,7 +89,7 @@ We’ll be using jQuery (a JavaScript library) to help simplify some of the codi
 
   1. Place your cursor in between the curly braces from step 3 and press enter.  The cursor should now be inside the function body. 
   
-  2. Type `var orderName = $("#order-form-input").val()`.
+  2. Type `var orderName = $("#order-form-input").val();`.
 
   {% hint style='info' %}
 This code is finding the HTML element that has the id "order-form-input" (the input box you can see on the page) and grabbing the value that has been entered there.
@@ -105,7 +105,7 @@ Now that the input data is saved into a variable, make sure we got a value and t
 ###### Call the function
 In order to see what we’ve accomplished so far, the function has to be run.  
 
-  1. In the _my-scripts.js_ file, find the comment that says `// call submitOrder function when order button is clicked (Worksheet Part 1: Call the Function, Step 1)`.  Place your cursor at the end of that line and press enter.  
+  1. In the _my-scripts.js_ file, find the comment that says `// call submitOrder function when order button is clicked (Worksheet Part 1: Call the Function, Step 1)` around line 28.  Place your cursor at the end of that line and press enter.  
   
   2. On that new line, type `submitOrder();` to call the submitOrder function. 
 
