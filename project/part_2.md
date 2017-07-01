@@ -49,7 +49,7 @@ Next, we need to create a function that will loop through the objects and add th
 For loop example: 
 `for (var i = 0; i < myArray.length; i++) { }`
 
-In the Drink Order App code, `myArray` would be substituted with the `cocktail` array so the code loops through the array of drink objects.
+In the Drink Order App code, `myArray` would be substituted with the `cocktails` array so the code loops through the array of drink objects.
   
 The for loop has three pieces:
 
