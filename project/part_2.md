@@ -82,7 +82,7 @@ Finally, inside the label HTML element, the drink object’s `label` value is us
 Look back at Part 1 for a reminder on how to call a function.
   {% endhint %}
 
-  5.  Open the _index.html_ file so we can remove the drink menu markup so it will be loaded with our JavaScript instead of with the markup. Remove all of the `<label>` and `<input>` elements that are inside the following `div` element: `<div class="input-group radio-group">`.
+  5.  In Atom, open the _index.html_ file so we can remove the drink menu markup so it will be loaded with our JavaScript instead of with the markup. Remove all of the `<label>` and `<input>` elements that are inside the following `div` element: `<div class="input-group radio-group">`.
 
   6.  In Atom, save both _index.html_ and _my-scripts.js_.
   
