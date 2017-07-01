@@ -62,7 +62,7 @@ The for loop has three pieces:
 
 
   3.  Inside the body of the for loop (that means inside the curly braces!) add this code:
-  ```$('.radio-group').append('<label class=”radio” for="' + cocktails[i].id + '"><input type="radio" id="' + cocktails[i].id + '" name="drink" value="' + cocktails[i].label + '">' + cocktails[i].label + '</label>');```
+  ```$('.radio-group').append('<label class="radio" for="' + cocktails[i].id + '"><input type="radio" id="' + cocktails[i].id + '" name="drink" value="' + cocktails[i].label + '">' + cocktails[i].label + '</label>');```
 
   {% hint style='info' %}
 This code is finding the HTML element that has the class `radio-group` applied to it.  Then it appends (or adds inside of that element) the label and radio input elements for the drink items. 
