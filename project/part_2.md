@@ -76,7 +76,7 @@ The last attribute is the `value` of the radio button which holds the drink obje
 Finally, inside the label HTML element, the drink object’s `label` value is used to display the formatted drink name text.
   {% endhint %}
 
-  4.  Next, call this function so the menu gets loaded into the page. In Atom in the _my-styles.js_ file, add the function call just inside the body of `$(document).ready(function() {`
+  4.  Next, call this function so the menu gets loaded into the page. In Atom in the _my-styles.js_ file, add the function call on the first line inside the body of `$(document).ready(function() {`
 
   {% hint style='tip' %}
 Look back at Part 1 for a reminder on how to call a function.
