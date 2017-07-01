@@ -100,7 +100,7 @@ Missed the HTML session and have no clue what an element is? Grab a mentor to ta
 ###### View Application Data
 Now that the input data is saved into a variable, make sure we got a value and try viewing data via a console.log statement. 
 
-  1. On the line underneath your variable, type `console.log(orderName);`.
+  1. On the line underneath your orderName variable, type `console.log(orderName);`.
 
 ###### Call the function
 In order to see what we’ve accomplished so far, the function has to be run.  
@@ -125,9 +125,9 @@ Inside the parentheses is where you would pass parameters to the function but si
 ###### Ordering Drinks
 We also want to save off the drink name to display it with the order. 
 
- 1. Add a new line after the `var orderName...` line.
+ 1. Add a new line after the `console.log();` line.
  
- 2. Type `var drinkName = $("input[type="radio"]:checked").val();` to save the selected drink to a variable called drinkName.
+ 2. Type `var drinkName = $("input[type='radio']:checked").val();` to save the selected drink to a variable called drinkName.
 
   {% hint style='info' %}
 The code in step 2 here is looking for the value of the checked radio button input.  It is storing that data in a variable called `drinkName`.
