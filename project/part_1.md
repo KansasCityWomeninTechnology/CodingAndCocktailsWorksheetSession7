@@ -176,11 +176,12 @@ We’ll want to make sure we don’t overwhelm our bartender with 50 drink order
   4. In Atom, in the _my-scripts.js_ file, find the comment for the `updateOrderCount` function: 
 ```
 /**
- * updateOrderCount Function
- * 
- * @param {number} count
- * The code from the Worksheet Part 1: Count Orders, Step 4 should go on the line just below the comment close.
- */
+* updateOrderCount Function
+*
+* Displays number of drinks currently in the order queue.
+* @param {number} count - counter for orders
+* The code from the Worksheet Part 1: Count Orders, Step 4 should go on the line just below the comment close.
+*/
 ```
 
   5. On the line right below the closing `*/` for that comment, add a new function to your file named `updateOrderCount`. Pass a parameter to this function called `count`.  
