@@ -196,28 +196,28 @@ Remember to pass a parameter that you add it inside the parenthesis like this:`v
 This code is finding the HTML element with the id of `drink-count` and changing the content of that HTML element to be what we pass to the jQuery html method - in this case, the string “Drinks Ordered:” and our updated order count.
   {% endhint %}
 
-  7. This function needs to be called inside the body of the `submitOrder` function, just under the code to add the order display. That code will probably look like `$("#order-details").append("<h1>" + orderName + " would like a " + drinkName + "</h1>");`
+  7. This function needs to be called inside the body of the `submitOrder` function, just under the code to add the order display - That order display code will look like `$("#order-details").append("<h1>" + orderName + " would like a " + drinkName + "</h1>");`
 
   {% hint style='info' %}  
 Remember how we call functions like in Step 2 under the "Call the Function" section above but this time you’ll need to pass the `orderCount` variable to the `submitOrder` function! `myFunction(passedParameter);`
   {% endhint %}
 
-###### Alerts
+###### Alerts & Conditionals
 Take a minute to read about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/CnCAlert). We’ll utilize one in our next step. You can customize the message to display whatever you want.
 
   1. You will make the following changes in Atom, in the _my-scripts.js_ file. The placement of this is a little tricky as we need to wrap the conditional around some existing code.  
 
-  2. Just above the comment `// add order display (Worksheet Part 1: Alerts, Step 2)` type out your `if (condition) {` code where the condition is if the `orderCount` is less than or equal to 5.  
+  2. Place the cursor at the end of the `var drinkName ...` line and press enter.  On that new line, type out your `if (condition) {` code where the condition is if the `orderCount` is less than or equal to 5.  
 
   {% hint style='tip' %} 
 [View documentation on the if statement on the Mozilla Developer Network pages.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
   {% endhint %}
   
-  3. Indent the `// add order display (Worksheet Part 1: Alerts, Step 2)` comment and the line directly below it so it is nested inside the body of the if statement to add the order to the display if there is still room for orders.
+  3. Indent the line directly below it (`$("#order-details").append("<h1>" + orderName + " would like a " + drinkName + "</h1>");`) so it is nested inside the body of the if statement. This will add the order to the display if there is still room for orders
   
-  4. Make sure your if statement body is closed out with a closing curly brace under the nested code.
+  4. Make sure your if statement body is closed out with a closing curly brace after the nested code.
    
-  5. Add an `else` clause to the if statement.  
+  5. Next to that closing curly brace, add an `else` clause to the if statement.  
   
   6. In the body of the else, display an alert that says “Drink order queue is full.  Please try ordering again in a few minutes.” 
 
@@ -229,7 +229,7 @@ These orders are only based on what is being submitted on your device in the cur
 
   8. In Google Chrome, reload your page, try adding 6 orders and see your alert pop up!
 
-  9.  Check your work with our answer key here: [bit.ly/CnC1stKey](http://bit.ly/CnC1stKey)
+  9.  Check your work with our answer key here: [bit.ly/CnCPFKey1](http://bit.ly/CnCPFKey1)
 
 **You’ve finished part one! Celebrate with a toast with your neighbor!**
 
