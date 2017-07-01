@@ -1,6 +1,64 @@
-## Bonus!
+# Bonus!
 
-If you’ve made it through all of the above or want to practice a little further at home, try ordering a drink without entering a name.  
+If you’ve made it through all of the above or want to practice a little further at home, we have a couple bonuses for you!
+
+## Bonus: Templates
+
+We ended the main part of the worksheet with getting data from an API. Yay! Now what do we do with it? Let's add a simple template with image markup and then we'll add our populated template to our Drink Order App.
+
+  1. Open _my_scripts.js_ in Atom & let's create a method named `getImageMarkup` below our closing `};` of the `fetchGifByOrderName` method, but above our `$(document).ready`:
+
+  ```
+  var addImageMarkup = function (response) {
+
+  };
+  ```
+
+  2. On a newline between the `addImageMarkup`'s opening & closing curly braces, create a variable named `imageMarkup` and set it to a template literal using back-ticks `` `` ``: `var imageMarkup = `` `
+
+  3. Place your cursor in the middle of the back-ticks and hit the enter key two times. On the line that is blank between the back-ticks type:
+
+  ```
+  <div class="order-name-gif">
+	  <img src="${}" alt="${}" title="${}" />
+	</div>
+  ```
+
+  4. Since our data comes through in Object format, let's use the dot notation we learned earlier on to grab the data out of the response Object. Within the curly braces for the `src` attribute, type: `response.data.image_url`
+
+  TODO: SHOW DATA FORMAT & HOW THIS IS THE PATH FOR DOT NOTATION
+
+  5. Within the curly braces for the `alt` & `title` attributes, type: `response.data.caption`
+
+  6. We're going to use jQuery to append our template literal to the markup (in the **order-details** id).
+
+    {% hint style='tip' %}
+    1. Add a new line after the closing `` `;`` of the `imageMarkup` template literal variable (and before the closing `};` of the `addImageMarkup` method).
+
+    2. On this new line, use jQuery to select the **order-details** id and use the `.append` method.
+
+    3. Pass the `imageMarkup` as a parameter in the `.append()` method.
+    {% endhint %}
+
+  7. We have our template added, but we're missing a step. Can you guess what it is?...  
+
+  We need to pass the data to our template, so it can actually populate the template!  
+
+  Look in the **fetch** method for where we're logging the response to the console. _Where we left a comment for using the formatted data._ Add a new line below the `console.log`, but above the closing `})` for that specific `then`.
+
+  8. On this new line, call our `addImageMarkup` method by passing the `response` as a parameter.
+
+  9. Refresh the Drink Order App in Chrome & place an order. You should see a gif appear below the text containing your drink order!
+
+  {% hint style='tip' %}
+  Not seeing a gif appear? Open the **Console** and **Network** tab to see if you can troubleshoot the issue. Grab a mentor, or check out the answer key below.
+  {% endhint %}
+
+  10. Check your work against the part three answer key here: TODO
+
+## Bonus: Fix a Bug
+
+Try ordering a drink without entering a name.  
 
 That’s not useful, is it? This is called a bug which is something you’ll run into regularly as a developer. Let’s fix that with another conditional!  These changes need to happen in _my-scripts.js_ in Atom.
 
