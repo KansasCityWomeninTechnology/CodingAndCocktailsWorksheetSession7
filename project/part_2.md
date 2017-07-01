@@ -17,7 +17,7 @@ Array with content of different data types: `[“element1” , “element2”, 3
      * The `id` key will need a camelCase value that is the drink’s name paired with it.  This will connect the drink label to the radio button input.  
 
     {% hint style='tip' %}
-(camelCase means the first word starts with a lowercase letter and each subsequent word starts with an uppercase letter without spaces between words!)
+camelCase means the first word starts with a lowercase letter and each subsequent word starts with an uppercase letter without spaces between words!
     {% endhint %} 
      
      * The `label` key will need the human readable drink name paired with it. 
