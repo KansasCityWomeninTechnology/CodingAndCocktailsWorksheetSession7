@@ -4,9 +4,9 @@ If you’ve made it through all of the above or want to practice a little furthe
 
 ## Bonus: Templates
 
-We ended the main part of the worksheet with getting data from an API. Yay! Now what do we do with it? Let's add a simple template with image markup and then we'll add our populated template to our Drink Order App.
+We ended the main part of the worksheet with getting data from an API. Yay! Now what do we do with it? Let's add a simple template with image markup. Then we'll add our populated template to our Drink Order App, to display the gif to the user.
 
-  1. Open _my_scripts.js_ in Atom & let's create a method named `getImageMarkup` below our closing `};` of the `fetchGifByOrderName` method, but above our `$(document).ready`:
+  1. Open _my_scripts.js_ in Atom & let's create a method named `addImageMarkup` below our closing `};` of the `fetchGifByOrderName` method, but above our `$(document).ready`:
 
   ```
   var addImageMarkup = function (response) {
@@ -24,7 +24,7 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
 	</div>
   ```
 
-  4. Since our data comes through in Object format, let's use the dot notation we learned earlier on to grab the data out of the response Object. Within the curly braces for the `src` attribute, type: `response.data.image_url`
+  4. Since our data comes through in Object format, let's use the dot notation we learned earlier in the Worksheet to grab the data out of the response Object. Within the curly braces for the `src` attribute, type: `response.data.image_url`
 
   TODO: SHOW DATA FORMAT & HOW THIS IS THE PATH FOR DOT NOTATION
 
@@ -32,13 +32,11 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
 
   6. We're going to use jQuery to append our template literal to the markup (in the **order-details** id).
 
-    {% hint style='tip' %}
-    1. Add a new line after the closing `` `;`` of the `imageMarkup` template literal variable (and before the closing `};` of the `addImageMarkup` method).
+      1. Add a new line after the closing `` `; `` of the `imageMarkup` template literal variable (and before the closing `};` of the `addImageMarkup` method).
 
-    2. On this new line, use jQuery to select the **order-details** id and use the `.append` method.
+      2. On this new line, use jQuery to select the **order-details** id and use the `.append` method.
 
-    3. Pass the `imageMarkup` as a parameter in the `.append()` method.
-    {% endhint %}
+      3. Pass the `imageMarkup` as a parameter in the `.append()` method.
 
   7. We have our template added, but we're missing a step. Can you guess what it is?...  
 
@@ -48,10 +46,10 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
 
   8. On this new line, call our `addImageMarkup` method by passing the `response` as a parameter.
 
-  9. Refresh the Drink Order App in Chrome & place an order. You should see a gif appear below the text containing your drink order!
+  9. Refresh the Drink Order app in Chrome & place an order. You should see a gif appear below the text containing your drink order!
 
   {% hint style='tip' %}
-  Not seeing a gif appear? Open the **Console** and **Network** tab to see if you can troubleshoot the issue. Grab a mentor, or check out the answer key below.
+  Not seeing a gif appear? Open the **Console** and **Network** tab to see if you can troubleshoot the issue. Grab a mentor on Slack, or check out the answer key below.
   {% endhint %}
 
   10. Check your work against the part three answer key here: TODO

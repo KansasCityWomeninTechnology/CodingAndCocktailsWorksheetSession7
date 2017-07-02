@@ -11,15 +11,22 @@ Unless your web site is a static application, you are going to consume data from
 **Dynamic Application** - Website that uses a server-side language, or JavaScript & APIs, to retrieve content from other files or a database to populate the site's content. Data in the database can be updated by a Content Management System (CMS) like WordPress, or via API interaction. This _dynamically_ updates the content, without the author or the programmer having to edit or write new code.
 {% endhint %}
 
-Let's learn how to access an API via JavaScript's built-in **fetch** method. We're going to use the Giphy API to fetch a gif based on the order name. That means we'll pass the API the order name. The API will provide that order name to the server, which will perform a search for a gif related to the order name. Once the server finds a relevant gif, it will supply that to the API, which will pass us the information we need for that gif. We'll then display the gif image on our Drink Order application.
+There are various ways to access data from an API. We're going to use JavaScript's built-in **fetch** method. When a user enters an **order name** and submits the order in our Drink Order app, we'll use the [Giphy API](https://developers.giphy.com) to fetch a gif based on the **order name**. Here's how that interaction works:
+- We pass the API the order name.
+- The API provides the order name to the server.
+- Server code searches a database for a gif related to the order name.
+- When the server code finds a relevant gif, it provides the gif's details from the database to the API.
+- The API returns the gif's details to us.
+- We handle the API response.  
+  Tonight, we will `console.log` the API response. But in the **Bonus** section of our worksheet, we display the gif image in the order details section of our Drink Order app.
 
 {% hint style='info' %}
-You might here other JavaScript programmers talk about using [XHR](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest) (**X**ML**H**ttp**R**equest) or jQuery's [AJAX](https://www.w3schools.com/xml/ajax_intro.asp) (**A**synchronous **J**avaScript **A**nd **X**ML) to interact with APIs. Those were methods we had to use prior to ECMAScript 2015 (ES6). When ES6 came out, it included a native method **[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)**, which was similar to jQuery's AJAX but doesn't require you to add a library like jQuery to use. You can use it in pure JavaScript!
+You might hear other JavaScript programmers talk about using [XHR](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest) (**X**ML**H**ttp**R**equest) or jQuery's [AJAX](https://www.w3schools.com/xml/ajax_intro.asp) (**A**synchronous **J**avaScript **A**nd **X**ML) to interact with APIs. Those were methods we had to use prior to ECMAScript 2015 (ES6). When ES6 came out, it included a native method **[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)**, which was similar to jQuery's AJAX but doesn't require you to add a library like jQuery to use. You can use it in pure JavaScript!
 {% endhint %}
 
   1. In Atom in the _my-scripts.js_ file, on the line just above `$(document).ready`, you'll want to add a few empty lines, so you are ready to add our fetch method.
 
-  2. We're going to create a function called `fetchGifByOrderName`, so add the following to the empty lines you added in step 1.
+  2. We're going to create a function called `fetchGifByOrderName`, so add the following to the empty lines you added in step 1:
 
   ```
   var fetchGifByOrderName = function (orderName) {
@@ -27,13 +34,13 @@ You might here other JavaScript programmers talk about using [XHR](https://devel
   };
   ```
 
-  3. Let's add a variable to hold the API URL on the first line of the method. Make sure you're inside the curly braces `{}` of the `fetchGifByOrderName` and type: ``var url = ``;``
+  3. Let's add a variable to hold the API URL on the first line of the method. Make sure you're inside the curly braces `{}` of the `fetchGifByOrderName` and type: `var url = ``; `
 
   {% hint style='danger' %}
   Yes, those are back-ticks ` `` `  and not single quotes `''`. We'll cover why in the next step.
   {% endhint %}
 
-  4. Now set the `url` variable to `https://api.giphy.com/v1/gifs/random?tag=${orderName}&api_key=75af32d089554f9a9daaac3f290e58fb` and instead of wrapping it with single quotes, we're going to wrap it with back-ticks. So it should look like this:
+  4. Now set the `url` variable to `https://api.giphy.com/v1/gifs/random?tag=${orderName}&api_key=75af32d089554f9a9daaac3f290e58fb`. It should look like this:
 
   ```
     var url = `https://api.giphy.com/v1/gifs/random?tag=${orderName}&api_key=75af32d089554f9a9daaac3f290e58fb`;
@@ -57,7 +64,7 @@ You might here other JavaScript programmers talk about using [XHR](https://devel
   TODO: Cover the parameters in the API & what they do
   {% endhint %}
 
-  5. On a new line below the `url` variable (but still before `fetchGifByOrderName`'s closing `}`), let's type out the native **fetch** structure with some `console.log`s:
+  5. On a new line below the `url` variable (but still before `fetchGifByOrderName`'s closing `}`), let's type out the native **fetch** structure with some comments & `console.log`s:
 
   ```
   fetch(url) // URL of API
@@ -82,6 +89,7 @@ You might here other JavaScript programmers talk about using [XHR](https://devel
   {% endhint %}
 
   At this point, your `fetchGifByOrderName` method should look similar to this:
+
   ![](/images/fetch-method.png)
 
   6. In order for this method to run, we need to call it somewhere. Scroll up in _my-scripts.js_ and look for the conditional you added earlier in the `submitOrder` method. You should have an `if` that checks that the `orderCount` is 5 or less. We want to call our method to fetch a gif **only** if the drink order can be ordered. Within the curly braces for the successful order condition (**not** if the `Drink order queue is full`), type: `fetchGifByOrderName(orderName);`. This will call our method & pass the value of the `orderName` variable through to our method.
@@ -96,9 +104,11 @@ You might here other JavaScript programmers talk about using [XHR](https://devel
 
   ![](/images/console-collapsed.png)
 
-  Click on the little triangle to the left of `Object {data: Object, meta: Object}`, and then the little triangle next to `data: Object` and you can see the `data` tied to the gif, the giphy API is providing us:
+  Click on the little triangle to the left of `Object {data: Object, meta: Object}`, and then the little triangle next to `data: Object`. Now you can see the `data` for the gif that the Giphy API provided us:
 
   ![](/images/console-expanded.png)
+
+  9. Check your work against the part three answer key here: TODO
 
 
 ### APIs & The Network Tab
@@ -111,7 +121,7 @@ The **Console** tab is great for general debugging, but there's another tab in d
 
   2. Hover over the **Name** of the request (which is the API URL we requested), and it will appear like a link. Click on the name as a link, and you'll see a new set of sub-tabs open of **Headers**, **Preview**, **Response** & **Timing**.
 
-  **Response** & **Preview** both show the API response. But **Preview** is in an easier ready format.
+  **Response** & **Preview** both show the API response. But **Preview** is in an easier to read format.
 
   ![](/images/network-api-response-tab.png)
 
@@ -125,6 +135,8 @@ The **Console** tab is great for general debugging, but there's another tab in d
 
   ![](/images/network-api-timing-tab.png)
 
-  3. Check your work against the part three answer key here: TODO
+  3. The Network tab doesn't capture API requests alone. If you refresh Chrome, with the **Network** tab selected, you'll see that it also captures all the files and assets that are loaded. There is a filter icon ![](/images/filter-icon.png) that toggles some optional filters on and off, when clicked. You can filter by JS files, CSS files, images, etc. This is great to troubleshoot whether a file loaded or not. API calls fall into the **XHR** category. Click on the **XHR** filter to see only the API call. If you don't see one, submit an order.
+
+  ![](/images/network-tab-filter.gif)
 
 **Way to go! You have increased your Wonder Woman power by 200%!!**
