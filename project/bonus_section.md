@@ -6,7 +6,7 @@ If you’ve made it through all of the above or want to practice a little furthe
 
 We ended the main part of the worksheet with getting data from an API. Yay! Now what do we do with it? Let's add a simple template with image markup. Then we'll add our populated template to our Drink Order App, to display the gif to the user.
 
-  1. Open _my_scripts.js_ in Atom & let's create a method named `addImageMarkup` below our closing `};` of the `fetchGifByOrderName` method, but above our `$(document).ready`:
+  1. Open _my_scripts.js_ in Atom & let's create a function named `addImageMarkup` below our closing `};` of the `fetchGifByOrderName` function, but above our `$(document).ready`:
 
   ```
   var addImageMarkup = function (response) {
@@ -14,7 +14,7 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
   };
   ```
 
-  2. On a newline between the `addImageMarkup`'s opening & closing curly braces, create a variable named `imageMarkup` and set it to a template literal using back-ticks `` `` ``: `var imageMarkup = `` `
+  2. On a newline between the `addImageMarkup`'s opening & closing curly braces, create a variable named `imageMarkup` and set it to a template literal using back-ticks `` `` ``: `var imageMarkup = ``; `
 
   3. Place your cursor in the middle of the back-ticks and hit the enter key two times. On the line that is blank between the back-ticks type:
 
