@@ -34,7 +34,7 @@ You might hear other JavaScript programmers talk about using [XHR](https://devel
   };
   ```
 
-  3. Let's add a variable to hold the API URL on the first line of the method. Make sure you're inside the curly braces `{}` of the `fetchGifByOrderName` and type: `var url = ``; `
+  3. Let's add a variable to hold the API URL on the first line of the function. Make sure you're inside the curly braces `{}` of the `fetchGifByOrderName` and type: `var url = ``; `
 
   {% hint style='danger' %}
   Yes, those are back-ticks ` `` `  and not single quotes `''`. We'll cover why in the next step.
@@ -92,7 +92,7 @@ You might hear other JavaScript programmers talk about using [XHR](https://devel
 
   ![](/images/fetch-method.png)
 
-  6. In order for this method to run, we need to call it somewhere. Scroll up in _my-scripts.js_ and look for the conditional you added earlier in the `submitOrder` method. You should have an `if` that checks that the `orderCount` is 5 or less. We want to call our method to fetch a gif **only** if the drink order can be ordered. Within the curly braces for the successful order condition (**not** if the `Drink order queue is full`), type: `fetchGifByOrderName(orderName);`. This will call our method & pass the value of the `orderName` variable through to our method.
+  6. In order for this function to run, we need to call it somewhere. Scroll up in _my-scripts.js_ and look for the conditional you added earlier in the `submitOrder` method. You should have an `if` that checks that the `orderCount` is 5 or less. We want to call our function to fetch a gif **only** if the drink order can be ordered. Within the curly braces for the successful order condition (**not** if the `Drink order queue is full`), type: `fetchGifByOrderName(orderName);`. This will call our function & pass the value of the `orderName` variable through to our function.
 
   7. Let's try our API call out. Open (or refresh) your _index.html_ file in Chrome, and open the **Console** tab in Chrome's developer tools. From the Drink Order App, select a drink, type in a name & click **Order**.
 
