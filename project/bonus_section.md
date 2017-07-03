@@ -44,7 +44,7 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
 
   Look in the **fetch** method for where we're logging the response to the console. _Where we left a comment for using the formatted data._ Add a new line below the `console.log`, but above the closing `})` for that specific `then`.
 
-  8. On this new line, call our `addImageMarkup` method by passing the `response` as a parameter.
+  8. On this new line, call our `addImageMarkup` function by passing the `response` as a parameter.
 
   9. Refresh the Drink Order app in Chrome & place an order. You should see a gif appear below the text containing your drink order!
 
@@ -52,7 +52,7 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
   Not seeing a gif appear? Open the **Console** and **Network** tab to see if you can troubleshoot the issue. Grab a mentor on Slack, or check out the answer key below.
   {% endhint %}
 
-  10. Check your work against the part three answer key here: TODO
+  10. Check your work against the bonus answer key here: [bit.ly/CnCBonus1](http://bit.ly/CnCBonus1)
 
 ## Bonus: Fix a Bug
 
