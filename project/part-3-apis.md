@@ -108,7 +108,7 @@ You might hear other JavaScript programmers talk about using [XHR](https://devel
 
   ![](/images/console-expanded.png)
 
-  9. Check your work against the part three answer key here: TODO
+  9. Check your work against the part three answer key here: [bit.ly/CnCPFKey3](http://bit.ly/CnCPFKey3).
 
 
 ### APIs & The Network Tab
