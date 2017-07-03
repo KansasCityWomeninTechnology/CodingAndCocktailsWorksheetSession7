@@ -60,7 +60,7 @@ Try ordering a drink without entering a name.
 
 That’s not useful, is it? This is called a bug which is something you’ll run into regularly as a developer. Let’s fix that with another conditional!  These changes need to happen in _my-scripts.js_ in Atom.
 
-1.  First, check to see if `orderName` has a value.  We just want the conditional to evaluate to true and an undefined value will always evaluate to the boolean value false. That means all we have to do to check whether or not `orderName` has a value is check `if (orderName) {`
+1.  To fix this first use a conditional to check if the `orderName` variable has a value.  We just want the conditional to evaluate to true - an undefined value will always evaluate to the boolean value false. That means all we have to do to check whether or not `orderName` has a value is check `if (orderName) {`
 
 2.  Wrap that if statement around the if statement that is checking our drink count.  This is called "nesting" if statements.  
 
@@ -72,4 +72,4 @@ It is bad practice to nest too many if statements since it decreases code readab
 
 4.  Save your changes and refresh the page in Google Chrome.  Try placing an order without a name now and see what happens!
 
-5.  Compare with the bonus answer key here: [bit.ly/CnCPFBonusKey](http://bit.ly/CnCPFBonusKey)
+5.  Compare with the bonus answer key here: [bit.ly/CnCBonus2](http://bit.ly/CnCBonus2)
