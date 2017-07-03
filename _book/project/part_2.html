@@ -1,0 +1,408 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Part 2: Loops, Arrays, and Objects · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part-3-apis.html" />
+    
+    
+    <link rel="prev" href="part_1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part_1.html">
+            
+                <a href="part_1.html">
+            
+                    
+                    Part 1: Review & Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="part_2.html">
+            
+                <a href="part_2.html">
+            
+                    
+                    Part 2: Loops, Arrays, and Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-3-apis.html">
+            
+                <a href="part-3-apis.html">
+            
+                    
+                    Part 3: APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="bonus_section.html">
+            
+                <a href="bonus_section.html">
+            
+                    
+                    Bonus: Templates & Bugs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../homework.html">
+            
+                <a href="../homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../survey.html">
+            
+                <a href="../survey.html">
+            
+                    
+                    Survey
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Part 2: Loops, Arrays, and Objects</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="part-2--loops-arrays-and-objects">Part 2:  Loops, Arrays, and Objects</h1>
+<h3 id="data-structures---arrays--objects">Data Structures - Arrays &amp; Objects</h3>
+<p>First, you&apos;ll create a data structure in <em>my-scripts.js</em>. You&#x2019;ll take the drinks from the HTML markup and move them into the javascript file so they are easier to change.  Since there are multiple drinks, an array (like a list) will be used to hold them.  Each drink will be a JavaScript object and will need two key value pairs; a value that will link the drink label and the radio button and a label that will display nicely.  There should be at least 5 drink objects in the menu.</p>
+<ol>
+<li><p>In Atom in the <em>my-scripts.js</em> file just under the <code>var orderCount = 0;</code> code, create a variable called <code>cocktails</code> and initialize it to an empty array.  </p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Empty Array: <code>[]</code></p>
+<p>Array with content of different data types: <code>[&#x201C;element1&#x201D; , &#x201C;element2&#x201D;, 3, true]</code></p>
+</div></div></p>
+</li>
+<li><p>Create an object for each drink.  </p>
+<ul>
+<li>Each drink object will need two keys: <code>id</code> and <code>label</code>.</li>
+<li>Each key will need a value paired with it.  </li>
+<li>The <code>id</code> key will need a camelCase value that is the drink&#x2019;s name paired with it.  This will connect the drink label to the radio button input.  </li>
+</ul>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>camelCase means the first word starts with a lowercase letter and each subsequent word starts with an uppercase letter without spaces between words!</p>
+</div></div> </p>
+<ul>
+<li>The <code>label</code> key will need the human readable drink name paired with it. </li>
+</ul>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Objects are surrounded by curly braces and contain key-value pairs like this:</p>
+<pre><code>{
+          &quot;key&quot;: &quot;value&quot;,
+          &quot;anotherKey&quot;: &quot;Another Value&quot;
+}
+</code></pre></div></div></p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Don&#x2019;t forget the comma between key value pairs!</p>
+</div></div></p>
+</li>
+<li><p>Make sure to save your work even though we won&#x2019;t see any cool changes just yet!</p>
+</li>
+</ol>
+<h3 id="loops">Loops</h3>
+<p>Next, we need to create a function that will loop through the objects and add them to the menu</p>
+<ol>
+<li><p>In Atom, in the <em>my-scripts.js</em> file, just below that array of drink objects, create another function called <code>loadMenu</code>.  </p>
+</li>
+<li><p>Inside the <code>loadMenu</code> function body, add a for loop. </p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>For loop example: 
+<code>for (var i = 0; i &lt; myArray.length; i++) { }</code></p>
+<p>In the Drink Order App code, <code>myArray</code> would be substituted with the <code>cocktails</code> array so the code loops through the array of drink objects.</p>
+<p>The for loop has three pieces:</p>
+<ol>
+<li><p>The initializing expression - what number to start the loop with. <code>var i = 0;</code></p>
+</li>
+<li><p>The condition - how many times to run through the loop. <code>i &lt; myArray.length;</code></p>
+</li>
+<li><p>The incrementing expression - how much to add to the loop counter each time through the loop. <code>i++</code> </p>
+</li>
+</ol>
+</div></div></p>
+</li>
+</ol>
+<ol>
+<li><p>Inside the body of the for loop (that means inside the curly braces!) add this code:
+<code>$(&apos;.radio-group&apos;).append(&apos;&lt;label class=&quot;radio&quot; for=&quot;&apos; + cocktails[i].id + &apos;&quot;&gt;&lt;input type=&quot;radio&quot; id=&quot;&apos; + cocktails[i].id + &apos;&quot; name=&quot;drink&quot; value=&quot;&apos; + cocktails[i].label + &apos;&quot;&gt;&apos; + cocktails[i].label + &apos;&lt;/label&gt;&apos;);</code></p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>This code is finding the HTML element that has the class <code>radio-group</code> applied to it.  Then it appends (or adds inside of that element) the label and radio input elements for the drink items. </p>
+<p>The label has a <code>class</code> attribute of <code>radio</code> for styling purposes.  There is also a <code>for</code> attribute that connects the visible label element to the input element&#x2019;s <code>id</code> attribute. This is where using the <code>id</code> key&#x2019;s value from the drink objects.</p>
+<p>The input element is of type &#x201C;radio&#x201D; so it will be a radio button selector and all of them have the <code>name</code> attribute of &quot;drink&quot;.  Having the same <code>name</code> across the radio input elements ensures the user can only select one radio button at a time. </p>
+<p>The last attribute is the <code>value</code> of the radio button which holds the drink objects <code>label</code> value and helps display formatted text.</p>
+<p>Finally, inside the label HTML element, the drink object&#x2019;s <code>label</code> value is used to display the formatted drink name text.</p>
+</div></div></p>
+</li>
+<li><p>Next, call this function so the menu gets loaded into the page. In Atom in the <em>my-styles.js</em> file, add the function call on the first line inside the body of <code>$(document).ready(function() {</code></p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Look back at Part 1 for a reminder on how to call a function.</p>
+</div></div></p>
+</li>
+<li><p>In Atom, open the <em>index.html</em> file so we can remove the drink menu markup so it will be loaded with our JavaScript instead of with the markup. Remove all of the <code>&lt;label&gt;</code> and <code>&lt;input&gt;</code> elements that are inside the following <code>div</code> element: <code>&lt;div class=&quot;input-group radio-group&quot;&gt;</code>.</p>
+</li>
+<li><p>In Atom, save both <em>index.html</em> and <em>my-scripts.js</em>.</p>
+</li>
+<li><p>In Google Chrome, reload your page.<br>It won&#x2019;t look much different but you&#x2019;ve utilized an array, objects, a for loop and a function to create different loading behavior!</p>
+</li>
+<li><p>Check your work against the part two answer key here: <a href="http://bit.ly/CnCPFKey2" target="_blank">bit.ly/CnCPFKey2</a></p>
+</li>
+</ol>
+<p><strong>Congratulations!  You worked through some hard stuff tonight!  Way to stick with it!</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part_1.html" class="navigation navigation-prev " aria-label="Previous page: Part 1: Review & Conditionals">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part-3-apis.html" class="navigation navigation-next " aria-label="Next page: Part 3: APIs">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Part 2: Loops, Arrays, and Objects","level":"1.3","depth":1,"next":{"title":"Part 3: APIs","level":"1.4","depth":1,"path":"project/part-3-apis.md","ref":"project/part-3-apis.md","articles":[]},"previous":{"title":"Part 1: Review & Conditionals","level":"1.2","depth":1,"path":"project/part_1.md","ref":"project/part_1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project/part_2.md","mtime":"2017-07-03T02:38:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-03T22:18:17.104Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

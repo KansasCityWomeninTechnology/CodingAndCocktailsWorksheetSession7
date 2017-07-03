@@ -1,0 +1,426 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Part 3: APIs · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bonus_section.html" />
+    
+    
+    <link rel="prev" href="part_2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part_1.html">
+            
+                <a href="part_1.html">
+            
+                    
+                    Part 1: Review & Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="part_2.html">
+            
+                <a href="part_2.html">
+            
+                    
+                    Part 2: Loops, Arrays, and Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="part-3-apis.html">
+            
+                <a href="part-3-apis.html">
+            
+                    
+                    Part 3: APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="bonus_section.html">
+            
+                <a href="bonus_section.html">
+            
+                    
+                    Bonus: Templates & Bugs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../homework.html">
+            
+                <a href="../homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../survey.html">
+            
+                <a href="../survey.html">
+            
+                    
+                    Survey
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Part 3: APIs</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="part-3-fetching-apis">Part 3: Fetching APIs</h1>
+<h3 id="apis--fetch">APIs &amp; Fetch</h3>
+<p>Unless your web site is a static application, you are going to consume data from the back-end (server) via an API.</p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p><strong>API (Application Programming Interface)</strong> - Middle-woman that allows 2 applications to talk to each other [most often being the go-between for front-end and back-end].</p>
+<p><strong>Static Application</strong> - Website that only allows content changes, if you make them directly in the code, manually by <em>hand</em>.</p>
+<p><strong>Dynamic Application</strong> - Website that uses a server-side language, or JavaScript &amp; APIs, to retrieve content from other files or a database to populate the site&apos;s content. Data in the database can be updated by a Content Management System (CMS) like WordPress, or via API interaction. This <em>dynamically</em> updates the content, without the author or the programmer having to edit or write new code.</p>
+</div></div></p>
+<p>There are various ways to access data from an API. We&apos;re going to use JavaScript&apos;s built-in <strong>fetch</strong> method. When a user enters an <strong>order name</strong> and submits the order in our Drink Order app, we&apos;ll use the <a href="https://developers.giphy.com" target="_blank">Giphy API</a> to fetch a gif based on the <strong>order name</strong>. Here&apos;s how that interaction works:</p>
+<ul>
+<li>We pass the API the order name.</li>
+<li>The API provides the order name to the server.</li>
+<li>Server code searches a database for a gif related to the order name.</li>
+<li>When the server code finds a relevant gif, it provides the gif&apos;s details from the database to the API.</li>
+<li>The API returns the gif&apos;s details to us.</li>
+<li>We handle the API response.<br>Tonight, we will <code>console.log</code> the API response. But in the <strong>Bonus</strong> section of our worksheet, we display the gif image in the order details section of our Drink Order app.</li>
+</ul>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>You might hear other JavaScript programmers talk about using <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest" target="_blank">XHR</a> (<strong>X</strong>ML<strong>H</strong>ttp<strong>R</strong>equest) or jQuery&apos;s <a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank">AJAX</a> (<strong>A</strong>synchronous <strong>J</strong>avaScript <strong>A</strong>nd <strong>X</strong>ML) to interact with APIs. Those were methods we had to use prior to ECMAScript 2015 (ES6). When ES6 came out, it included a native method <strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">fetch</a></strong>, which was similar to jQuery&apos;s AJAX but doesn&apos;t require you to add a library like jQuery to use. You can use it in pure JavaScript!</p>
+</div></div></p>
+<ol>
+<li><p>In Atom in the <em>my-scripts.js</em> file, on the line just above <code>$(document).ready</code>, you&apos;ll want to add a few empty lines, so you are ready to add our fetch method.</p>
+</li>
+<li><p>We&apos;re going to create a function called <code>fetchGifByOrderName</code>, so add the following to the empty lines you added in step 1:</p>
+<pre><code>var fetchGifByOrderName = function (orderName) {
+
+};
+</code></pre></li>
+<li><p>Let&apos;s add a variable to hold the API URL on the first line of the function. Make sure you&apos;re inside the curly braces <code>{}</code> of the <code>fetchGifByOrderName</code> and type: <code>var url = ``;</code></p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>  Yes, those are back-ticks <code>`` </code>  and not single quotes <code>&apos;&apos;</code>. We&apos;ll cover why in the next step.</p>
+</div></div></p>
+</li>
+<li><p>Now set the <code>url</code> variable to <code>https://api.giphy.com/v1/gifs/random?tag=${orderName}&amp;api_key=75af32d089554f9a9daaac3f290e58fb</code>. It should look like this:</p>
+<pre><code>var url = `https://api.giphy.com/v1/gifs/random?tag=${orderName}&amp;api_key=75af32d089554f9a9daaac3f290e58fb`;
+</code></pre><p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>  Previously, we used concatenation to combine strings with a <code>+</code>. The back-ticks allow us to use template literals, which is another way of concatenation.</p>
+<pre><code>  `https://api.giphy.com/v1/gifs/random?tag=${orderName}&amp;api_key=75af32d089554f9a9daaac3f290e58fb`
+</code></pre><p>  is the same as:</p>
+<pre><code>  &apos;https://api.giphy.com/v1/gifs/random?tag=&apos; + orderName + &apos;&amp;api_key=75af32d089554f9a9daaac3f290e58fb&apos;
+</code></pre><p>  Using a template literal (using back-ticks), we can use the <code>${}</code> format to wrap our variable <code>orderName</code>: <code>${orderName}</code></p>
+</div></div></p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>  TODO: Cover the parameters in the API &amp; what they do</p>
+</div></div></p>
+</li>
+<li><p>On a new line below the <code>url</code> variable (but still before <code>fetchGifByOrderName</code>&apos;s closing <code>}</code>), let&apos;s type out the native <strong>fetch</strong> structure with some comments &amp; <code>console.log</code>s:</p>
+<pre><code>fetch(url) // URL of API
+   .then(function(response) {
+       // Code for processing data response from API to desired data format
+       return response.json();
+   })
+ .then(function(response) {
+   // Code for using the data we formatted
+       console.log(response);
+ })
+ .catch(function(error) {
+   // Code to run if API returns an error
+ console.log(error);
+ });
+</code></pre><p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>  Let&apos;s walk through this method... TODO</p>
+<p>  You don&apos;t technically have to indent the <code>.then</code> or <code>.catch</code> for the code to work, but indenting them makes your code easier to read as you can easily see they go with the <code>fetch(url)</code>.</p>
+</div></div></p>
+<p>At this point, your <code>fetchGifByOrderName</code> method should look similar to this:</p>
+<p><img src="../images/fetch-method.png" alt=""></p>
+</li>
+<li><p>In order for this function to run, we need to call it somewhere. Scroll up in <em>my-scripts.js</em> and look for the conditional you added earlier in the <code>submitOrder</code> method. You should have an <code>if</code> that checks that the <code>orderCount</code> is 5 or less. We want to call our function to fetch a gif <strong>only</strong> if the drink order can be ordered. Within the curly braces for the successful order condition (<strong>not</strong> if the <code>Drink order queue is full</code>), type: <code>fetchGifByOrderName(orderName);</code>. This will call our function &amp; pass the value of the <code>orderName</code> variable through to our function.</p>
+</li>
+<li><p>Let&apos;s try our API call out. Open (or refresh) your <em>index.html</em> file in Chrome, and open the <strong>Console</strong> tab in Chrome&apos;s developer tools. From the Drink Order App, select a drink, type in a name &amp; click <strong>Order</strong>.</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>  Remember the shortcut to open dev tools in Chrome: <code>cmd + shift + i</code> (Mac) or <code>ctrl + shift + i</code> (Windows)</p>
+</div></div></p>
+</li>
+<li><p>In the console, you should see 2 things logged. The value of the <code>orderName</code> variable (that we console logged earlier) and the JSON response from the API request, which will show collapsed like this:</p>
+<p><img src="../images/console-collapsed.png" alt=""></p>
+<p>Click on the little triangle to the left of <code>Object {data: Object, meta: Object}</code>, and then the little triangle next to <code>data: Object</code>. Now you can see the <code>data</code> for the gif that the Giphy API provided us:</p>
+<p><img src="../images/console-expanded.png" alt=""></p>
+</li>
+<li><p>Check your work against the part three answer key here: <a href="http://bit.ly/CnCPFKey3" target="_blank">bit.ly/CnCPFKey3</a>.</p>
+</li>
+</ol>
+<h3 id="apis--the-network-tab">APIs &amp; The Network Tab</h3>
+<p>The <strong>Console</strong> tab is great for general debugging, but there&apos;s another tab in developer tools that can be even more helpful when working with APIs. The <strong>Network</strong> tab.</p>
+<ol>
+<li><p>In your open dev tools, click on <strong>Network</strong> and click on the <strong>Order</strong> button in the app again. This will trigger a new API request that will show as a new request like:</p>
+<p><img src="../images/api-request-network-tab.png" alt=""></p>
+</li>
+<li><p>Hover over the <strong>Name</strong> of the request (which is the API URL we requested), and it will appear like a link. Click on the name as a link, and you&apos;ll see a new set of sub-tabs open of <strong>Headers</strong>, <strong>Preview</strong>, <strong>Response</strong> &amp; <strong>Timing</strong>.</p>
+<p><strong>Response</strong> &amp; <strong>Preview</strong> both show the API response. But <strong>Preview</strong> is in an easier to read format.</p>
+<p><img src="../images/network-api-response-tab.png" alt=""></p>
+<p><img src="../images/network-api-preview-tab.png" alt=""></p>
+<p><strong>Headers</strong> shows you all the information that was sent in the API request (most of which is handled behind the scenes for you).</p>
+<p><img src="../images/network-api-headers-tab.gif" alt=""></p>
+<p><strong>Timing</strong> does what it sounds like. It shows a breakdown of the request and response time.</p>
+<p><img src="../images/network-api-timing-tab.png" alt=""></p>
+</li>
+<li><p>The Network tab doesn&apos;t capture API requests alone. If you refresh Chrome, with the <strong>Network</strong> tab selected, you&apos;ll see that it also captures all the files and assets that are loaded. There is a filter icon <img src="../images/filter-icon.png" alt=""> that toggles some optional filters on and off, when clicked. You can filter by JS files, CSS files, images, etc. This is great to troubleshoot whether a file loaded or not. API calls fall into the <strong>XHR</strong> category. Click on the <strong>XHR</strong> filter to see only the API call. If you don&apos;t see one, submit an order.</p>
+<p><img src="../images/network-tab-filter.gif" alt=""></p>
+</li>
+</ol>
+<p><strong>Way to go! You have increased your Wonder Woman power by 200%!!</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part_2.html" class="navigation navigation-prev " aria-label="Previous page: Part 2: Loops, Arrays, and Objects">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bonus_section.html" class="navigation navigation-next " aria-label="Next page: Bonus: Templates & Bugs">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Part 3: APIs","level":"1.4","depth":1,"next":{"title":"Bonus: Templates & Bugs","level":"1.5","depth":1,"path":"project/bonus_section.md","ref":"project/bonus_section.md","articles":[]},"previous":{"title":"Part 2: Loops, Arrays, and Objects","level":"1.3","depth":1,"path":"project/part_2.md","ref":"project/part_2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project/part-3-apis.md","mtime":"2017-07-03T03:07:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-03T22:18:17.104Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
