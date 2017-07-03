@@ -1,7 +1,7 @@
 <div>
     <img src="/images/image02.png" style="float: left; margin: 0px 15px 15px 0px; height:250px;">
-    <h1 style="display:inline-block;margin-top:50px;">Coding &amp; Cocktails Session 7:</h1>
-    <h2>Programming Concepts 102: A deeper dive into JavaScript</h2>
+    <h1 style="display:inline-block;margin-top:2.75em;">Coding &amp; Cocktails Session 7:</h1>
+    <h2 style="margin-top:0;margin-bottom:2.75em;>Programming Concepts 102: A deeper dive into JavaScript</h2>
 </div>
 <hr>
 
