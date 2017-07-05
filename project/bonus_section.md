@@ -6,7 +6,7 @@ If you’ve made it through all of the above or want to practice a little furthe
 
 We ended the main part of the worksheet with getting data from an API. Yay! Now what do we do with it? Let's add a simple template with image markup. Then we'll add our populated template to our Drink Order App, to display the gif to the user.
 
-  1. Open _my_scripts.js_ in Atom & let's create a method named `addImageMarkup` below our closing `};` of the `fetchGifByOrderName` method, but above our `$(document).ready`:
+  1. Open _my_scripts.js_ in Atom & let's create a function named `addImageMarkup` below our closing `};` of the `fetchGifByOrderName` function, but above our `$(document).ready`:
 
   ```
   var addImageMarkup = function (response) {
@@ -14,7 +14,7 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
   };
   ```
 
-  2. On a newline between the `addImageMarkup`'s opening & closing curly braces, create a variable named `imageMarkup` and set it to a template literal using back-ticks `` `` ``: `var imageMarkup = `` `
+  2. On a newline between the `addImageMarkup`'s opening & closing curly braces, create a variable named `imageMarkup` and set it to a template literal using back-ticks `` `` ``: `var imageMarkup = ``; `
 
   3. Place your cursor in the middle of the back-ticks and hit the enter key two times. On the line that is blank between the back-ticks type:
 
@@ -44,7 +44,7 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
 
   Look in the **fetch** method for where we're logging the response to the console. _Where we left a comment for using the formatted data._ Add a new line below the `console.log`, but above the closing `})` for that specific `then`.
 
-  8. On this new line, call our `addImageMarkup` method by passing the `response` as a parameter.
+  8. On this new line, call our `addImageMarkup` function by passing the `response` as a parameter.
 
   9. Refresh the Drink Order app in Chrome & place an order. You should see a gif appear below the text containing your drink order!
 
@@ -52,7 +52,7 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
   Not seeing a gif appear? Open the **Console** and **Network** tab to see if you can troubleshoot the issue. Grab a mentor on Slack, or check out the answer key below.
   {% endhint %}
 
-  10. Check your work against the part three answer key here: TODO
+  10. Check your work against the bonus answer key here: [bit.ly/CnCBonus1](http://bit.ly/CnCBonus1)
 
 ## Bonus: Fix a Bug
 
@@ -60,7 +60,7 @@ Try ordering a drink without entering a name.
 
 That’s not useful, is it? This is called a bug which is something you’ll run into regularly as a developer. Let’s fix that with another conditional!  These changes need to happen in _my-scripts.js_ in Atom.
 
-1.  First, check to see if `orderName` has a value.  We just want the conditional to evaluate to true and an undefined value will always evaluate to the boolean value false. That means all we have to do to check whether or not `orderName` has a value is check `if (orderName) {`
+1.  To fix this first use a conditional to check if the `orderName` variable has a value.  We just want the conditional to evaluate to true - an undefined value will always evaluate to the boolean value false. That means all we have to do to check whether or not `orderName` has a value is check `if (orderName) {`
 
 2.  Wrap that if statement around the if statement that is checking our drink count.  This is called "nesting" if statements.  
 
@@ -72,4 +72,4 @@ It is bad practice to nest too many if statements since it decreases code readab
 
 4.  Save your changes and refresh the page in Google Chrome.  Try placing an order without a name now and see what happens!
 
-5.  Compare with the bonus answer key here: [bit.ly/CnCPFBonusKey](http://bit.ly/CnCPFBonusKey)
+5.  Compare with the bonus answer key here: [bit.ly/CnCBonus2](http://bit.ly/CnCBonus2)
