@@ -47,21 +47,28 @@ You might hear other JavaScript programmers talk about using [XHR](https://devel
   ```
 
   {% hint style='tip' %}
-  Previously, we used concatenation to combine strings with a `+`. The back-ticks allow us to use template literals, which is another way of concatenation.
+  Previously, we used concatenation to combine strings with `+`. The back-ticks allow us to use template literals, which is another way of concatenation.
 
-  ```
-  `https://api.giphy.com/v1/gifs/random?tag=${orderName}&api_key=75af32d089554f9a9daaac3f290e58fb`
-  ```
+  `` `https://api.giphy.com/v1/gifs/random?tag=${orderName}&api_key=75af32d089554f9a9daaac3f290e58fb` ``
+
   is the same as:
-  ```
-  'https://api.giphy.com/v1/gifs/random?tag=' + orderName + '&api_key=75af32d089554f9a9daaac3f290e58fb'
-  ```
 
-  Using a template literal (using back-ticks), we can use the `${}` format to wrap our variable `orderName`: `${orderName}`
+  `'https://api.giphy.com/v1/gifs/random?tag=' + orderName + '&api_key=75af32d089554f9a9daaac3f290e58fb'`
+
+  Using a template literal (using back-ticks), we can use the `${}` format (called a **template expression** or **template substitution**) to wrap our `orderName` variable: `${orderName}`
   {% endhint %}
 
   {% hint style='info' %}
-  TODO: Cover the parameters in the API & what they do
+  Let's break down the parts of the API URL & what they mean.
+  `https://api.giphy.com/v1/gifs/random?tag=sandy&api_key=75af32d089554f9a9daaac3f290e58fb`
+
+  **Scheme** - `http` or `https` - Most APIs will be secure and use `https`.  
+  **Host** - `api.giphy.com` - This is the main domain of the URL.  
+  **Path** - `/v1/gifs/random` - The part that follows the domain.  
+    **Endpoint** - The unique part of the path, in this case `/gifs/random`  
+  **Query Parameters** - These are at the end of the API URL & begin with a `?`, followed by one or more parameters in the format of `parameterName=value`. Usually the parameter name is **camelCase** and the value is a primitive value (boolean, number or string). Multiple parameters are separated by the ampersand: `&`.  
+  &nbsp;&nbsp;&bull; **tag** - The word(s) that will be used to search the Giphy database for a gif.  
+  &nbsp;&nbsp;&bull; **api_key** - Most APIs require some kind of authentication for users to be able to use the API. In the case of Giphy, they use an `api_key` parameter in the URL. To get an API key, you **Create an App** from https://developers.giphy.com. After providing a name and description of your app, Giphy provides you with an API key to use during development of your project. [Like what we're using tonight.] When you're ready to launch your project, you have to apply for a Production API key. We'll cover some differences in how APIs handle authentication in our [September](https://www.eventbrite.com/e/coding-cocktails-september-tickets-33536482522?aff=julyWorksheet) session.
   {% endhint %}
 
   5. On a new line below the `url` variable (but still before `fetchGifByOrderName`'s closing `}`), let's type out the native **fetch** structure with some comments & `console.log`s:
