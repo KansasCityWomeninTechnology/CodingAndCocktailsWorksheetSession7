@@ -24,7 +24,7 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
 	</div>
   ```
 
-  4. Since our data comes through in Object format, let's use the dot notation we learned earlier in the Worksheet to grab the data out of the response Object. The `image_url` from the `data` portion of the response is what we want to use for our image's source. We'll do this first one together. Within the curly braces for the `src` attribute, type: `response.data.image_url`
+  4. Since our data comes through in object format, let's use the dot notation we learned earlier in the worksheet to grab the data out of the response object. The `image_url` from the `data` portion of the response is what we want to use for our image's source. We'll do this first one together. Within the curly braces for the `src` attribute, type: `response.data.image_url`
 
   {% hint style='info' %}
   Here's an abbreviated sample of the response we get from the Giphy API:

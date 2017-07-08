@@ -64,7 +64,7 @@ You can open the file in Google Chrome in a number of ways:
 ###### Create the function
 First we'll add a function to handle drink orders. 
   
-  1. In Atom, find the _my-scripts.js_ file in the _assets/scripts_ folder and double click on it to open. 
+  1. In Atom, in the _assets/scripts_ folder, find the _my-scripts.js_ file and double click on it to open. 
   
   2. Find the submitOrder function comment:
 ```
@@ -76,7 +76,7 @@ First we'll add a function to handle drink orders.
  */
  ```
  
-  3. On the line just below the closing `*/`, create a variable set equal to a function like this:
+  3. On the line just below the closing `*/`, create a variable set equal to a function by typing out this:
 
     `var submitOrder = function () {};`
 
@@ -84,7 +84,7 @@ First we'll add a function to handle drink orders.
 Next, we need to gather some input from the user and save it off into additional variables.
 
   {% hint style='info' %}
-We’ll be using jQuery (a JavaScript library) to help simplify some of the coding but we’ll supply that portion of the code for you.  Instead of copying and pasting from this worksheet, try typing out what you see.
+We’ll be using jQuery (a JavaScript library, or, set of functions to help in application development) to help simplify some of the coding but we’ll supply that portion of the code for you.  Instead of copying and pasting from this worksheet, try typing out what you see.
   {% endhint %}
 
   1. Place your cursor in between the curly braces from step 3 and press enter.  The cursor should now be inside the function body. 
@@ -100,7 +100,7 @@ Missed the HTML session and have no clue what an element is? Grab a mentor to ta
 ###### View Application Data
 Now that the input data is saved into a variable, make sure we got a value and try viewing data via a console.log statement. 
 
-  1. On the line underneath your orderName variable, type `console.log(orderName);`.
+  1. In the same function body as before, on the line underneath the orderName variable, type `console.log(orderName);`.
 
 ###### Call the function
 In order to see what we’ve accomplished so far, the function has to be run.  
@@ -123,7 +123,7 @@ Inside the parentheses is where you would pass parameters to the function but si
 
 
 ###### Ordering Drinks
-We also want to save off the drink name to display it with the order. 
+We also want to save the drink name to display it with the order. 
 
  1. Add a new line after the `console.log();` line.
  
@@ -196,40 +196,40 @@ Remember to pass a parameter that you add it inside the parenthesis like this:`v
 This code is finding the HTML element with the id of `drink-count` and changing the content of that HTML element to be what we pass to the jQuery html method - in this case, the string “Drinks Ordered:” and our updated order count.
   {% endhint %}
 
-  7. This function needs to be called inside the body of the `submitOrder` function, just under the code to add the order display - That order display code will look like `$("#order-details").append("<h1>" + orderName + " would like a " + drinkName + "</h1>");`
+  7. This function needs to be called inside the body of the `submitOrder` function, on a new line directly below the following code: `$("#order-details").append("<h1>" + orderName + " would like a " + drinkName + "</h1>");`
 
-  {% hint style='info' %}  
-Remember how we call functions like in Step 2 under the "Call the Function" section above but this time you’ll need to pass the `orderCount` variable to the `submitOrder` function! `myFunction(passedParameter);`
+  {% hint style='info' %} 
+Remember how we call functions like in Step 2 under the "Call the Function" section above? This time you’ll need to pass the `orderCount` variable to the `submitOrder` function! `myFunction(passedParameter);`
   {% endhint %}
 
 ###### Alerts & Conditionals
 Take a minute to read about alert boxes here: [bit.ly/CnCAlert](http://bit.ly/CnCAlert). We’ll utilize one in our next step. You can customize the message to display whatever you want.
 
-  1. You will make the following changes in Atom, in the _my-scripts.js_ file. The placement of this is a little tricky as we need to wrap the conditional around some existing code.  
+You will make the following changes in Atom, in the _my-scripts.js_ file. The placement of this is a little tricky as we need to wrap the conditional around some existing code.  
 
-  2. Place the cursor at the end of the `var drinkName ...` line and press enter.  On that new line, type out your `if (condition) {` code where the condition is if the `orderCount` is less than or equal to 5.  
+  1. Place the cursor at the end of the `var drinkName ...` line and press enter.  On that new line, type out your `if (condition) {` code where the condition is if the `orderCount` is less than or equal to 5.  
 
   {% hint style='tip' %} 
 [View documentation on the if statement on the Mozilla Developer Network pages.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
   {% endhint %}
   
-  3. Indent the line directly below it (`$("#order-details").append("<h1>" + orderName + " would like a " + drinkName + "</h1>");`) so it is nested inside the body of the if statement. This will add the order to the display if there is still room for orders
+  2. Indent the line directly below it (`$("#order-details").append("<h1>" + orderName + " would like a " + drinkName + "</h1>");`) so it is nested inside the body of the if statement. This will add the order to the display if there is still room for orders
   
-  4. Make sure your if statement body is closed out with a closing curly brace after the nested code.
+  3. Make sure your if statement body is closed out with a closing curly brace after the nested code.
    
-  5. Next to that closing curly brace, add an `else` clause to the if statement.  
+  4. Next to that closing curly brace, add an `else` clause to the if statement.  
   
-  6. In the body of the else, display an alert that says “Drink order queue is full.  Please try ordering again in a few minutes.” 
+  5. In the body of the else, display an alert that says “Drink order queue is full.  Please try ordering again in a few minutes.” 
 
   {% hint style='info' %} 
 These orders are only based on what is being submitted on your device in the current browser session.  Since we don’t have a server connected, the data is only persisted as long as you don’t refresh your browser. Once you run a refresh the variables and page content are reset starting over so in order to reset your order count, just refresh your browser window!
   {% endhint %}
 
-  7. In Atom, save your _my-scripts.js_ file.
+  6. In Atom, save your _my-scripts.js_ file.
 
-  8. In Google Chrome, reload your page, try adding 6 orders and see your alert pop up!
+  7. In Google Chrome, reload your page, try adding 6 orders and see your alert pop up!
 
-  9.  Check your work with our answer key here: [bit.ly/CnCPFKey1](http://bit.ly/CnCPFKey1)
+  8.  Check your work with our answer key here: [bit.ly/CnCPFKey1](http://bit.ly/CnCPFKey1)
 
 **You’ve finished part one! Celebrate with a toast with your neighbor!**
 
