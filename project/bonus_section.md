@@ -24,7 +24,7 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
 	</div>
   ```
 
-  4. Since our data comes through in Object format, let's use the dot notation we learned earlier in the Worksheet to grab the data out of the response Object. Within the curly braces for the `src` attribute, type: `response.data.image_url`
+  4. Since our data comes through in object format, let's use the dot notation we learned earlier in the Worksheet to grab the data out of the response object. Within the curly braces for the `src` attribute, type: `response.data.image_url`
 
   TODO: SHOW DATA FORMAT & HOW THIS IS THE PATH FOR DOT NOTATION
 
