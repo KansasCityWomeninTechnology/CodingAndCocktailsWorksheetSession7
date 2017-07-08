@@ -24,11 +24,35 @@ We ended the main part of the worksheet with getting data from an API. Yay! Now 
 	</div>
   ```
 
-  4. Since our data comes through in Object format, let's use the dot notation we learned earlier in the Worksheet to grab the data out of the response Object. Within the curly braces for the `src` attribute, type: `response.data.image_url`
+  4. Since our data comes through in Object format, let's use the dot notation we learned earlier in the Worksheet to grab the data out of the response Object. The `image_url` from the `data` portion of the response is what we want to use for our image's source. We'll do this first one together. Within the curly braces for the `src` attribute, type: `response.data.image_url`
 
-  TODO: SHOW DATA FORMAT & HOW THIS IS THE PATH FOR DOT NOTATION
+  {% hint style='info' %}
+  Here's an abbreviated sample of the response we get from the Giphy API:
 
-  5. Within the curly braces for the `alt` & `title` attributes, type: `response.data.caption`
+  ```
+  {
+    "data": {
+      "caption": "",
+      "image_url": "http://media0.giphy.com/media/xT8qB5wdOO58pkkd7q/giphy.gif",
+      "image_width": "245",
+      "type": "gif"
+    },
+    "meta": {
+      "msg": "OK",
+      "response_id": "randomNumbersAndSymbols2378497248",
+      "status": 200
+    }
+  }
+  ```
+
+  In order to determine what property we want & how to access it, it helps to work backward (or from inside out).
+
+  The `image_url` is a property of the `data` object. And `data` is a nested object within our overall object.
+
+  The outer curly braces are the `response` object (as that is what we're using as the parameter name in the `addImageMarkup` method). If we had `var addImageMarkup = function (funkyChicken)`, then our top-level object would be `funkyChicken` and we'd use `funkyChicken.data.image_url` to get the `image_url`. But `response` makes more sense than `funkyChicken`, so we'll leave it.
+  {% endhint %}
+
+  5. Use the previous step as a guide & within the curly braces for the `alt` & `title` attributes, add the `caption` from the JSON response. If you get stuck, check out the answer key at the end of this section or ask us on Slack!
 
   6. We're going to use jQuery to append our template literal to the markup (in the **order-details** id).
 

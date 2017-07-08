@@ -65,10 +65,12 @@ You might hear other JavaScript programmers talk about using [XHR](https://devel
   **Scheme** - `http` or `https` - Most APIs will be secure and use `https`.  
   **Host** - `api.giphy.com` - This is the main domain of the URL.  
   **Path** - `/v1/gifs/random` - The part that follows the domain.  
-    **Endpoint** - The unique part of the path, in this case `/gifs/random`  
+    **Endpoint** - The unique part of the path, in this case `/gifs/random`. The **random** endpoint returns one gif based on the **tag** provided, but there are [other endpoints](https://developers.giphy.com/docs/#technical-documentation) available.  
   **Query Parameters** - These are at the end of the API URL & begin with a `?`, followed by one or more parameters in the format of `parameterName=value`. Usually the parameter name is **camelCase** and the value is a primitive value (boolean, number or string). Multiple parameters are separated by the ampersand: `&`.  
-  &nbsp;&nbsp;&bull; **tag** - The word(s) that will be used to search the Giphy database for a gif.  
-  &nbsp;&nbsp;&bull; **api_key** - Most APIs require some kind of authentication for users to be able to use the API. In the case of Giphy, they use an `api_key` parameter in the URL. To get an API key, you **Create an App** from https://developers.giphy.com. After providing a name and description of your app, Giphy provides you with an API key to use during development of your project. [Like what we're using tonight.] When you're ready to launch your project, you have to apply for a Production API key. We'll cover some differences in how APIs handle authentication in our [September](https://www.eventbrite.com/e/coding-cocktails-september-tickets-33536482522?aff=julyWorksheet) session.
+  <ul>
+    <li> <strong>tag</strong> - The word(s) that will be used to search the Giphy database for a gif (<code>sandy</code> in our example above).</li>  
+    <li><strong>api_key</strong> - Most APIs require some kind of authentication for users to be able to use the API. In the case of Giphy, they use an <code>api_key</code> parameter in the URL. To get an API key, you <strong>Create an App</strong> from <a href="https://developers.giphy.com" target="_blank">https://developers.giphy.com</a>. After providing a name and description of your app, Giphy provides you with an API key to use during development of your project. [Like what we're using tonight.] When you're ready to launch your project, you have to apply for a Production API key. We'll cover some differences in how APIs handle authentication in our <a href="https://www.eventbrite.com/e/coding-cocktails-september-tickets-33536482522?aff=julyWorksheet" target="_blank">September</a> session.</li>  
+  </ul>
   {% endhint %}
 
   5. On a new line below the `url` variable (but still before `fetchGifByOrderName`'s closing `}`), let's type out the native **fetch** structure with some comments & `console.log`s:
@@ -90,9 +92,19 @@ You might hear other JavaScript programmers talk about using [XHR](https://devel
   ```
 
   {% hint style='info' %}
-  Let's walk through this method... TODO
+  Let's walk through this method...
 
-  You don't technically have to indent the `.then` or `.catch` for the code to work, but indenting them makes your code easier to read as you can easily see they go with the `fetch(url)`.
+  On the first line, we're passing the `url` as a parameter to the `fetch` method that is built into JavaScript. The `fetch` method returns a **Promise** object.
+
+  **Promises** allow you to control flow, like an if/else statement, but are great for when the conditional code is more complex and not right next to each other. We are unable to cover **Promises** in detail with the time we have tonight, but the important thing to know is that the **Promise** object has 2 methods available: `then` & `catch`. These methods are chainable - do this, **then** do this, **then** do this. `then` is for when the Promise is resolved successfully, whereas `catch` is for errors. Want to learn more about **Promises**? Read this [great article](https://scotch.io/tutorials/javascript-promises-for-dummies) later.
+
+  When the fetch Promise is resolved (API is returned), the first `then` receives the API response, which is returned as a [Response object](https://developer.mozilla.org/en-US/docs/Web/API/Response). In order to get the data out of the Response object in the format we're expecting, we have to use one of the [Body methods](https://developer.mozilla.org/en-US/docs/Web/API/Body). The Giphy API is providing the data in JSON format, so we return the response using the `.json()` method, which also returns a Promise object.
+
+  The second `then` is triggered when the first `then` finishes (when converting the response to JSON is done). The value returned by the first `then` is passed in as a parameter to the second `then`. At this point, the data is in JSON format, and ready for us to use in our application. For now, we're logging the JSON response format to the console.
+
+  At the end, we have a `catch` method, so we can handle any errors thrown in the Promise resolution chain.
+
+  You don't technically have to indent the `.then` or `.catch` for the code to work, but indenting them makes your code easier to read as you can easily see they go with `fetch(url)`.
   {% endhint %}
 
   At this point, your `fetchGifByOrderName` method should look similar to this:
