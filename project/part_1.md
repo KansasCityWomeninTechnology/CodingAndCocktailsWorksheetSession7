@@ -64,7 +64,7 @@ You can open the file in Google Chrome in a number of ways:
 ###### Create the function
 First we'll add a function to handle drink orders. 
   
-  1. In Atom, find the _my-scripts.js_ file in the _assets/scripts_ folder and double click on it to open. 
+  1. In Atom, in the _assets/scripts_ folder, find the _my-scripts.js_ file and double click on it to open. 
   
   2. Find the submitOrder function comment:
 ```
@@ -76,7 +76,7 @@ First we'll add a function to handle drink orders.
  */
  ```
  
-  3. On the line just below the closing `*/`, create a variable set equal to a function like this:
+  3. On the line just below the closing `*/`, create a variable set equal to a function by typing out this:
 
     `var submitOrder = function () {};`
 
