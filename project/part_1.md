@@ -199,7 +199,7 @@ This code is finding the HTML element with the id of `drink-count` and changing 
   7. This function needs to be called inside the body of the `submitOrder` function, on a new line directly below the following code: `$("#order-details").append("<h1>" + orderName + " would like a " + drinkName + "</h1>");`
 
   {% hint style='info' %} 
-Remember how we call functions like in Step 2 under the "Call the Function" section above? This time you’ll need to pass the `orderCount` variable to the `submitOrder` function! `myFunction(passedParameter);`
+Remember how we call functions like in Step 2 under the "Call the Function" section above? This time you’ll need to pass the `orderCount` variable to the `updateOrderCount` function! `myFunction(passedParameter);`
   {% endhint %}
 
 ###### Alerts & Conditionals
