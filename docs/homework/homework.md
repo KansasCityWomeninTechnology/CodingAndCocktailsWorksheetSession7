@@ -1,6 +1,13 @@
 # Homework {#homework}
 
-The more you practice, the more comfortable you’ll feel!  Work through the following tutorial on your own time at home to help cement the concepts in your brain.
+The more you practice, the more comfortable you’ll feel!  Work through the following tutorial on your own time at home to help reenforce what you learned. 
+
+{% hint style='tip' %}
+##### Hey Slacker!
+
+Remember, we're here to help.
+Join the KCWiT #codingandcocktails Slack Channel: [kcwit.slack.com](http://kcwit.slack.com)
+{% endhint %}
 
 1. Push your work (with or without the bonuses) to Github & tell us in Slack, so we can celebrate together!
 
@@ -17,4 +24,3 @@ The more you practice, the more comfortable you’ll feel!  Work through the fol
     * [Eloquent JavaScript](http://eloquentjavascript.net/)
 
 
-[![](/images/slack.png)](http://kcwit.slack.com)

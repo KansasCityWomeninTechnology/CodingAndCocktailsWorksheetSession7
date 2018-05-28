@@ -1,0 +1,1 @@
+1. Call fetch api and console log

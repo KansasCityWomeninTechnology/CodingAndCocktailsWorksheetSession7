@@ -1,6 +1,6 @@
-# Coding & Cocktails Session 7: JavaScript 102
+# Coding & Cocktails Session 7: JavaScript Like a Boss
 
-The `docs` directory contains worksheets for Coding & Cocktails session 7 published on Gitbooks: [Coding & Cocktails - Session 7: Programming Concepts 102: Deeper Dive into JavaScript](https://codingandcocktailskc.gitbooks.io/session-7-programming-fundamentals-102-js/content/).
+The `docs` directory contains worksheets for Coding & Cocktails session 7 published on Gitbooks: [Coding & Cocktails - Session 7: Programming Concepts 102: JavaScript Like a Boss](https://codingandcocktailskc.gitbooks.io/session-7-programming-fundamentals-102-js/content/).
 
 ## Getting Going
 

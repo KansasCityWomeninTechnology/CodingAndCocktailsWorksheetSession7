@@ -1,9 +1,19 @@
 # Summary
 
 * [Overview](README.md)
-* [Part 1: Review & Conditionals](project/part_1.md)
-* [Part 2: Loops, Arrays, and Objects](project/part_2.md)
-* [Part 3: APIs](/project/part-3-apis.md)
-* [Bonus: Templates & Bugs](project/bonus_section.md)
-* [Homework](homework.md)
-* [Survey](survey.md)
+* [Setup Instructions](setup/README.md)
+
+### Worksheet 
+* [Review and DOM Manipulation](ws1-dom/README.md)
+* [Events](ws2-events/README.md)
+* [Objects and Scope](ws3-scope/README.md)
+* [APIs](ws4-fetch/README.md)
+* [Templates](ws5-templates/README.md)
+* [Quiz](quiz.md)
+
+### Bonus
+* [Templates- Handlebars](homework/handlebars.md)
+* [Homework](homework/homework.md) 
+
+----
+* [References & Shortcuts](references/README.md)
