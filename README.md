@@ -1,32 +1,29 @@
-<div>
-    <img src="/images/image02.png" style="float: left; margin: 0px 15px 15px 0px; height:250px;">
-    <h1 style="display:inline-block;margin-top:2.75em;">Coding &amp; Cocktails Session 7:</h1>
-    <h2 style="margin-top:0;margin-bottom:2.75em;">Programming Concepts 102: A deeper dive into JavaScript</h2>
-</div>
-<hr>
+# Coding & Cocktails Session 7: JavaScript 102
 
-### Overview {#overview}
+The `docs` directory contains worksheets for Coding & Cocktails session 7 published on Gitbooks: [Coding & Cocktails - Session 7: Programming Concepts 102: Deeper Dive into JavaScript](https://codingandcocktailskc.gitbooks.io/session-7-programming-fundamentals-102-js/content/).
 
-Tonight we discussed some common programming concepts found in the JavaScript programming language.  Many of these concepts are shared across programming languages but the syntax (the format for how you write or utilize a specific concept) may differ slightly from language to language. You will utilize these concepts often as you write code so practice with them will help a lot!
+## Getting Going
 
-{% hint style='danger' %}
-While following along with the worksheet, type out the commands instead of doing a copy & paste (_unless instructed to copy & paste_) to avoid inadvertently using any incorrect characters.
-{% endhint %}
+```bash
+npm install
+npm run docs:install
+```
+To serve Gitbook, `npm start`.
+To build without serving, `npm run docs:build`.
 
-### Helpful Keyboard Shortcuts
-|Command|Mac Key Combination|Windows Key Combination|
-|--|--|--|
-|Cut|`cmd` + `x`|`ctrl` + `x`|
-|Copy|`cmd` + `c`|`ctrl` + `c`|
-|Paste|`cmd` + `v`|`ctrl` + `v`|
-|Undo|`cmd` + `z`|`ctrl` + `z`|
-|Redo|`cmd` + `y`|`ctrl` + `y`|
-|Save|`cmd` + `s`|`ctrl` + `s`|
-|Select all|`cmd` + `a`|`ctrl` + `a`|
-|Find|`cmd` + `f`|`ctrl` + `f`|
-|Switch between open apps/programs |`cmd` + `tab`|`alt` + `tab`|
-|Switch between programs on the taskbar| N/A | `windows key` + `tab`|
-|Switch between Chrome windows. |`shift` + `cmd` + `~`| N/A |
+## Associated Repos
+ 
+
+## Associated CodePens 
 
 
-[![](/images/glossary.png)](http://bit.ly/CnCgloss) [![](/images/tools.png)](http://bit.ly/CnCTools)
+## TODO
+- [ ] 2018 updates!
+- [ ] Update GitBook Title (make sure it doesn't affect URL)
+- [ ] Update codepens
+- [ ] Update drink order app repo as needed
+
+## License
+![](https://lh6.googleusercontent.com/osprAumZLusoNUcKnPtOWMijWYLZ8ydrUS0gMTvMCoyhSVBd69InqiXqQjc7fH8iQiVbZLXvyyvPZXwKjeyHuPnrd2zJT1mYLa1WoziryvxOo0q7nvMnpfeeVPBgfqW0bnp1--wa)![](https://lh5.googleusercontent.com/AZZipN4uXuU6FkxA0zLbrq9EwMhky22oNI8UtjQ2-Kgzy64Jmbij_IKUwXDcqGjnHWSMg9h3ii2Dx_SLI871nVn56NyF1VnmDbkEL2m9sJ_9YYGpNC8kdiYepai1jAZLEWWt8iTW)![](https://lh6.googleusercontent.com/GSxH81qYzBJkBR39GbviwKcwxem0RbN8XTx_6BOHgziQ6OomnG-au25ZSdiNQ4rX2p2HanRGa8_SzTPhJ3SKW-Vrs6fJ8N9s0FLq1EVSwUZXrLZuUVONachwFWwqTr6PMpn1csnu)
+
+This work is licensed by [http://kcwomenintech.org/](http://kcwomenintech.org/) under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
