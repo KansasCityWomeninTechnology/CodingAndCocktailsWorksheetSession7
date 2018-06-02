@@ -1,10 +1,19 @@
 # A Deeper Dive into JavaScript {#top}
 We will start by practicing JavaScript fundamentals and diving deeper into DOM manipulation before we explore new concepts such as events, objects, and APIs. JavaScript is one of many programming languages used for application development.
 
+Tonight we will create an web application with interactive elements and dynamic content that looks like this: JAD TODO: ADD PICTURE
+![](images/completed.png)
+
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
 {% hint style='danger' %}
 Before starting the worksheet, please take a moment to review [Setup instructions](/setup) to ensure you have all the tools and workspace setup you need for tonight's work.
+{% endhint %}
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+{% hint style='danger' %}
+If you are using a Chromebook, please skip to the [Chromebook instructions](#chromebook-instructions) below!
 {% endhint %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
@@ -14,14 +23,18 @@ This section will help guide you through the following steps:
 {% include "./instruction-steps.html" %}
 
 
-## Declare variables and assign values {#variables} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+## Prepare your workspace and serve your web page {#prepare} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 {% include "./1prepare.md" %}
 
-## Explore type comparisons and equality operators {#types} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Logical operations are the basis of computer programming. Explore types, arithmetic operations, and equality comparison.
+## Create a function and update the text of an element {#text} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+We'll write a function that updates the DOM dynamically with text
 {% include "./2elementvalue.md" %}
 
-{% include "./3updatedom.md" %}
+## Add a counter and update the DOM element text {#counter} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+{% include "./3counter.md" %}
+
+## Add conditional logic to display an alert {#conditional} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+{% include "./4conditional.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 

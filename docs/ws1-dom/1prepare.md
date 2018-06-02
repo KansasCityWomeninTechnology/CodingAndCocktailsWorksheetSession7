@@ -1,14 +1,14 @@
-1. Using Chrome, download the zip file [ALISA UPDATE from the GitHub repo](https://github.com/KansasCityWomeninTechnology/javascript-101/archive/master.zip) and extract the contents to "CodingAndCocktails/JavaScriptSomething" folder.
+1. Using Chrome, download the zip file [ALISA UPDATE from the GitHub repo](https://github.com/KansasCityWomeninTechnology/javascript-101/archive/master.zip) and extract the contents to "CodingAndCocktails/JavaScriptBasics folder.
    {% hint style='danger' %}
-If you don't have a "CodingAndCocktails/JavaScriptSomething" folder, take a moment to [set up your workspace](/setup).
+If you don't have a "CodingAndCocktails/JavaScriptBasics" folder, take a moment to [set up your workspace](/setup).
    {% endhint %}   
 
-1. Open the "JavaScriptSomething" folder in Atom.
+1. Open the "JavaScriptSomething102" folder in Atom.
    {% hint style='tip' %}
 To open the folder in Atom, follow the instructions below:
    1. Open Atom 
    2. Select **File** <i class="fa fa-long-arrow-right"></i> **Open Folder**
-   3. Navigate to and select "JavaScriptSomething" folder
+   3. Navigate to and select "JavaScriptSomething102" folder
 
    You can close all tabs except for _index.html_ and _scripts.js_.
   {% endhint %}   
