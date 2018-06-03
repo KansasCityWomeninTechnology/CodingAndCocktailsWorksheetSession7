@@ -10,7 +10,7 @@ To open the folder in Atom, follow the instructions below:
    2. Select **File** <i class="fa fa-long-arrow-right"></i> **Open Folder**
    3. Navigate to and select "JavaScriptSomething102" folder
 
-   You can close all tabs except for _index.html_ and _scripts.js_.
+   You can close all tabs that Atom displays. Open _index.html_ and _my-script.js_ located in the "assets/scripts" folder. We will use both files tonight.
   {% endhint %}   
 
 1. We will use the atom-live-server package we installed to serve the _index.html_. This package opens up the web page in your default browser and reload the page whenever you save files. Start the live server by selecting **Packages** <i class="fa fa-long-arrow-right"></i> **atom-live-server**. Select **Start server**. A browser tab will open.

@@ -42,12 +42,10 @@ Compare your _scripts.js_ against the answer key for your work so far. It might 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
 ## References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-[MDN Reference: Variable assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
+[MDN Reference: fetch](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)
 
-[MDN Reference: Arithemetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Arithmetic)
+[MDN Reference: Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
-[MDN Reference: if else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-
-[Chrome DevTools JavaScript Debugging Reference](https://developers.google.com/web/tools/chrome-devtools/javascript/reference)
+[Chrome DevTools Network Reference](https://developers.google.com/web/tools/chrome-devtools/network-performance/reference)
 
 

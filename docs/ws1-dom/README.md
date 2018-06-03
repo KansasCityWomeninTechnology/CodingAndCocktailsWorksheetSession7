@@ -49,9 +49,13 @@ Compare your _scripts.js_ against the answer key for your work so far. It might 
 ## References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 [What is a programming language video](https://vimeo.com/250067069)
 
-[JavaScript data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+[MDN Reference: Document API's getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
-[JavaScript operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
+[MDN Reference: Document API's querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+
+[MDN Reference: Function](https://developer.mozilla.org/en-US/docs/Glossary/Function)
+
+[MDN Reference: Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
