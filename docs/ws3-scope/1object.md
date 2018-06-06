@@ -15,11 +15,19 @@ const cocktails = [{
 }];
    ```
    {% hint style='info' %}
-Everything inside the `{}` is part of the object. The curly braces help group like code statements together. We know the difference between objects and functions by the way we declare it. `const myObject = {};` is an object and `const myFunction = function(){};` is a function. The arrow syntax is also a function declaration.
+Everything inside the `{}` is part of the object. The curly braces help group code statements together. We know the difference between objects and functions by the way we declare it. `const myObject = {};` is an object and `const myFunction = function(){};` is a function.
+
+Objects contain key-value pairs like this:
+```javascript
+{
+          "key": "value",
+          "anotherKey": "Another Value"
+}
+```
    {% endhint %}
 
 1. Populate the rest of the `cocktails` array with the list of the available drinks. Copy and paste the following code snippet to replace the cocktails array declaration to avoid typing fatigue. 
-```javascript
+   ```javascript
 const cocktails = [{
         'id': 'focusedLady',
         'label': 'Focused Lady'
@@ -53,7 +61,10 @@ const cocktails = [{
         'label': 'Focused the Mostest'
     },
 ];
-```
+   ```
+   {% hint style='info' %}
+Notice commas separate array elements.
+   {% endhint %}
 
 1. In Atom, open _index.html_ and find the div containing the drink list. Comment out all the drinks. Save your _index.html_. We no longer see the drink list in Chrome and our web page is broken for the moment.
    {% hint style='working' %}

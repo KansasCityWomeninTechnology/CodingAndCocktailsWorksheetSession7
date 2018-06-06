@@ -14,18 +14,25 @@ this.drinkList.forEach( (drink) => {
 });
    ```
 
-1. We're back in business. Let's build that drink menu out. We have to build out the same HTML we commented out previously in code. Inside the `forEach`, remove the console log. Create a new `label` element and assign it to a variable. Add the "radio" class to it by typing the following code
+1. We're back in business. Let's build that drink menu out. We have to build out the same HTML we commented out previously in code. Inside the `forEach`, remove the console log. Create a new `label` element and assign it to a variable by typing the following code
    ```javascript
 let labelNode = document.createElement('label');
-labelNode.className = 'radio';
    ```
+   {% hint style='working' %}
+Our goal is to build a HTML element structure that looks like what you commented out in the HTML using JavaScript for each drink object in the array. We want to create something that looks like this using the drink's name and id:
+```javascript
+<label class="radio" for="focusedLady">
+      <input type="radio" id="focusedLady" name="drink" value="Focused Lady"> Focused Lady
+</label>
+```
+   {% endhint %}
 
 1. We want a way to tie the radio button to the id of the drink we can do this by setting the attribute "for" and adding the id of the drink to it. This is it for the parent `label` tag. Add the following line code right after setting `className`
    ```javascript
 labelNode.setAttribute('for', drink.id);
    ```
    {% hint style='info' %}
-Notice we're access the 'id' property of the array element.
+Notice we're accessing the 'id' property of the array element. The `for` attribute connects the visible label element to the input's `id` attribute. We are tying these two elements together using the drink id.
    {% endhint %}
 
 1. Next we need to build the inner `<input>` element. After the `setAttribute` call, create a new element for `input` and assign it to a variable called `radioNode`. 
@@ -45,6 +52,9 @@ radioNode.name = 'drink';
 radioNode.setAttribute('type', 'radio');
 radioNode.setAttribute('value', drink.label);
    ```
+   {% hint style='info' %}
+The input element is a radio button, so we add the `type` attribute and set it to `radio`. The `id` ties the radio button, the label, and the drink object together. The `name` is 'drink' for all elements. This ensures a user can select only one radio button at a time. Finally, the `value` attribute contains the drink object's label and helps display formatted text. 
+   {% endhint %}
 
 1. Create the text node for the label and assign it to a variable called `textNode`.
    {% hint style='working' %}
@@ -52,7 +62,7 @@ radioNode.setAttribute('value', drink.label);
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-Add <code>const textNode = document.createTextNode(drink.label);</code> after the previous <code>setAttribute</code> call in the <code>forEach</code>.
+Add <code>const textNode = document.createTextNode(drink.label);</code> after the previous <code>setAttribute</code> call in the <code>forEach</code> to add the text for the drink name.
 </details>
    {% endhint %}
 
@@ -61,6 +71,9 @@ Add <code>const textNode = document.createTextNode(drink.label);</code> after th
 labelNode.appendChild(radioNode);
 labelNode.appendChild(textNode);
    ``` 
+   {% hint style='info' %}
+We are enclosing the radio button and the text inside the label to build the nested HTML element structure.
+   {% endhint %}
 
 1. Now we need to add `labelNode` to the DOM. We can do so by building a separate DOM from the application via DocumentFragment. Inside the `buildDrinkMenu` function before the `forEach` call, declare a new variable
    ```javascript
@@ -77,6 +90,6 @@ Building up a separate DOM and adding it to our main DOM tree when complete resu
 document.querySelector('.radio-group').appendChild(fragment);
    ```
    {% hint style='info' %}
-Why go through this effort instead of adding the drink list to the HTML? It's easier to add new drinks and edit the menu items. There are Javascript frameworks to help with making this process easier.
+Why go through this effort instead of adding the drink list to the HTML? Because it's easier to add new drinks and edit the menu items. There are Javascript frameworks to help with making this process easier.
    {% endhint %}
 
