@@ -27,13 +27,15 @@ This section will help guide you through the following steps:
 {% include "./1prepare.md" %}
 
 ## Create a function and update the text of an element {#text} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-We'll write a function that updates the DOM dynamically with text
+We'll write a function that updates the DOM dynamically with text.
 {% include "./2elementvalue.md" %}
 
 ## Add a counter and update the DOM element text {#counter} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+We'll practice using variables and arithmetic operators to add a counter and update the DOM. 
 {% include "./3counter.md" %}
 
 ## Add conditional logic to display an alert {#conditional} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+We want to conditionally display an alert by using `if` and `else` to control code flow.
 {% include "./4conditional.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->

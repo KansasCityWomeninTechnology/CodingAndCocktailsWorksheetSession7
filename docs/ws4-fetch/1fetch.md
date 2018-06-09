@@ -8,34 +8,38 @@ Add <code>const fetchImage = () => {}; </code> after the <code>updateOrderCount<
 </details>
    {% endhint %}
 
-1. Inside the `if` statement in `submitOrder` function, add a call to `fetchImage();` before create the node.
+1. Inside the `if` statement in `submitOrder` function, add a call to `fetchImage();` before creating the node.
 
-1. Inside the `fetchImage` function, declare a new `const` variable called `url`. Assign the value to 'https://source.unsplash.com/collection/2187331/300x200'.
-   ```javascript
-const fetchImage = () => {
-    const url = 'https://source.unsplash.com/collection/2187331';
-};
-   ```
-1. Call `fetch` with the `url` as a parameter.
-   {% hint style='working' %}
-<details>
-<summary>
-Need a little help? Expand this section for guidance. 
-</summary> 
-Add <code>fetch(url);</code> after the <code>url</code> declaration in the function.
-</details>
+1. Inside the `fetchImage` function, declare a new `const` variable called `url`. Assign the value to 'https://jsonplaceholder.typicode.com/photos/1'.
+   {% hint style='info' %}
+Let's break down the parts of the URL.
+
+**Scheme**- `http` or `https`- Most APIs use `https` for security reasons and uses encryption under the covers.
+
+**Host**- `jsonplaceholder.typicode.com`- This is the main domain of the URL.
+
+**Path**- `/photos`- This is a unique endpoint to retrieve the resource. JSONPlaceholder also has endpoints for `/users`, `/todos`, `/albums`, among others.
    {% endhint %}
-
-1. In DevTools, open the **Network** tab. Press ![](images/clear-requests.png) **Clear** button to clear out any existing network requests. Place a drink order and click the order button. You'll see network requests made. Click on the line that has the word "photo". You see tabs for **Headers**, **Preview**, **Response**, and **Timing**. You can click on those tabs to see different information about the request.
 
 1. Let's add in the remaining code we need to use `fetch()`. Back in _my-script.js_ replace the exiting `fetch(url);` call with the following code with console logging built in.
    ```javascript
 fetch(url)
-      .then((response) => { return response.blob(); })
-      .then((blob) => {
-            console.log(blob);
+      .then((response) => { return response.json(); })
+      .then((json) => {
+            console.log(json);
        })
        .catch( (error) => { console.log(error); });
    ```
+  {% hint style='working' %}
+Let's walk through what we did here.
 
-1. In Chrome, add a drink order and take a look at the console. Do you see a `Blob` object? Feel free to inspect the object.
+On the first line, we call `fetch` API built into JavaScript and pass in the `url` parameter we defined. The `fetch` API returns a **Promise** object.
+
+**Promises** allow you to work with objects **asynchronously** and used for control flow, much like an if/else statement. **Promises** have 2 methods available: `then` and `catch`. Check out the references to read more about Promises.
+
+When the `fetch` Promise resolves, we `then` process the Response we get by converting it to `json`. The output from `then` is another Promise. We `then` take the `json` output and log it to the console. In case of an error, we `catch` and log it out to the console.
+
+ECMAScript2017 now has `async` and `await` as new ways to work with **asynchronous** output and works alongside Promises. We'll learn more about `async` and `await` in a future session. 
+   {% endhint %}
+
+1. In Chrome, add a drink order and take a look at the console. Do you see a `json` object? It looks like the objects we created tonight with keys and values. Feel free to inspect the object in the console.

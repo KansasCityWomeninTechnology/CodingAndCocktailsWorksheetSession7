@@ -1,10 +1,10 @@
-1. Using Atom, open _my-script.js_. Two functions are already defined in the file. Find the `onclick` event handler on line 4. Place your cursor between the opening and closing curly brace and press `Enter`. Your code should look like this
+1. Using Atom, open _my-script.js_ in the "assets/scripts" folder. Two functions are already defined in the file. Find the `onclick` event handler on line 4. Place your cursor between the opening and closing curly brace and press `Enter`. Your code should look like this
    ```javascript
 document.getElementById('order-btn').onclick = function () {
 };
    ```
    {% hint style='info' %}
-The opening and closing curly brace signify the starting and ending boundaries for groups of code statements. All the code inside the curly brace are part of the same group. Code outside of the curly braces are not part of the group. In this case, all code inside the curly braces are part of a function and all code outside of the curly brace is outside of the function. You will see instructions to add code inside and outside functions tonights.
+The opening and closing curly brace signify the starting and ending boundaries for groups of code statements. All the code inside the curly brace are part of the same group. Code outside of the curly braces are not part of the group. In this case, all code inside the curly braces are part of a function and all code outside of the curly brace is not part of the function. You will see instructions to add code inside and outside functions tonights.
    {% endhint %}      
 
    {% hint style='tip' %}
@@ -65,11 +65,13 @@ We are passing the value as a parameter to the `submitOrder` function. We can no
 Need a little help? Expand this section for guidance. 
 </summary> 
 Change the <code>submitOrder</code> function to
+<pre>
 <code class="lang-javascript">
 const submitOrder = function (name) {
       alert(name);
 };
 </code>
+</pre>
 </details>
    {% endhint %}
 
@@ -85,5 +87,9 @@ document.querySelector('.order-details').innerHTML = name + " would like a drink
 We are using `document.querySelector` here instead of `document.getElementById`. We are querying for the class `order-details` instead of element id. The `Document` API has different ways to find and access elements from the DOM depending on what you are trying to access and how many elements fit the criteria of the search. Check out the references for the section to read more about the different ways to access elements in the DOM. 
   {% endhint %}   
 
+1. In Chrome, try adding your name and click the order button. Do you see your name added to the web page?
+   {% hint style='tip' %}
+You will use Atom to type code statements and Chrome to verify your work when your web page reloads. Don't forget to save _my-script.js_ every time you type a code statement.
+   {% endhint %}
 
 

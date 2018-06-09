@@ -24,11 +24,11 @@ This section will help guide you through the following steps:
 
 
 ## Use fetch() to retrieve an image {#fetch} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-We will call the API using fetch and log out the response.
+We will call an API using `fetch` and log out the `json` response.
 {% include "./1fetch.md" %}
 
 ## Connect the image to the DOM {#image} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Let's add the image to the web page.
+Now let's try fetching an image and add the image to the web page.
 {% include "./2image.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
@@ -45,6 +45,10 @@ Compare your _scripts.js_ against the answer key for your work so far. It might 
 [MDN Reference: fetch](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)
 
 [MDN Reference: Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+[MDN Reference: JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
+
+[MDN Reference: Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)
 
 [Chrome DevTools Network Reference](https://developers.google.com/web/tools/chrome-devtools/network-performance/reference)
 

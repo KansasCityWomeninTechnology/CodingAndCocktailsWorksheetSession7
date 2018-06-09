@@ -31,7 +31,7 @@ Make sure to check your email and follow instructions from CodePen to complete t
 
 ## Create a folder for tonight's work
 
-Create a folder named "JavaScriptBasics" in your "CodingAndCocktails" folder by following the steps below
+Create a folder named "JavaScript102" in your "CodingAndCocktails" folder by following the steps below
 
 1. In your terminal, navigate to your home directory by typing the instructions for your OS and press `Enter`.
 
@@ -41,9 +41,9 @@ cd ~/CodingAndCocktails
 cd %USERPROFILE%/CodingAndCocktails
    {%- endcodetabs %}
 
-1. Type `mkdir JavaScriptBasics` and press `Enter`.
+1. Type `mkdir JavaScript102` and press `Enter`.
 
-1. Navigate into the "JavaScriptBasics" directory by typing `cd JavaScriptBasics` and pressing `Enter`.
+1. Navigate into the "JavaScript102" directory by typing `cd JavaScript102` and pressing `Enter`.
 
 
 ## Helpful tips as you work through the worksheet {#tips}

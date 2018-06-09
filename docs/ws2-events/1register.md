@@ -5,7 +5,7 @@ document.getElementById('order-btn').addEventListener('click', function () {
 });
    ```
    {% hint style='info' %}
-We are adding an event lister for 'click' events onto the DOM element with the id 'order-btn'. Upon clicking, we want the function to execute. The advantage of using `addEventListener` instead of `onclick` is that we can dynamically add and remove event listeners. We can also add mutiple listeners for the same event.
+We are adding an event listener for 'click' events onto the DOM element with the id 'order-btn'. Upon clicking, we want the function to execute. The advantage of using `addEventListener` instead of `onclick` is that we can dynamically add and remove event listeners. We can also add mutiple listeners for the same event.
    {% endhint %}
 
 1. Let's add another listener to the same event. Place your cursor after the `;` on the `document.getElementById('order-btn')` call and press `Enter`. Add another event listener for the same element id but this time log "second click handler" to the console. Your code should look like this

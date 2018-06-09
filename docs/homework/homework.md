@@ -11,7 +11,7 @@ Join the KCWiT #codingandcocktails Slack Channel: [kcwit.slack.com](http://kcwit
 
 1. Push your work (with or without the bonuses) to Github & tell us in Slack, so we can celebrate together!
 
-2. In the worksheet, we use Giphy's `/gifs/random` endpoint. Try using one of the [other endpoints](https://developers.giphy.com/docs/#technical-documentation).
+2. In the worksheet, we use Unsplash random image from a collection and a specific photo endpoint. Try the other free endpoints by following their documentation [https://source.unsplash.com/](https://source.unsplash.com/).
 
 3. Fork the [CodePen](https://codepen.io/CodingCocktailsKC/pen/ZyBRbw) from the presentation for Ron Swanson quotes and change the number of quotes returned, adjust the HTML and add some CSS. Share it in Slack!
 

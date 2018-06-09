@@ -89,12 +89,12 @@ const menu = {}
 Notice there's no semicolons after object declarations.
    {% endhint %}
 
-1. We want to declare the `cocktails` array inside the `menu` object. Place your cursor between the opening and closing curly brace for the `menu` object and press `Enter`. Create a new property called 'drinkList' and paste the array as the value of the property. Your `menu` code should look like this
+1. We want to declare the `cocktails` array inside the `menu` object. Place your cursor between the opening and closing curly brace for the `menu` object and press `Enter`. Create a new property called 'drinkArray' and paste the array as the value of the property. Your `menu` code should look like this
    ```javascript
 const menu = {
 
     // 3.1.6
-    drinkList: [{
+    drinkArray: [{
             'id': 'focusedLady',
             'label': 'Focused Lady'
         },
@@ -129,11 +129,14 @@ const menu = {
     ],
 }
    ```
+   {% hint style="info" %}
+Notice a comma replaces the semicolon after the array declaration and we're not using single quotes for the property name this time.
+   {% endhint %}
 
 1. Add a new property to the `menu` object called `buildDrinkMenu` with a log to console. This will be a method on the object. A shortened version of the `menu` object will look like this
    ```javascript
 const menu = {
-    drinkList: [{
+    drinkArray: [{
             'id': 'focusedLady',
             'label': 'Focused Lady'
         },

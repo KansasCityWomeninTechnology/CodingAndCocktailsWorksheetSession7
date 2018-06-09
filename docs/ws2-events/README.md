@@ -13,7 +13,7 @@ Register an event listener on a click event.
 {% include "./1register.md" %}
 
 ## Build on to the DOM dynamically {#dom} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Append new elements to the DOM dynamically.
+Append new elements to the DOM programmatically.
 {% include "./2dom-manipulation.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->

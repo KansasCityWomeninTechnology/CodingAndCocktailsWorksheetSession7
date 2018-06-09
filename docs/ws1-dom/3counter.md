@@ -38,11 +38,13 @@ Check out the references in this section to learn more about functions.
 Need a little help? Expand this section for guidance. 
 </summary> 
 Change the <code>updateOrderCount</code> function to
+<pre>
 <code class="lang-javascript">
 const updateOrderCount = (count) => {
       document.getElementById('drink-count').innerHTML = "Drinks Ordered: " + count;
 };
 </code>
+</pre>
 </details>
    {% endhint %}
 

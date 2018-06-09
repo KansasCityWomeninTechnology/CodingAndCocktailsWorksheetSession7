@@ -1,15 +1,15 @@
-1. We explored scopes on variables, but we don't need `numberOfDrinks` in the `buildDrinkMenu` function. Delete all the code inside the function and replace it with `console.log(drinkList);`. Uh oh. We can't access `drinkList`?
+1. We explored scopes on variables, but we don't need `numberOfDrinks` in the `buildDrinkMenu` function. Delete all the code inside the function and replace it with `console.log(drinkArray);`. Uh oh. We can't access `drinkArray`?
 
-1. In `buildDrinkMenu` function, change the `console.log(drinkList);` to `console.log(this.drinkList);`. 😮
+1. In `buildDrinkMenu` function, change the `console.log(drinkArray);` to `console.log(this.drinkArray);`. 😮
 
-1. What is up that!? Let's change the log statement to `console.log(this);`. Log say "this" is the contents `menu` object. We can reference `drinkList` through it.
+1. What is up that!? Let's change the log statement to `console.log(this);`. Log say "this" is the contents `menu` object. We can reference `drinkArray` through it.
    {% hint style='working' %}
 The `this` keyword provides the context from which we are working. In this case, it's the `menu` object. What happens if you `console.log(this);` inside a click handler? What is the "this" context? 
    {% endhint %}
 
-1. Now that we know how to access `drinkList` from inside `buildDrinkMenu` function, iterate through the array and log each item out to the console. Your code will look like this
+1. Now that we know how to access `drinkArray` from inside `buildDrinkMenu` function, iterate through the array and log each item out to the console. Your code will look like this
    ```javascript
-this.drinkList.forEach( (drink) => {
+this.drinkArray.forEach( (drink) => {
       console.log(drink);
 });
    ```

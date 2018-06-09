@@ -13,8 +13,10 @@ You can also use template literals to evaluate expressions. Change `${count}` to
 Need a little help? Expand this section for guidance. 
 </summary> 
 Replace the string concatenation with 
+<pre>
 <code class="lang-javascript">
 const textNode = document.createTextNode(`${name} would like a ${drink}`);
 </code>
+</pre>
 </details>
    {% endhint %}
