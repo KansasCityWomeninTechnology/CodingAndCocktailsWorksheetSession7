@@ -21,7 +21,7 @@ Need a little help? Expand this section for guidance.
 Change the <code>if</code> statement to
 <pre>
 <code class="lang-javascript">
-if (numberOfDrinks < 5) {
+if (numberOfDrinks < 6) {
      document.querySelector('.order-details').innerHTML = name + " would like a drink!";
 } else {
     alert("Drink order queue is full. Please try ordering again in a few minutes.");

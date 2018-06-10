@@ -21,7 +21,7 @@ Let's break down the parts of the URL.
 **Path**- `/photos`- This is a unique endpoint to retrieve the resource. JSONPlaceholder also has endpoints for `/users`, `/todos`, `/albums`, among others.
    {% endhint %}
 
-1. Let's add in the remaining code we need to use `fetch()`. Back in _my-script.js_ replace the exiting `fetch(url);` call with the following code with console logging built in.
+1. Let's call `fetch()`. Add the following code to call `fetch` and log the output.
    ```javascript
 fetch(url)
       .then((response) => { return response.json(); })
@@ -42,4 +42,4 @@ When the `fetch` Promise resolves, we `then` process the Response we get by conv
 ECMAScript2017 now has `async` and `await` as new ways to work with **asynchronous** output and works alongside Promises. We'll learn more about `async` and `await` in a future session. 
    {% endhint %}
 
-1. In Chrome, add a drink order and take a look at the console. Do you see a `json` object? It looks like the objects we created tonight with keys and values. Feel free to inspect the object in the console.
+1. In Chrome, add a drink order and take a look at the console. Do you see a **JSON** object? It looks like the objects we created tonight with keys and values. Feel free to inspect the object in the console.

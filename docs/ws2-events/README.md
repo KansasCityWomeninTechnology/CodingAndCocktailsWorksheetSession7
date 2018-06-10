@@ -16,6 +16,8 @@ Register an event listener on a click event.
 Append new elements to the DOM programmatically.
 {% include "./2dom-manipulation.md" %}
 
+**You added dynamic content to your web page. Celebrate a toast with your neighbor!**
+
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
 

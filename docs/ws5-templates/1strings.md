@@ -1,7 +1,11 @@
-1. Inside the `updateOrderCount` function, update `innerHTML` text to use template literal instead of string concatenation by changing the string to
+1. Inside the `updateOrderCount` function, update `innerHTML` text to use template literal instead of string concatenation. Template literals use backticks (`\``) instead of quotes. Change the string to
    ```javascript
 `Drinks Ordered: ${count}`;
    ```
+   {% hint style='info' %}
+Remember to change the single quotes to backticks!
+   {% endhint %}
+
    {% hint style='working' %}
 You can also use template literals to evaluate expressions. Change `${count}` to `${count + 10}`. Try ordering a drink and watch what happens to "Drinks Ordered" count. 😲 Let's change it back to `${count}`.
    {% endhint %}

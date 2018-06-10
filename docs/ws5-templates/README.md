@@ -18,6 +18,12 @@ We'll find cocktail photos we like and add the photo ids to our drink objects. T
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
+**You made it! This is a tough worksheet and you crushed it!**
+
+![](https://media.giphy.com/media/qofGyifRrqQpy/giphy.gif)
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
 
 ## Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 Compare your _scripts.js_ against the answer key for your work so far. It might look a little different depending on spacing.  

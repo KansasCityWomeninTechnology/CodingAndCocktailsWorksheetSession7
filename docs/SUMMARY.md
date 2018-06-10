@@ -12,7 +12,7 @@
 * [Quiz](quiz.md)
 
 ### Bonus
-* [Templates- Handlebars](homework/bonus.md)
+* [Bug Fix & Enhancements](homework/bonus.md)
 * [Homework](homework/homework.md) 
 
 ----

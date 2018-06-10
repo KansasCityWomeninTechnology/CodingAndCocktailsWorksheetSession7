@@ -1,9 +1,17 @@
-1. Using Chrome, download the zip file [ALISA UPDATE from the GitHub repo](https://github.com/KansasCityWomeninTechnology/javascript-101/archive/master.zip) and extract the contents to "CodingAndCocktails/JavaScript102 folder.
+1. Using Chrome, download [the zip file from the GitHub repo](https://github.com/alisaduncan/javascript-102/archive/master.zip). Extract the contents and copy the _index.html_ and "assets" folder to "CodingAndCocktails/JavaScript102" folder. Your "CodingAndCocktails/JavaScript102" folder should contain the following files and folders
+   ```
+index.html
+assets
+     scripts
+          my-script.js
+     styles
+          main.css
+   ```
    {% hint style='danger' %}
 If you don't have a "CodingAndCocktails/JavaScript102" folder, take a moment to [set up your workspace](/setup).
    {% endhint %}   
 
-1. Open the "JavaScriptSomething102" folder in Atom.
+1. Open the "JavaScript102" folder in Atom.
    {% hint style='tip' %}
 To open the folder in Atom, follow the instructions below:
    1. Open Atom 

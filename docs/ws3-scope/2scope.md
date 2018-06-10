@@ -1,8 +1,13 @@
-1. Delete the `cocktails` array at the top of the _my-script.js_. 
-
-1. You now have an error in the console because the code we wrote to iterate over `cocktails` no longer works. You should see "Uncaught ReferenceError: cocktails is not defined". We need to change how we're accessing the array. Find the `cocktails.forEach` at the bottom of _my-script.js_ file and replace with `menu.drinkArray.forEach`.
+1. In Atom, open _my-script.js_ and navigate to the bottom of the file. Inside the `document.addEventListener("DOMContentLoaded", ...)` function, before the calls to register the event listeners for the order button, iterate over the `drinkArray` and log each element to the console using the following code
+   ```javascript
+menu.drinkArray.forEach( (item) => { console.log(item);});
+   ```
    {% hint style='info' %}
-We couldn't access `label` directly before, so the same principle holds true for accessing `drinkArray` in the `menu` object. The `drinkArray` property is available at object scope, not global scope.
+We can access properties inside objects using the `.` notation. The `drinkArray` property is available at object scope, not global scope.
+   {% endhint %}
+
+   {% hint style='working' %}
+The entire object in the array is logged out. What if you want to only log the `label` within each drink? How would you change your log statement to do so?
    {% endhint %}
 
 1. We'll have the `buildDrinkMenu()` iterate across the array and be response for building out the menu itself. Replace the call `menu.drinkArray.forEach` with `menu.buildDrinkMenu();`. You should see the log to the console say "inside buildDrinkMenu".
@@ -12,9 +17,11 @@ Defining responsibilities and grouping code for that purpose together helps make
 
 1. Inside the `buildDrinkMenu` function, change the `console.log()` to log out `numberOfDrinks` using `console.log(numberOfDrinks);`. We can access a variable declared at global scope inside our function scope.
 
-1. In the `buildDrinkMenu` function before the `console.log()`, declare a new variable called `numberOfDrinks` and set the value to 5. Notice the value logged. 
+1. In the `buildDrinkMenu` function before the `console.log()`, declare a new variable called `numberOfDrinks` and set the value to 5. Notice the value logged.  
    {% hint style="info" %}
-The local scope wins over global scope.
+The `let` syntax favors smallest scope. It creates a new variable with the same name but a different value and uses the new variable in place of the one declared at the global scope.
+
+To help write maintainable code, use the most restrictive scope you can. Doing so will help prevent you from inadvertently changing a variable or unintentionally changing functionality. 
    {% endhint %}
 
 1. Create a new function called `testLog` inside `buildDrinkMenu` after the `console.log()`. In the `testLog` function log `numberOfDrinks` variable again. We can access variables declared in parent's scope from the child function. Your `buildDrinkMenu` function looks like this
@@ -33,6 +40,3 @@ function () {
    {% hint style='tip' %}
 This is an example of nested functions.
    {% endhint %}
-
-
-

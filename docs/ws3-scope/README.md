@@ -24,6 +24,12 @@ The `this` keyword specifies the scope that we're in. We'll explore `this`, see 
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
+**You leveled up your JavaScript skills like a boss! Way to go!!**
+
+ ![](https://media.giphy.com/media/3o7TKx78XweLhgI52M/giphy.gif)
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
 
 ## Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 Compare your _scripts.js_ against the answer key for your work so far. It might look a little different depending on spacing.  
@@ -37,8 +43,9 @@ Compare your _scripts.js_ against the answer key for your work so far. It might 
 
 [MDN Reference: let keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
+[MDN Reference: var keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+
 [MDN Reference: this keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
 [MDN Reference: DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment)
-
 

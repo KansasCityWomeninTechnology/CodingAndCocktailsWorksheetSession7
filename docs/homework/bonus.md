@@ -49,7 +49,7 @@ orderName = orderName.trim();
 
 1. Try submitting an order with spaces as the name. A drink order didn't submit. Yay! We're getting closer! Now try submitting an order without the drink selected. Uh oh. We still see an error in the console: `Uncaught TypeError: Cannot read property 'id' of null`.
    {% hint style="working" %}
-Look at the code to query for the radio button. We use `document.querySelector('input[type="radio"]:checked').id`. But if we don't deselect a drink, the `querySelector` can't find any elements matching a checked radio button. The return from `querySelector()` where no elements match the criteria is `null`. We then try to get the `id` property of `null`. We need to check the element is not `null` before proceeding.
+Look at the code to query for the radio button. We use `document.querySelector('input[type="radio"]:checked').id`. But if we don't select a drink, the `querySelector` can't find any elements matching a checked radio button. The return from `querySelector()` where no elements match the criteria is `null`. We then try to get the `id` property of `null`. We need to check the element is not `null` before proceeding.
    {% endhint %}
 
 1. Change the variable name `drinkId` to `drinkElement` and remove the call to get the `id` property.
@@ -149,3 +149,8 @@ drinkArray.forEach( (drink) => {
 
 1. Does the drink menu show a subset of the drink array? Great job!!
 
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+**Way to stick with it!!**
+
+![](https://media.giphy.com/media/QvBPuk3difuYU/giphy.gif)

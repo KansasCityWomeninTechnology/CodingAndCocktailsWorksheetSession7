@@ -40,6 +40,14 @@ We want to conditionally display an alert by using `if` and `else` to control co
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
+**High Five!!**
+
+You got through a lot of concepts in a short amount time. Nice job!!! Time to grab a drink and celebrate!
+
+![](https://media.giphy.com/media/CW27AW0nlp5u0/giphy.gif)
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
 
 ## Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 Compare your _scripts.js_ against the answer key for your work so far. It might look a little different depending on spacing.  

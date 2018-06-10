@@ -22,7 +22,7 @@ document.getElementById('order-btn').addEventListener('click', function () {
 
 1. It's about time to add the drink name to the order list. Change the `submitOrder` function to take `drink` as a second parameter.
 
-1. We need to pass in the drink name into the `submitOrder` function. We can do that from the event listener function where we are passing in the order name, but the call to `submitOrder` is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first. Declare a variable called `orderName` inside the event handler function and assign it to the value of the form input. Your code should look like this
+1. We need to pass in the drink name into the `submitOrder` function. We can do that from the first 'order-btn' event listener function where we are passing in the order name, but the call to `submitOrder` is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first. Declare a variable called `orderName` inside the event handler function and assign it to the value of the form input. Your code should look like this
    ```javascript
 const orderName = document.getElementById('order-form-input').value;
    ```

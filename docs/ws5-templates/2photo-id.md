@@ -32,7 +32,7 @@ When we created the drink menu in the `buildDrinkMenu` method, we added drink's 
 
 1. Now that we have the `drinkId`, we can use it to lookup the menu's drink object. We can use a built in `find` method when working with arrays. In the `submitOrder` function, inside the `if` statement, before the call to `fetchImage` type the following code
    ```javascript
-const drinkObject = menu.drinkArray.find( (arrayElement) => { return arrayElementId == drinkId; });
+const drinkObject = menu.drinkArray.find( (arrayElement) => { return arrayElement.id == drinkId; });
     ```
    {% hint style="working" %}
 Let's talk through what's going on. We call `find` on `drinkArray`. The `find` method iterates over the array elements and returns the first element in the array that satisfies the condition defined in the callback function. We get the array element as a parameter and check if the array element strictly equals `drinkId`. Feel free to write to console or add debug the web app to see how this works.

@@ -31,6 +31,8 @@ We will call an API using `fetch` and log out the `json` response.
 Now let's try fetching an image and add the image to the web page.
 {% include "./2image.md" %}
 
+**Woohoo! Looking good!!**
+
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
 
