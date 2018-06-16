@@ -1,28 +1,41 @@
-1. We explored scopes on variables, but we don't need `numberOfDrinks` in the `buildDrinkMenu` function. Delete all the code inside the function and replace it with `console.log(drinkArray);`. Uh oh. We can't access `drinkArray`?
+1. We explored scopes on variables, but we don't need `numberOfDrinks` in the `buildDrinkMenu` function. Delete all the code inside the function and replace it with `console.log(drinkArray);`. The console log has an error stating "Uncaught ReferenceError: drinkArray is not defined". Uh oh. We can't access `drinkArray`?
 
 1. In `buildDrinkMenu` function, change the `console.log(drinkArray);` to `console.log(this.drinkArray);`. 😮
 
-1. What is up that!? Let's change the log statement to `console.log(this);`. Log say "this" is the contents `menu` object. We can reference `drinkArray` through it.
+1. What is up that!? Let's change the log statement to `console.log(this);`. The console log states that the output of "this" is the contents `menu` object. We see the `drinkArray` property with 8 elements in the array and the `buildDrinkMenu` function in the console log output. 
    {% hint style='working' %}
-The `this` keyword provides the context from which we are working. In this case, it's the `menu` object. What happens if you `console.log(this);` inside a click handler? What is the "this" context? 
+The `this` keyword provides the context from which we are working. In this case, it's the `menu` object. This is a tricky concept so you might need to explore a little to better understand what "this" is. What happens if you `console.log(this);` inside the second click handler? What is the "this" context? 
+
+Note you'll see an error from the first click handler, but you'll still see the console log statements from the second click handler.
+
+Arrow functions do not have its own `this` context so it's primarily used for small functions that don't require context complexity. 
    {% endhint %}
 
 1. Now that we know how to access `drinkArray` from inside `buildDrinkMenu` function, iterate through the array and log each item out to the console. Your code will look like this
    ```javascript
-this.drinkArray.forEach( (drink) => {
-      console.log(drink);
-});
+buildDrinkMenu: function () {
+      this.drinkArray.forEach( (drink) => {
+            console.log(drink);
+      });
+ }
    ```
 
-1. We're back in business. Let's build that drink menu out. We have to build out the same HTML we commented out previously in code. Inside the `forEach`, remove the console log. Create a new `label` element and assign it to a variable by typing the following code
+1. We're back in business. Let's build that drink menu out. We have to implement the code to build out the same HTML we commented out previously. Inside the `forEach`, remove the console log. Create a new `label` element and assign it to a variable by typing the following code
    ```javascript
 let labelNode = document.createElement('label');
    ```
    {% hint style='working' %}
 Our goal is to build a HTML element structure that looks like what you commented out in the HTML using JavaScript for each drink object in the array. We want to create something that looks like this using the drink's name and id:
-```javascript
-<label class="radio" for="focusedLady">
-      <input type="radio" id="focusedLady" name="drink" value="Focused Lady"> Focused Lady
+```html
+<label for="focusedLady">
+      <input type="radio" id="focusedLady" name="drink" value="Focused Lady">
+      Focused Lady
+</label>
+```
+
+We now have the following HTML
+```html
+<label>
 </label>
 ```
    {% endhint %}
@@ -33,6 +46,12 @@ labelNode.setAttribute('for', drink.id);
    ```
    {% hint style='info' %}
 Notice we're accessing the 'id' property of the array element. The `for` attribute connects the visible label element to the input's `id` attribute. We are tying these two elements together using the drink id.
+
+We now have
+```html
+<label for="focusedLady">
+</label>
+```
    {% endhint %}
 
 1. Next we need to build the inner `<input>` element. After the `setAttribute` call, create a new element for `input` and assign it to a variable called `radioNode`. 
@@ -54,6 +73,11 @@ radioNode.setAttribute('value', drink.label);
    ```
    {% hint style='info' %}
 The input element is a radio button, so we add the `type` attribute and set it to `radio`. The `id` ties the radio button, the label, and the drink object together. The `name` is 'drink' for all elements. This ensures a user can select only one radio button at a time. Finally, the `value` attribute contains the drink object's label and helps display formatted text. 
+
+We now have
+```html
+<input type="radio" id="focusedLady" name="drink" value="Focused Lady">
+```
    {% endhint %}
 
 1. Create the text node for the label and assign it to a variable called `textNode`.
@@ -62,7 +86,7 @@ The input element is a radio button, so we add the `type` attribute and set it t
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-Add <code>const textNode = document.createTextNode(drink.label);</code> after the previous <code>setAttribute</code> call in the <code>forEach</code> to add the text for the drink name.
+Add <code>const textNode = document.createTextNode(drink.label);</code> after the previous <code>setAttribute</code> call in the <code>forEach</code> to create a node with the text for the drink name.
 </details>
    {% endhint %}
 
@@ -72,15 +96,21 @@ labelNode.appendChild(radioNode);
 labelNode.appendChild(textNode);
    ``` 
    {% hint style='info' %}
-We are enclosing the radio button and the text inside the label to build the nested HTML element structure.
+We are enclosing the radio button and the text inside the label to build the nested HTML element structure that looks like this
+```html
+<label for="focusedLady">
+      <input type="radio" id="focusedLady" name="drink" value="Focused Lady">
+      Focused Lady
+</label>
+```
    {% endhint %}
 
-1. Now we need to add `labelNode` to the DOM. We can do so by building a separate DOM from the application via DocumentFragment. Inside the `buildDrinkMenu` function before the `forEach` call, declare a new variable
+1. Now we need to add `labelNode` to the DOM. We can do so by building a separate DOM from the application via **DocumentFragment**. Inside the `buildDrinkMenu` function before the `forEach` call, declare a new variable
    ```javascript
 let fragment = document.createDocumentFragment();
    ``` 
    {% hint style='info' %}
-Building up a separate DOM and adding it to our main DOM tree when complete results in better performance. We can use the Document and DocumentFragment API to do this.
+Building up a separate DOM and adding it to our main DOM tree when complete results in better performance. We can use the **Document** and **DocumentFragment** API to do this. Read more about **DocumentFragment** in the references for this section.
    {% endhint %}
 
 1. Inside the `forEach` call, add `fragment.appendChild(labelNode);` as the last line to add the labelNode to the fragment DOM.
@@ -92,4 +122,6 @@ document.querySelector('.radio-group').appendChild(fragment);
    {% hint style='info' %}
 Why go through this effort instead of adding the drink list to the HTML? Because it's easier to add new drinks and edit the menu items. There are Javascript frameworks to help with making this process easier.
    {% endhint %}
+
+1. Interact with your web app in Chrome. You should see the drink list and be able to place orders again!
 

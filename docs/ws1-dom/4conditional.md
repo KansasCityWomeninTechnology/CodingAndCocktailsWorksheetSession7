@@ -12,7 +12,7 @@ We can write the conditional logic using the '<=' operator. What would that look
 Notice the indention on the `document.querySelector()`. Indent everything inside the `if` statement to make it easier to read your code. Doing so helps your brain group logical units of code together at a glance!
    {% endhint %}
 
-1. In cases where there are more than 5 orders, we want to display an alert saying "Drink order queue is full. Please try ordering again in a few minutes." Add an else condition with an alert. 
+1. In cases where there are more than 5 orders, we want to display an alert. Add an else condition with an alert that says "Drink order queue is full. Please try ordering again in a few minutes."
    {% hint style='working' %}
 <details>
 <summary>

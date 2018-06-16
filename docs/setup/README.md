@@ -12,19 +12,12 @@ If you are using a Chromebook, please skip to the [Chromebook instructions](#chr
 
 ## Requirements for this session
 
-You will need the following for the worksheet:
+You will need the following tools for the worksheet:
 1. [Chrome browser](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-browser/)
 
 1. [Atom IDE](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/)
 
 1. [Install atom-live-server package](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/#required-plugins-for-javascript-sessions)
-
-1. [CodePen Account](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/user-accounts/#optional-accounts)
-   {% hint style='danger' %}
-Make sure to check your email and follow instructions from CodePen to complete the registration process. A completed registration provides access all the features we need for tonight's session.
-   {% endhint %}
-
-1. [Terminal for your OS](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-command-line/)
 
 1. [Coding & Cocktails folder](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tips-directory-structure/)
 
@@ -33,20 +26,17 @@ Make sure to check your email and follow instructions from CodePen to complete t
 
 Create a folder named "JavaScript102" in your "CodingAndCocktails" folder by following the steps below
 
-1. In your terminal, navigate to your home directory by typing the instructions for your OS and press `Enter`.
+1. Open a file explorer and navigate to your home directory.
+   {% hint style="tip" %}
+Your home directory is typically `/users/yourname` on a Mac or `C:/Users/yourname` on a Windows machine.
 
-   {% codetabs name="Mac", type="bash" -%} 
-cd ~/CodingAndCocktails
-   {%- language name="Windows", type="bash" -%} 
-cd %USERPROFILE%/CodingAndCocktails
-   {%- endcodetabs %}
+**Windows users**- You can navigate to your home directory by typing `%USERPROFILE%` in the file location bar and press `Enter`. 
+   {% endhint %}
 
-1. Type `mkdir JavaScript102` and press `Enter`.
-
-1. Navigate into the "JavaScript102" directory by typing `cd JavaScript102` and pressing `Enter`.
-
+1. Create a folder named "JavaScript102".
 
 ## Helpful tips as you work through the worksheet {#tips}
+
 {% hint style='tip' %}
 View the worksheet and your IDE in split screen. 
 

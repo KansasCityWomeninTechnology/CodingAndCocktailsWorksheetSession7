@@ -27,7 +27,7 @@ The atom-live-server package will automatically refresh the Chrome tab to keep t
 Save the file by navigating to **File** <i class="fa fa-long-arrow-right"></i> **Save** or by using the keyboard shortcut `cmd` + `s` for Macs and `ctrl` + `s` for Windows. Refer to [Helpful Keyboard Shortcuts](/references).
    {% endhint %}
 
-1. Now that we know the click handler works, let's get the value of the form input for the name of the order by adding the following code inside the function. Remove the alert. Your click handler function should look like this
+1. Now that we know the click handler works, let's get the value of the form input for the name of the order. In Atom, add the following code inside the `onclick` function and remove the alert. Your click handler function should look like this
    ```javascript
 document.getElementById('order-btn').onclick = function () {
       document.getElementById('order-form-input').value;
@@ -58,7 +58,7 @@ submitOrder(document.getElementById('order-form-input').value);
 We are passing the value as a parameter to the `submitOrder` function. We can now access the value of the form input in the `submitOrder` using the variable `name`. 
    {% endhint %}   
 
-1. To verify we wired it up correctly, let's alert on the `name` variable. Inside the `submitOrder` function, alert on `name`. Try testing this out to see the alert pop up.
+1. To verify we wired it up correctly, let's alert on the `name` variable. Inside the `submitOrder` function, alert on `name`. Try testing this out in Chrome to see the alert pop up.
    {% hint style='working' %}
 <details>
 <summary>
@@ -79,12 +79,12 @@ const submitOrder = function (name) {
 Notice we can leave the name blank. The value will be empty but the alert still displays with nothing inside.  
   {% endhint %}   
 
-1. Great! Now we can update the DOM with information about the order in the `submitOrder` function. We should also append extra text to their name so it sounds friendly. We can do this using **string concatenation**. Remove the alert message and replace it with
+1. Great! Now we can update the DOM with information about the order in the `submitOrder` function. We should also append extra text to their name so it sounds friendly. We can do this using **string concatenation**. In Atom, remove the alert message and replace it with
    ```javascript
 document.querySelector('.order-details').innerHTML = name + " would like a drink!";
    ```
   {% hint style='info' %}
-We are using `document.querySelector` here instead of `document.getElementById`. We are querying for the class `order-details` instead of element id. The `Document` API has different ways to find and access elements from the DOM depending on what you are trying to access and how many elements fit the criteria of the search. Check out the references for the section to read more about the different ways to access elements in the DOM. 
+We are using `document.querySelector` here instead of `document.getElementById`. We are querying for the class `order-details` instead of the element id. The `Document` API has different ways to find and access elements from the DOM depending on what you are trying to access and how many elements fit the criteria of the search. Check out the references for the section to read more about the different ways to access elements in the DOM. 
   {% endhint %}   
 
 1. In Chrome, try adding your name and click the order button. Do you see your name added to the web page?

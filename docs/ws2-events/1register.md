@@ -8,7 +8,7 @@ document.getElementById('order-btn').addEventListener('click', function () {
 We are adding an event listener for 'click' events onto the DOM element with the id 'order-btn'. Upon clicking, we want the function to execute. The advantage of using `addEventListener` instead of `onclick` is that we can dynamically add and remove event listeners. We can also add mutiple listeners for the same event.
    {% endhint %}
 
-1. Let's add another listener to the same event. Place your cursor after the `;` on the `document.getElementById('order-btn')` call and press `Enter`. Add another event listener for the same element id but this time log "second click handler" to the console. Your code should look like this
+1. Let's add another listener to the same event. After the `document.getElementById('order-btn')` function, press `Enter` to add a new line. Add another event listener for the same element id but this time log "second click handler" to the console. Your code should look like this
    ```javascript
 document.getElementById('order-btn').addEventListener('click', function () {
       submitOrder(document.getElementById('order-form-input').value);
@@ -22,7 +22,7 @@ document.getElementById('order-btn').addEventListener('click', function () {
 
 1. It's about time to add the drink name to the order list. Change the `submitOrder` function to take `drink` as a second parameter.
 
-1. We need to pass in the drink name into the `submitOrder` function. We can do that from the first 'order-btn' event listener function where we are passing in the order name, but the call to `submitOrder` is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first. Declare a variable called `orderName` inside the event handler function and assign it to the value of the form input. Your code should look like this
+1. We need to pass in the drink name into the `submitOrder` function. We can do that from the first 'order-btn' event listener function where we are passing in the order name, but the call to `submitOrder` is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first. Declare a variable called `orderName` inside the first event handler function and assign it to the value of the form input. Your code should look like this
    ```javascript
 const orderName = document.getElementById('order-form-input').value;
    ```
@@ -45,7 +45,7 @@ Change <code>submitOrder(document.getElementById('order-form-input').value);</co
 </details>
    {% endhint %}
 
-1. In the `submitOrder` function update the string concatenation `name + " would like a drink!"` to include the drink name.  to `name + " would like a " + drink`.
+1. In the `submitOrder` function update the string concatenation `name + " would like a drink!"` to include the drink name.
    {% hint style='working' %}
 <details>
 <summary>

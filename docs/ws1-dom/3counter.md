@@ -24,13 +24,17 @@ const updateOrderCount = (count) => {};
    {% hint style="info" %}
 In JavaScript, you can declare **functions** and **function expressions**. Function declarations use the syntax `function myFunction(){}` while function expressions use the syntax `const myFunction = function(){};`. In a function expression, you are assigning the function to a variable. This makes it easier to pass functions as parameters. We have been using **function expressions**.
 
-The arrow function is a shorthand hand way to write function expressions and is an ECMAScript 2015 standard.
+The arrow function is a shorthand hand way to write function expressions and is an ECMAScript 2015 standard. When you use arrow functions, you pass parameters in the open and close parenthesis, just the same as a regular function. The `=>` symbol signifies the keyword `function`. 
 
 Check out the references in this section to learn more about functions.
 
    {% endhint %}
 
-1. Inside the `updateOrderCount` function, update the `innerHTML` of the HTML that will display the order count. Search for the `<h2>` element in _index.html_ with the text "Drinks Ordered: 0" to find the element id to use in your function. Use string concatenation to build out the same string exception replace "0" with the count. You will update the function in _my-script.js_.
+1. Inside the `updateOrderCount` function, update the `innerHTML` of the HTML that displays the order count by using 
+   ```javascript
+document.getElementById('drink-count')   
+   ```
+   Use string concatenation to build out the string "Drinks Ordered: 0" except replace the "0" with the count.
 
    {% hint style='working' %}
 <details>
@@ -48,10 +52,20 @@ const updateOrderCount = (count) => {
 </details>
    {% endhint %}
 
-1. We need to call this new function so that we can see the drink count change. Call the `updateOrderCount` function as the last line of the `submitOrder` function, passing in the `numberOfDrinks` as a parameter. Your calling code should look like this
-   ```javascript
+1. We need to call this new function so that we can see the drink count change. Call the `updateOrderCount` function as the last line of the `submitOrder` function, passing in the `numberOfDrinks` as a parameter.
+   {% hint style='working' %}
+<details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+In <code>submitOrder</code> function add the following code as the last line of the function 
+<pre>
+<code class="lang-javascript">
 updateOrderCount(numberOfDrinks);
-   ```
+</code>
+</pre>
+</details>
+   {% endhint %}
 
 1. Click on the order button in Chrome. Do you see the drink counter change? 😎
 

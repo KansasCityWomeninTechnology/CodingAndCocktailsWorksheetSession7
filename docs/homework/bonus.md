@@ -18,7 +18,7 @@ You're getting ready to release the web page to your customer, Coding & Cocktail
 Don't forget to save your file after each code change to see your web page reload. If another browser opens, you can open Chrome and open a tab using the same URL as the other browser tab.
    {% endhint %}
 
-1. In _my-script.js_, inside the `click` event handler, wrap the call to `submitOrder` in an `if` statement. Add an equality check for `orderName` variable is not empty in the `if` condition.
+1. In _my-script.js_, inside the first `click` event handler, wrap the call to `submitOrder` in an `if` statement. Add an equality check for `orderName` variable is not empty in the `if` condition.
    {% hint style="working" %}
 <details>
 <summary>
@@ -36,15 +36,14 @@ if (orderName) {
    {% endhint %}
 
    {% hint style="tip" %}
-Remember, in JavaScript, `null` and `undefined` are considered **falsey**.
+Remember, in JavaScript, `null`, `undefined`, and empty strings are considered **falsey**.
    {% endhint %}
 
-1. Try submitting an order without the name. A drink order didn't submit. Yay! Now try submitting an order where the order only contains **whitespace** by using the spacebar to add one space in the order name. Uh oh.
+1. Try submitting an order without the name. A drink order didn't submit. Yay! Now try submitting an order where the order contains only **whitespace** by using the spacebar to add one space in the order name. Uh oh.
 
-1. We can use the built in `trim()` function to trim leading and trailing **whitespace** from user entry. The `trim()` function returns a new string without leading and trailing whitespace. Before the `if` statement, `trim` the `orderName` and set the result back to itself. Because we are modifying the variable, we need to change the `orderName` declaration to `let`. Your code will look like this
+1. We can use the built in `trim()` function to trim leading and trailing **whitespace** from user entry. The `trim()` function returns a new string without leading and trailing whitespace. We can add the call to `trim()` right after retrieving the value of the input element.Your code will look like this
    ```javascript
-let orderName = document.getElementById('order-form-input').value;
-orderName = orderName.trim();
+const orderName = document.getElementById('order-form-input').value.trim();
    ```
 
 1. Try submitting an order with spaces as the name. A drink order didn't submit. Yay! We're getting closer! Now try submitting an order without the drink selected. Uh oh. We still see an error in the console: `Uncaught TypeError: Cannot read property 'id' of null`.
@@ -116,10 +115,10 @@ Don't forget the single quotes and a comma between the <code>photoId</code> prop
 </details>
    {% endhint %}
 
-1. In the `buildDrinkMenu` method we want to create a new array of drinks where `isAvailable == true`. We can do that using the built in `filter()` method on arrays. After the `fragment` variable declaration, but be before the `forEach`, create a new variable called `availableDrinks` and type the following code
+1. In the `buildDrinkMenu` method we want to create a new array of drinks where `isAvailable == true` and use that array to build the menu. We can do that using the built in `filter()` method on arrays. After the `fragment` variable declaration, but be before the `forEach`, create a new variable called `availableDrinks` and type the following code
    ```javascript
 const availableDrinks = this.drinkArray.filter( (arrayElement) => {
-      return arrayElement.isAvailable == true;
+      return arrayElement.isAvailable === true;
 });
    ```
    {% hint style="working" %}
@@ -154,3 +153,10 @@ drinkArray.forEach( (drink) => {
 **Way to stick with it!!**
 
 ![](https://media.giphy.com/media/QvBPuk3difuYU/giphy.gif)
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+
+## Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+Compare your _my-script.js_ against the answer key for your work so far. It might look a little different depending on spacing and photos you selected.  
+{% include "./checkpoint.html" %}

@@ -13,7 +13,13 @@ fetch(url)
        .catch( (error) => { console.log(error); });
    ```
 
-1. In DevTools, open the **Network** tab. Press ![](images/clear-requests.png) **Clear** button to clear out any existing network requests. Place a drink order and click the order button. You'll see network requests made. Click on the line that has the word "photo". You see tabs for **Headers**, **Preview**, **Response**, and **Timing**. You can click on those tabs to see different information about the request.
+1. In DevTools, open the **Network** tab. In this view we see all the requests the web page made. We can see where the _index.html_ loaded the assets such as _my-script.js_ and _main.css_ and the images references in the _index.html_ such as the logo.
+   
+   ![](images/network.png)
+
+1. We can clear existing requests to make it easy to capture the network calls we're interested in. Press ![](images/clear-requests.png) **Clear** button to clear out any existing network requests. Place a drink order and click the order button. You'll see network requests made. Click on the line that has the word "photo". You see tabs for **Headers**, **Preview**, **Response**, and **Timing**. You can click on those tabs to see different information about the request.
+
+   ![](images/request.png)
 
 1. In Chrome, add a drink order and take a look at the console. Do you see a `Blob` object? Feel free to inspect the object in the console.
    {% hint style="working" %}

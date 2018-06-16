@@ -9,7 +9,7 @@ Unless your web site is a static application, you will need to consume data from
 **Dynamic Application** - Website that uses a server-side language, or JavaScript & APIs, to retrieve content from other files or a database to populate the site's content. Data in the database can be updated by a Content Management System (CMS) like WordPress, or via API interaction. This _dynamically_ updates the content, without the author or the programmer having to edit or write new code.
 {% endhint %}
 
-There are various ways to access data from an API. We're going to use JavaScript's built-in **fetch** method. When a user enters an **order name** and submits the order in our app, we'll use the [Unsplash API](https://source.unsplash.com/) to fetch a image randomly. 
+There are various ways to access data from an API. We're going to use JavaScript's built-in **fetch** method. When a user enters an **order name** and submits the order in our app, we'll first call [JSONPlaceholder](http://jsonplaceholder.typicode.com/) API to inspect JSON results then convert to use the [Unsplash API](https://source.unsplash.com/) to fetch a image randomly. 
 
 {% hint style='info' %}
 You might hear other JavaScript programmers talk about using [XHR](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest) (**X**ML**H**ttp**R**equest) or jQuery's [AJAX](https://www.w3schools.com/xml/ajax_intro.asp) (**A**synchronous **J**avaScript **A**nd **X**ML) to interact with APIs. Those were methods we had to use prior to ECMAScript 2015 (ES6). When ES6 came out, it included a native method **[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)**, which was similar to jQuery's AJAX but doesn't require you to add a library like jQuery to use. You can use it in pure JavaScript!
@@ -37,7 +37,7 @@ Now let's try fetching an image and add the image to the web page.
 ## 
 
 ## Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Compare your _scripts.js_ against the answer key for your work so far. It might look a little different depending on spacing.  
+Compare your _my-script.js_ against the answer key for your work so far. It might look a little different depending on spacing.  
 {% include "./checkpoint.html" %}
 
 

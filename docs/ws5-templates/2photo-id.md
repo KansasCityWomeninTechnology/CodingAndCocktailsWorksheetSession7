@@ -1,6 +1,8 @@
 1. In Chrome, open a new tab to [https://unsplash.com/collections/2187331/cocktails](https://unsplash.com/collections/2187331/cocktails) to view all the cocktails in the collection we using in the `fetch` call. Click on an image of your choosing. 
 
 1. Notice the url changes to include the photo id `https://unsplash.com/photos/<PHOTO_ID>`. Copy the photo id. It will look like `eXdKs9d37Sc`.
+   
+   ![](images/photo-id.png)
 
 1. In _my-script.js_, add a new property to the first object in `drinkArray` by placing your cursor after the closing single quote on `'label': 'Focused Lady'`. Add a comma and press `Enter`. Add a new property called `photoId` using the photo id you copied. Your object will look like this
    ```javascript
@@ -18,7 +20,7 @@ You can add as many properties as you want on an object. Here is an example of t
 
 1. Find photos and add their `photoIds` to the remaining drink objects. 
 
-1. We now have the photo ids, but need a way to retrieve the `photoId`. We can do so if we access the drink object in the array. We can lookup array elements by their id. In the `click` event listener at the bottom of the file where you where you call `submitOrder`, change the variable `drinkName` to `drinkId` and pull the `id` property from the element. Your code will look like this
+1. We now have the photo ids, but need a way to retrieve the `photoId`. We can do so if we access the drink object in the array. We can lookup array elements by their id. In the first `click` event listener at the bottom of the file where you where you call `submitOrder`, change the variable `drinkName` to `drinkId` and pull the `id` property from the element. Your code will look like this
    ```javascript
 const drinkId = document.querySelector('input[type="radio"]:checked').id;
    ```
@@ -32,18 +34,20 @@ When we created the drink menu in the `buildDrinkMenu` method, we added drink's 
 
 1. Now that we have the `drinkId`, we can use it to lookup the menu's drink object. We can use a built in `find` method when working with arrays. In the `submitOrder` function, inside the `if` statement, before the call to `fetchImage` type the following code
    ```javascript
-const drinkObject = menu.drinkArray.find( (arrayElement) => { return arrayElement.id == drinkId; });
+const drinkObject = menu.drinkArray.find( (arrayElement) => { 
+      return arrayElement.id === drinkId; 
+});
     ```
    {% hint style="working" %}
-Let's talk through what's going on. We call `find` on `drinkArray`. The `find` method iterates over the array elements and returns the first element in the array that satisfies the condition defined in the callback function. We get the array element as a parameter and check if the array element strictly equals `drinkId`. Feel free to write to console or add debug the web app to see how this works.
+Let's talk through what's going on. We call `find` on `drinkArray`. The `find` method iterates over the array elements and returns the first element in the array that satisfies the condition defined in the `return` statement. We get the array element as a parameter and check if the array element strictly equals `drinkId`. Feel free to write to console or debug the web app to see how this works.
    {% endhint %}
 
-1. The `drinkObject` variable contains the drink object. Pass the drink's `photoId` into the `fetchImage` function. The call to the `fetchImage` function should look like this:
+1. The `drinkObject` variable contains the drink object. Pass the drink's `photoId` into the call to `fetchImage()` inside the `submitOrder` function. The call to the `fetchImage` function should look like this:
    ```javascript
 fetchImage(drinkObject.photoId);
    ```
 
-1. Before we forget, in the `submitOrder` function update the string template that builds the order details to use drink name. 
+1. Before we forget, in the `submitOrder` function update the string template that builds the order details to reference the `drinkObject`'s drink name. 
    {% hint style="working" %}
 <details>
 <summary>

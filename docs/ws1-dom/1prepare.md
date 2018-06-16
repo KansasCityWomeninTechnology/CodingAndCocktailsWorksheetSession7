@@ -1,12 +1,7 @@
-1. Using Chrome, download [the zip file from the GitHub repo](https://github.com/alisaduncan/javascript-102/archive/master.zip). Extract the contents and copy the _index.html_ and "assets" folder to "CodingAndCocktails/JavaScript102" folder. Your "CodingAndCocktails/JavaScript102" folder should contain the following files and folders
-   ```
-index.html
-assets
-     scripts
-          my-script.js
-     styles
-          main.css
-   ```
+1. Using Chrome, [download the zip file from the GitHub repo](https://github.com/KansasCityWomeninTechnology/javascript-102/archive/master.zip). Extract the contents and copy the _index.html_ and "assets" folder to "CodingAndCocktails/JavaScript102" folder. Your "JavaScript102" folder should contain the following files and folders
+
+   ![](images/files.png)
+
    {% hint style='danger' %}
 If you don't have a "CodingAndCocktails/JavaScript102" folder, take a moment to [set up your workspace](/setup).
    {% endhint %}   
@@ -16,7 +11,7 @@ If you don't have a "CodingAndCocktails/JavaScript102" folder, take a moment to 
 To open the folder in Atom, follow the instructions below:
    1. Open Atom 
    2. Select **File** <i class="fa fa-long-arrow-right"></i> **Open Folder**
-   3. Navigate to and select "JavaScript102" folder
+   3. Navigate to your "CodingAndCocktails" folder and select the "JavaScript102" folder
 
    You can close all tabs that Atom displays. Open _index.html_ and _my-script.js_ located in the "assets/scripts" folder. We will use both files tonight.
   {% endhint %}   

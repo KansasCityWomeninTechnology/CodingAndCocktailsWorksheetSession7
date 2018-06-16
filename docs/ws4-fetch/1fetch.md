@@ -18,10 +18,10 @@ Let's break down the parts of the URL.
 
 **Host**- `jsonplaceholder.typicode.com`- This is the main domain of the URL.
 
-**Path**- `/photos`- This is a unique endpoint to retrieve the resource. JSONPlaceholder also has endpoints for `/users`, `/todos`, `/albums`, among others.
+**Path**- `/photos/1`- This is a unique endpoint to retrieve the resource. JSONPlaceholder also has endpoints for `/users`, `/todos`, `/albums`, among others.
    {% endhint %}
 
-1. Let's call `fetch()`. Add the following code to call `fetch` and log the output.
+1. Let's call `fetch()`. Inside the `fetchImage` function, add the following code to call `fetch` and log the output.
    ```javascript
 fetch(url)
       .then((response) => { return response.json(); })
@@ -43,3 +43,5 @@ ECMAScript2017 now has `async` and `await` as new ways to work with **asynchrono
    {% endhint %}
 
 1. In Chrome, add a drink order and take a look at the console. Do you see a **JSON** object? It looks like the objects we created tonight with keys and values. Feel free to inspect the object in the console.
+
+   ![](images/json.png)

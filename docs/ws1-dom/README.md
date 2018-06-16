@@ -1,7 +1,8 @@
 # A Deeper Dive into JavaScript {#top}
 We will start by practicing JavaScript fundamentals and diving deeper into DOM manipulation before we explore new concepts such as events, objects, and APIs. JavaScript is one of many programming languages used for application development.
 
-Tonight we will create an web application with interactive elements and dynamic content that looks like this: JAD TODO: ADD PICTURE
+Tonight we will create an web application with interactive elements and dynamic content that looks like this: 
+
 ![](images/completed.png)
 
 <!-- trick markdown to give me a little space between these two sections of text -->
@@ -50,7 +51,7 @@ You got through a lot of concepts in a short amount time. Nice job!!! Time to gr
 ## 
 
 ## Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Compare your _scripts.js_ against the answer key for your work so far. It might look a little different depending on spacing.  
+Compare your _my-script.js_ against the answer key for your work so far. It might look a little different depending on spacing.  
 {% include "./checkpoint.html" %}
 
 
