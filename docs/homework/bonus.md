@@ -36,7 +36,7 @@ if (orderName) {
    {% endhint %}
 
    {% hint style="tip" %}
-Remember, in JavaScript, `null`, `undefined`, and empty strings are considered **falsey**.
+Remember, in JavaScript, `null`, `undefined`, and empty strings are **falsy**.
    {% endhint %}
 
 1. Try submitting an order without the name. A drink order didn't submit. Yay! Now try submitting an order where the order contains only **whitespace** by using the spacebar to add one space in the order name. Uh oh.
