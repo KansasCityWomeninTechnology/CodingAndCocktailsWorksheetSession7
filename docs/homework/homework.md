@@ -1,6 +1,6 @@
 # Homework {#homework}
 
-The more you practice, the more comfortable you’ll feel!  Work through the following tutorial on your own time at home to help reenforce what you learned. 
+The more you practice, the more comfortable you’ll feel!  Work through the following tutorial on your own time at home to help reinforce what you learned. 
 
 {% hint style='tip' %}
 ##### Hey Slacker!
