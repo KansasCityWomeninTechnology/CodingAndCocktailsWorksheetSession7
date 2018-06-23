@@ -11,7 +11,7 @@ Join the KCWiT #codingandcocktails Slack Channel: [kcwit.slack.com](http://kcwit
 
 
 ## Fix a bug by using equality and conditional logic
-You're getting ready to release the web page to your customer, Coding & Cocktails, and realize there's a bug! You can submit an order without a name and without selecting a drink order. Let's check to make sure a name and a drink order exists before submitting the order.
+You're getting ready to release the web page to your customer, Coding & Cocktails, and realize there's a bug! You can submit an order without a name. And if you submit an order without selecting a drink order, we see an error in the console. Let's check to make sure a name and a drink order exists before submitting the order.
 
 1. Open Atom and start atom-live-server. Open Chrome DevTools in the browser tab that atom-live-server opens.
    {% hint style="tip" %}
@@ -138,7 +138,7 @@ const availableDrinks = this.drinkArray.filter( (element) => {
       return element.isAvailable == true;
 });
 
-drinkArray.forEach( (drink) => {
+availableDrinks.forEach( (drink) => {
       ...
 });
 </code>

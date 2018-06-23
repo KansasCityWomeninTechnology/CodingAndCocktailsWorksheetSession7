@@ -1,20 +1,26 @@
-1. Inside the `if` statement in the `submitOrder` function, let's create new elements to append to the DOM. We want to create the following HTML in code:
+1. Inside the `if` statement in the `submitOrder` function, we'll programmatically new HTML elements to append to the DOM. Create an `<h3>` element and assign it to a variable using the following code as the first line inside the `if` statement.
+   ```javascript
+let node = document.createElement('h3');
+   ```
+   {% hint style="working" %}
+We want to create the following HTML using DOM manipulation
    ```html
 <h3>
        Ada Lovelace would like a Focused Lady
 </h3>
+<h3>
+       Grace Hopper would like a Nerdy Daiquiri
+</h3>
    ```
-Create an `<h3>` element and assign it to a variable using the following code as the first line inside the `if` statement.
-   ```javascript
-let node = document.createElement('h3');
-   ```
+   {% endhint %}
+
    {% hint style='info' %}
-We are using the `Document` API to create a new `<h3>` element and assigning it to the variable `node`. We're using `let` to assign the variable instead of `const` because we need to modify the element. Variable declared with `const` are for read-only use.
+We are using the `Document` API to create a new `<h3>` element and assigning it to the variable `node`. We're using `let` to assign the variable instead of `const` because we need to modify the element. Variables declared with `const` are for read-only use.
 
 We now have a structure that looks like `<h3></h3>`. There's no text inside yet.
    {% endhint %}
 
-1. Next, create a text node to house the text for the order detail using the code below. We can pass in the string concatenation to build the order detail into the text node.
+1. After creating the `<h3>` element, create a text node to house the text for the order detail using the code below. We can pass in the string concatenation to build the order detail into the text node.
    ```javascript
 const textNode = document.createTextNode(name + " would like a " + drink);
    ```
