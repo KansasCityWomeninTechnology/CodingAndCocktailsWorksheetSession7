@@ -8,15 +8,22 @@ document.getElementById('order-btn').addEventListener('click', function () {
 We are adding an event listener for 'click' events onto the DOM element with the id 'order-btn'. Upon clicking, we want the function to execute. The advantage of using `addEventListener` instead of `onclick` is that we can dynamically add and remove event listeners. We can also add mutiple listeners for the same event.
    {% endhint %}
 
-1. Let's add another listener to the same event. After the `document.getElementById('order-btn')` function, press `Enter` to add a new line. Add another event listener for the same element id but this time log "second click handler" to the console. Your code should look like this
-   ```javascript
-document.getElementById('order-btn').addEventListener('click', function () {
-      submitOrder(document.getElementById('order-form-input').value);
-});
+1. Let's add another listener to the same event. After the `document.getElementById('order-btn')` function, press `Enter` to add a new line. Add another event listener for the same element id but this time log "second click handler" to the console.
+      {% hint style='working' %}
+<details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Add
+<pre>
+<code class="lang-javascript">
 document.getElementById('order-btn').addEventListener('click', function () {
       console.log('second click handler');
 });
-   ```
+</code>
+</pre>
+</details>
+   {% endhint %}
 
 1. Double check that everything still works when you interact with the button in Chrome. Do you see the second event handler log in the console as well as changes to the DOM from the `submitOrder` function?
 
@@ -57,3 +64,6 @@ Change the <code>name + " would like a drink!"</code> function to
    {% endhint %}
 
 1. In Chrome, select a drink, add your name, and click the order button. Do you see the drink name included in the order? Select a different drink and click the order button again. Your drink order got replaced. How can we append to the new drink to the order instead of replacing it? 
+   {% hint tip='tip' %}
+You'll see an error if you don't select a drink. We'll fix this bug together in the Bonus assignment.
+   {% endhint %}

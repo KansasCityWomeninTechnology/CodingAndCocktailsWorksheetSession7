@@ -39,7 +39,7 @@
 |Switch between open apps/programs|`cmd` + `tab`|`alt` + `tab`|
 |Switch between programs on the taskbar| N/A | `windows key` + `tab`|
 |Switch between Chrome windows|`shift` + `cmd` + `~`| N/A |
-|Open Google Chrome developer tools console|`cmd` + `shift` + `i`| `F12`|
+|Open Google Chrome developer tools console|`cmd` + `option` + `i`| `F12`|
 
 
 <!-- trick markdown to give me a little space between these two sections of text -->

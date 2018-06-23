@@ -1,14 +1,14 @@
-1. We explored scopes on variables, but we don't need `numberOfDrinks` in the `buildDrinkMenu` function. Delete all the code inside the function and replace it with `console.log(drinkArray);`. The console log has an error stating "Uncaught ReferenceError: drinkArray is not defined". Uh oh. We can't access `drinkArray`?
+1. We want to iterate over `drinkArray` in the `buildMenu` method to build the drink menu. Remove the existing console log and instead log out `drinkArray`. The console log has an error stating "Uncaught ReferenceError: drinkArray is not defined". Uh oh. We can't access `drinkArray`?
 
-1. In `buildDrinkMenu` function, change the `console.log(drinkArray);` to `console.log(this.drinkArray);`. 😮
+1. In `buildDrinkMenu` method, change the console log statement to log `this.drinkArray`. 😮
 
-1. What is up that!? Let's change the log statement to `console.log(this);`. The console log states that the output of "this" is the contents `menu` object. We see the `drinkArray` property with 8 elements in the array and the `buildDrinkMenu` function in the console log output. 
+1. What is up that!? Let's change the log statement to `console.log(this);`. The console log states that the output of "this" is the contents of the `menu` object. We see the `drinkArray` property with 8 elements in the array and the `buildDrinkMenu` function in the console log output. 
    {% hint style='working' %}
 The `this` keyword provides the context from which we are working. In this case, it's the `menu` object. This is a tricky concept so you might need to explore a little to better understand what "this" is. What happens if you `console.log(this);` inside the second click handler? What is the "this" context? 
 
 Note you'll see an error from the first click handler, but you'll still see the console log statements from the second click handler.
 
-Arrow functions do not have its own `this` context so it's primarily used for small functions that don't require context complexity. 
+Arrow functions do not have their own `this` context so they are primarily used for small functions that don't require context complexity. 
    {% endhint %}
 
 1. Now that we know how to access `drinkArray` from inside `buildDrinkMenu` function, iterate through the array and log each item out to the console. Your code will look like this
@@ -25,7 +25,7 @@ buildDrinkMenu: function () {
 let labelNode = document.createElement('label');
    ```
    {% hint style='working' %}
-Our goal is to build a HTML element structure that looks like what you commented out in the HTML using JavaScript for each drink object in the array. We want to create something that looks like this using the drink's name and id:
+Our goal is to build an HTML element structure that looks like what you commented out in the HTML using JavaScript for each drink object in the array. We want to create something that looks like this using the drink's name and id:
 ```html
 <label for="focusedLady">
       <input type="radio" id="focusedLady" name="drink" value="Focused Lady">
@@ -40,7 +40,7 @@ We now have the following HTML
 ```
    {% endhint %}
 
-1. We want a way to tie the radio button to the id of the drink we can do this by setting the attribute "for" and adding the id of the drink to it. This is it for the parent `label` tag. Add the following line code right after setting `className`
+1. We want a way to tie the radio button to the id of the drink we can do this by setting the attribute "for" and adding the id of the drink to it. This is it for the parent `label` tag. Add the following line code right after creating the `label` element
    ```javascript
 labelNode.setAttribute('for', drink.id);
    ```

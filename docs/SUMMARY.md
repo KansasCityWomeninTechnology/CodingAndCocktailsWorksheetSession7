@@ -13,6 +13,7 @@
 
 ### Bonus
 * [Bug Fix & Enhancements](homework/bonus.md)
+* [Scope Exploration](homework/bonus-scope.md)
 * [Homework](homework/homework.md) 
 
 ----
