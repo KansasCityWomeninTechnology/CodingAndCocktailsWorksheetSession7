@@ -1,5 +1,5 @@
 # A Deeper Dive into JavaScript {#top}
-We will start by practicing JavaScript fundamentals and diving deeper into DOM manipulation before we explore new concepts such as events, objects, and APIs. JavaScript is one of many programming languages used for application development.
+We will start by practicing JavaScript fundamentals and diving deeper into DOM ([Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)) manipulation before we explore new concepts such as events, objects, and APIs. JavaScript is one of many programming languages used for application development.
 
 Tonight we will create an web application with interactive elements and dynamic content that looks like this: 
 
@@ -28,7 +28,7 @@ This section will help guide you through the following steps:
 {% include "./1prepare.md" %}
 
 ## Create a function and update the text of an element {#text} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-We'll write a function that updates the DOM dynamically with text.
+We'll write a function that updates the DOM dynamically with text. Remember a function is a bit of code that takes input, process the input and returns some output - sort of like a coffee machine!
 {% include "./2elementvalue.md" %}
 
 ## Add a counter and update the DOM element text {#counter} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
