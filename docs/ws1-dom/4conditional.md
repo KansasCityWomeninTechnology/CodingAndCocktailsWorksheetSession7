@@ -1,9 +1,19 @@
-1. In Atom, inside the `submitOrder` function in _my-script.js_ add conditional logic that will update the name for the order only on the first 4 orders. Wrap the code to update the `innerHTML` inside an if statement like this
+1. In Atom, inside the `submitOrder` function in _my-script.js_ set up your if block structure to add conditional logic that will update the name for the order only on the first 4 orders. Remember an if block looks like this:
    ```javascript
+if () {
+      // Code goes here
+}
+   ```  
+
+1. Add the condition inside the parentheses to specify what needs to be true for the code inside the `if` block to execute.  Remember we want the code to execute only for the first 4 orders.
+
+1. Move the code that updates the `innerHTML` inside the if blocks curly braces.  Your code should now look similar to this:
+```javascript
 if (numberOfDrinks < 5) {
       document.querySelector('.order-details').innerHTML = name + " would like a drink!";
 }
-   ```  
+   ```
+
    {% hint style='working' %}
 We can write the conditional logic using the '<=' operator. What would that look like?
    {% endhint %}

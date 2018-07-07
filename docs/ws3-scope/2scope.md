@@ -3,7 +3,7 @@
 menu.drinkArray.forEach( (item) => { console.log(item);});
    ```
    {% hint style='info' %}
-We can access properties inside objects using the `.` notation. The `drinkArray` property is available at object scope, not global scope.
+We can access properties inside objects using the `.` notation. The `drinkArray` property is available at object scope (meaning we can access the property as a part of the `menu` object), not global scope (meaning the entire script file cannot access the property).
    {% endhint %}
 
    {% hint style='working' %}
