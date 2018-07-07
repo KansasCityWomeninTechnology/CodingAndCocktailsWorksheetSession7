@@ -5,7 +5,7 @@ if () {
 }
    ```  
 
-1. Add the condition inside the parentheses to specify what needs to be true for the code inside the if block to execute.  Remember we want the code to execute only for the first 4 orders.
+1. Add the condition inside the parentheses to specify what needs to be true for the code inside the `if` block to execute.  Remember we want the code to execute only for the first 4 orders.
 
 1. Move the code that updates the `innerHTML` inside the if blocks curly braces.  Your code should now look similar to this:
 ```javascript

@@ -6,7 +6,7 @@ Two functions are already defined in the file: one function associated with the 
 
 2. Find the `onclick` event handler on line 4. Place your cursor between the opening and closing curly braces (these: `{}`) and press `Enter`. 
 
-  Your cursor will be on a new line in between those curly braces that denote the function body.  Notice how Atom has indented your cursor as well.  This is to help with code readability. Your code should now look similar to this:
+  Your cursor will be on a new line in between those curly braces that denote the function body.  Notice how Atom indents your cursor position as well.  This is to help with code readability. Your code should now look similar to this:
    ```javascript
 document.getElementById('order-btn').onclick = function () {
 };
@@ -16,7 +16,7 @@ The opening and closing curly brace signify the starting and ending boundaries f
    {% endhint %}      
 
    {% hint style='tip' %}
-View the worksheet and the IDE (Integrated Development Environment - a generic term for where you write your code, Atom is serving as the IDE in our case) in split screen mode to make it easier to work through tonight's session. Check out the [helpful tips in the Setup guide](/setup#tips). 
+View the worksheet and the **IDE** (**I**ntegrated **D**evelopment **E**nvironment - a generic term for where you write your code, Atom is serving as the IDE in our case) in split screen mode to make it easier to work through tonight's session. Check out the [helpful tips in the Setup guide](/setup#tips). 
    {% endhint %}
 
 1. Add an alert with the message "Hi LadyDev!" inside the function body to verify we wired up the click handler correctly. Your click handler should look like this:
@@ -38,13 +38,13 @@ The atom-live-server package will automatically refresh the Chrome tab to keep t
 Save the file by navigating to **File** <i class="fa fa-long-arrow-right"></i> **Save** or by using the keyboard shortcut `cmd` + `s` for Macs and `ctrl` + `s` for Windows. Refer to [Helpful Keyboard Shortcuts](/references).
    {% endhint %}
 
-1. In chrome,  click on the order button. Do you see the alert pop up? 
+1. In Chrome, click on the order button. Do you see the alert pop up? 
 
   {% hint style='danger' %}
 If you don't see the alert pop up when you click the button, double check that you've saved your files and grab a mentor if you're stuck!
   {% endhint %}
   
-  Great! We've got a form on our page that we want to work with user input from. Now that we know the click handler works, let's get the value of the form input!
+  Great! We've got a form on our page that accepts user input to work with. Now that we know the click handler works, let's get the value of the form input!
 
 1. In Atom, remove the alert code. 
 
@@ -67,7 +67,7 @@ document.getElementById('order-btn').onclick = function () {
 
 1. Wrap the value of the form in the `console.log()` method to see what the value of the input is. 
 
-  You could add another alert message, or log it out to the console to do so.  Since we used the alert method already, try using `console.log()` here.  Your onclick function body should look like this:
+  You could add another alert message, or log it out to the console to do so.  Since we used the alert method already, try using `console.log()` here.  Your `onclick` function body should look like this:
    ```javascript
 console.log(document.getElementById('order-form-input').value);
    ```
@@ -76,14 +76,14 @@ console.log(document.getElementById('order-form-input').value);
 
 1. Enter text in the name form field and click on the order button. You should see your text write to the DevTools console. Leave DevTools open.  
 
-1. In Atom, place your cursor at the top of the _my-script.js_ file and press `Enter` twice.  Place your cursor back on the first line of the file and create a constant variable named `submitOrder`. This will be your new functions name.
+1. In Atom, place your cursor at the top of the _my-script.js_ file and press `Enter` twice.  Place your cursor back on the first line of the file and create a constant variable named `submitOrder`. This will be your new function's name.
    ```javascript
 const submitOrder
    ```
 
 1. Next to the `submitOrder` variable, add an `=` sign to set your variable to some content.  Type the `function` keyword to start your function definition.
 
-1. Add the open and close parens for the area where you enter the input parameters for the function and add a single parameter called `name` as input to this function. 
+1. Add the open and close parenthesis for the area where you enter the input parameters for the function and add a single parameter called `name` as input to this function. 
 
 1. Wrap up the function structure by adding the open and close curly braces `{}` and a semi-colon to end the line of code. Your function should look like this:
   ```javascript
@@ -100,7 +100,7 @@ We are passing the value as a parameter to the `submitOrder` function. We can no
 
 1. Inside the `submitOrder` function, add an alert on `name` to verify we wired it up correctly and save your work. 
 
-1. In Chrome, try testing this out in Chrome to see the alert pop up with the value you enter in the name field.
+1. In Chrome, try testing this out to see the alert pop up with the value you enter in the name field.
    {% hint style='working' %}
 <details>
 <summary>

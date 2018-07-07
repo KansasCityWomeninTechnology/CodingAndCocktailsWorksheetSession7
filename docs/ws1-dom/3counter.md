@@ -28,7 +28,7 @@ numberOfDrinks += 1;
 Feel free to add `console.log()` statements to troubleshoot, double check your work, or to help reinforce concepts. You can also use the `debugger;` statement to **debug** your code using Chrome DevTools. Refer to the [debugging steps](https://codingandcocktailskc.gitbooks.io/session-6-programming-fundamentals-101-jquery-js/content/ws2-functions/#conditional) from last session or feel free to grab a mentor!
    {% endhint %}
 
-1.  Place your cursor after the closing curly brace for the `submitOrder` function, press enter twice and create a new function called `updateOrderCount` that accepts one parameter: `count`. This time we're going to use arrow syntax to create the function.
+1. Place your cursor after the closing curly brace for the `submitOrder` function, press `Enter` twice and create a new function called `updateOrderCount` that accepts one parameter: `count`. This time we're going to use arrow syntax to create the function.
 
   ```javascript
 const updateOrderCount = (count) => {};
@@ -39,7 +39,7 @@ const updateOrderCount = (count) => {};
    {% hint style="info" %}
 In JavaScript, you can declare **functions** and **function expressions**. Function declarations use the syntax `function myFunction(){}` while function expressions use the syntax `const myFunction = function(){};`. In a function expression, you are assigning the function to a variable. This makes it easier to pass functions as parameters. We have been using **function expressions**.
 
-The arrow function is a shorthand hand way to write function expressions and is an ECMAScript 2015 standard. When you use arrow functions, you pass parameters in the open and close parenthesis, just the same as a regular function. The `=>` symbol signifies the keyword `function`. 
+The **arrow function** is a shorthand hand way to write function expressions and is an ECMAScript 2015 standard. When you use arrow functions, you pass parameters in the open and close parenthesis, just the same as a regular function. The `=>` symbol signifies the keyword `function`. 
 
 Check out the references in this section to learn more about functions.
 
